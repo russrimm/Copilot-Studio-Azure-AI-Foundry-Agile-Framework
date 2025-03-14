@@ -95,11 +95,14 @@ C. **Integration Examples**
 ### Enterprise Implementation
 
 A. **[Security & Compliance Guide](./Security%20%26%20Compliance/security-compliance-guide.md)**
-   - Data handling best practices
-   - Authentication patterns
-   - Audit logging implementation
-   - Compliance framework integration
-   - Privacy protection measures
+   - Environment security management
+   - Data protection and content filtering
+   - Authentication and authorization
+   - Audit logging and compliance monitoring
+   - Security best practices and documentation
+   - Channel and integration security
+   - Security troubleshooting and resolution
+   - Compliance documentation and tracking
 
 B. **[Performance & Monitoring](./Performance%20%26%20Monitoring/performance-monitoring-guide.md)**
    - Monitoring setup guides

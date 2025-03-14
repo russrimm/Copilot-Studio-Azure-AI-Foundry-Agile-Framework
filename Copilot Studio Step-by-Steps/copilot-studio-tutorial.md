@@ -14,6 +14,8 @@
 - [Advanced Techniques](#advanced-techniques)
 - [Troubleshooting Common Issues](#troubleshooting-common-issues)
 - [Resources and Next Steps](#resources-and-next-steps)
+- [Security and Auditing](#security-and-auditing)
+- [Implementing Telemetry](#implementing-telemetry)
 
 ## Introduction
 
@@ -260,11 +262,29 @@ Topics are the building blocks of your Copilot's capabilities, organizing conver
 
 ### Topic Types
 
-Copilot Studio supports several types of topics:
+Copilot Studio supports two main types of topics:
 
-- **Standard topics**: General conversation paths triggered by user phrases
-- **System topics**: Built-in functionality like greetings and fallback responses
-- **Lesson topics**: Guided learning experiences with multiple steps
+- **System Topics**: Built-in functionality for core system operations:
+  - Conversation Start
+  - Conversational Boosting
+  - End of Conversation
+  - Escalate
+  - Fallback
+  - Multiple Topics Matched
+  - On Error
+  - Reset Conversation
+  - Sign in
+
+- **Custom Topics**: Common conversation scenarios that you can customize:
+  - Goodbye
+  - Greeting
+  - Start Over
+  - Thank you
+  - Your own business-specific topics for:
+    - FAQ responses
+    - Business processes
+    - Multi-turn conversations
+    - Integration workflows
 
 ### Creating a Conversation Flow
 
@@ -511,6 +531,206 @@ If your Copilot is slow to respond:
 2. Explore AI Builder for custom AI models
 3. Study Dataverse for complex data operations
 4. Investigate Azure Cognitive Services for enhanced AI capabilities
+
+## Security and Auditing
+
+### Environment Security
+
+1. **Environment Management**
+   - Use separate environments for development, testing, and production
+   - Configure environment-specific security settings
+   - Implement data loss prevention (DLP) policies
+   - Set up IP restrictions when needed
+
+2. **Access Control**
+   - Configure Microsoft Entra ID (formerly Azure AD) integration
+   - Set up role-based access control (RBAC)
+   - Manage user and admin permissions
+   - Configure service principal access
+
+### Data Security
+
+1. **Data Protection**
+   - Enable encryption at rest and in transit
+   - Configure data retention policies
+   - Set up data masking for sensitive information
+   - Implement PII/PHI handling procedures
+
+2. **Content Filtering**
+   - Configure profanity filtering
+   - Set up content moderation
+   - Implement custom blocked phrases
+   - Configure response filtering
+
+### Authentication and Authorization
+
+1. **User Authentication**
+   - Configure identity providers
+   - Set up multi-factor authentication
+   - Implement single sign-on (SSO)
+   - Manage authentication tokens
+
+2. **API Security**
+   - Secure custom action endpoints
+   - Manage API keys and secrets
+   - Configure OAuth 2.0 settings
+   - Implement API throttling
+
+### Audit and Compliance
+
+1. **Audit Logging**
+   - Enable comprehensive audit trails
+   - Track user actions and changes
+   - Monitor system access
+   - Log security events
+
+2. **Compliance Monitoring**
+   - Track regulatory compliance
+   - Monitor data residency
+   - Implement compliance reporting
+   - Set up alerts for compliance violations
+
+### Security Best Practices
+
+1. **Development Security**
+   - Use secure development practices
+   - Implement code review processes
+   - Follow least privilege principle
+   - Regular security testing
+
+2. **Operational Security**
+   - Regular security assessments
+   - Incident response planning
+   - Security patch management
+   - Regular backup procedures
+
+### Monitoring and Alerts
+
+1. **Security Monitoring**
+   - Set up security dashboards
+   - Configure alert thresholds
+   - Monitor suspicious activities
+   - Track authentication failures
+
+2. **Performance Monitoring**
+   - Monitor resource usage
+   - Track response times
+   - Set up availability monitoring
+   - Configure performance alerts
+
+### Channel Security
+
+1. **Channel-Specific Security**
+   - Configure Teams channel security
+   - Set up web chat security
+   - Secure custom channel endpoints
+   - Implement channel authentication
+
+2. **Integration Security**
+   - Secure external system connections
+   - Configure connector security
+   - Manage integration credentials
+   - Monitor integration access
+
+### Security Troubleshooting
+
+1. **Common Issues**
+   - Authentication problems
+   - Authorization failures
+   - Security alert investigation
+   - Access control issues
+
+2. **Resolution Steps**
+   - Diagnostic procedures
+   - Security log analysis
+   - Issue escalation process
+   - Resolution documentation
+
+### Security Documentation
+
+1. **Security Policies**
+   - Document security configurations
+   - Maintain security procedures
+   - Update security guidelines
+   - Track security changes
+
+2. **Compliance Documentation**
+   - Maintain compliance records
+   - Document audit findings
+   - Track remediation efforts
+   - Update compliance status
+
+## Implementing Telemetry
+
+### Setting Up Telemetry
+
+1. **Application Insights Integration**
+   - Create an Application Insights resource in Azure
+   - Get the instrumentation key
+   - Configure connection in Copilot Studio
+
+2. **Custom Telemetry Implementation**
+   - Add Power Automate flow for telemetry
+   - Configure custom dimensions and metrics
+   - Set up correlation IDs for tracking
+
+### Key Metrics to Track
+
+1. **Conversation Metrics**
+   - Session duration
+   - Message count per session
+   - Topic trigger frequency
+   - User satisfaction scores
+   - Response times
+
+2. **Technical Metrics**
+   - API response times
+   - Authentication success/failure rates
+   - Knowledge base query performance
+   - Action execution times
+   - Error rates by type
+
+### Custom Event Tracking
+
+1. **Business Events**
+   - Task completion rates
+   - Business process metrics
+   - User journey tracking
+   - Goal conversion rates
+
+2. **System Events**
+   - System health checks
+   - Resource utilization
+   - Integration status
+   - Performance bottlenecks
+
+### Telemetry Dashboard Setup
+
+1. **Azure Dashboard**
+   - Create custom views
+   - Set up real-time monitoring
+   - Configure alerts
+   - Create performance reports
+
+2. **Custom Reports**
+   - User engagement metrics
+   - Business impact analysis
+   - Error trend analysis
+   - Usage pattern insights
+
+### Best Practices
+
+1. **Data Collection**
+   - Implement consistent naming conventions
+   - Use structured logging
+   - Include contextual information
+   - Follow data privacy guidelines
+
+2. **Monitoring Strategy**
+   - Set up proactive alerts
+   - Define baseline metrics
+   - Create incident response procedures
+   - Regular reporting schedule
 
 ---
 
