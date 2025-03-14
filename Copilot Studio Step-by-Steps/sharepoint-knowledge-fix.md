@@ -1,4 +1,4 @@
-# Fixing SharePoint Knowledge Integration in Copilot Studio
+# Resolving Issues with SharePoint Knowledge Integration in Copilot Studio
 
 SharePoint knowledge integration in Copilot Studio can sometimes encounter issues. Here's a step-by-step guide to diagnose and fix these problems based on the recommended approach.
 
