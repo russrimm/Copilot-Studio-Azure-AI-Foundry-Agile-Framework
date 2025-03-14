@@ -37,59 +37,46 @@ C. **[Azure OpenAI with Copilot Studio Integration](./azure-openai-copilot-integ
    - System message configuration and optimization techniques
    - Troubleshooting and best practices
 
-### Practical Guides & Tutorials
+### Implementation Guides
 
-4. **[Microsoft Copilot Studio Tutorial for Beginners](<./Copilot Studio Step-by-Steps/copilot-studio-tutorial.md>)**
-   - Comprehensive tutorial for getting started with Copilot Studio
-   - Step-by-step instructions for creating your first Copilot
-   - Understanding triggers, actions, and conversation flows
-   - Integrating AI capabilities and connecting to data sources
-   - Testing, publishing, monitoring, and governance best practices
+A. **Getting Started**
+   1. [Copilot Studio Tutorial](./Copilot%20Studio%20Step-by-Steps/copilot-studio-tutorial.md)
+      - Basic concepts and setup
+      - Building your first copilot
+      - Best practices and tips
+   2. [SharePoint Knowledge Integration](./Copilot%20Studio%20Step-by-Steps/sharepoint-knowledge-fix.md)
+      - Troubleshooting and solutions
+      - Best practices and maintenance
 
-5. **[Fixing SharePoint Knowledge Integration in Copilot Studio](<./Copilot Studio Step-by-Steps/sharepoint-knowledge-fix.md>)**
-   - Step-by-step troubleshooting guide for SharePoint knowledge integration issues
-   - Common error scenarios and their solutions
-   - Best practices for maintaining SharePoint knowledge sources
-   - Prevention tips to avoid future connection problems
+B. **Advanced Implementation**
+   1. [Building an Autonomous Agent](./Autonomous%20Agents/autonomous-agent-copilot-studio.md)
+      - Creating self-sufficient AI agents
+      - External systems integration
+      - Decision-making frameworks
+   2. [Advanced Agent Guide](./Autonomous%20Agents/autonomous-agent-guide.md)
+      - Azure OpenAI service setup
+      - Core agent framework
+      - System messages
 
-6. **[Building an Autonomous Agent with Copilot Studio](<./Autonomous Agents/autonomous-agent-copilot-studio.md>)**
-   - Comprehensive guide to creating self-sufficient AI agents
-   - Connecting to external systems for autonomous operations
-   - Implementing decision-making frameworks
-   - Human-in-the-loop mechanisms for oversight
-   - Testing, monitoring, and continuous improvement
+C. **Integration Examples**
+   1. [ServiceNow Integration](./Copilot%20Studio%20Step-by-Steps/servicenow-copilot-poc.md)
+      - Complete POC setup
+      - User access configuration
+      - Agent building walkthrough
+   2. [HR Assistant Implementation](./Copilot%20Studio%20Step-by-Steps/hr-copilot-studio-guide.md)
+      - HR-focused virtual assistant
+      - Knowledge base creation
+      - System integration
 
-7. **[Building an Autonomous Agent Guide (Alternative Version)](<./Autonomous Agents/autonomous-agent-guide.md>)**
-   - Detailed walkthrough for creating autonomous agents with Microsoft Copilot Studio
-   - Azure OpenAI service provisioning and configuration
-   - Core agent framework development
-   - System messages implementation
-   - Advanced configurations and troubleshooting
+### Use Cases & Examples
 
-8. **[Building an HR Assistant with Copilot Studio](<./Copilot Studio Step-by-Steps/hr-copilot-studio-guide.md>)**
-   - Step-by-step guide for creating an HR-focused virtual assistant
-   - Knowledge base creation from HR documents
-   - Building essential HR topics (benefits, time off, personal information)
-   - Authentication implementation
-   - Integration with HR systems
-
-9. **[ServiceNow Integration POC Guide](<./Copilot Studio Step-by-Steps/servicenow-copilot-poc.md>)**
-   - Step-by-step guide for implementing a ServiceNow-powered agent with Copilot Studio
-   - Setting up ServiceNow developer instance
-   - Configuring user access and connections
-   - Building a Copilot Studio agent with ServiceNow integration
-   - Testing, validation, and advanced configurations
-
-### Use Cases & Implementation Examples
-
-10. **[Copilot Studio Use Cases and Integrations](<./Copilot Studio Use Cases/copilot-studio-use-cases.md>)**
-   - Detailed implementation guides for various Copilot Studio scenarios
-   - Service Desk / Help Desk Automation with ServiceNow integration
-   - Employee Onboarding Assistant
-   - Customer Service Automation with Snowflake integration
-   - Microsoft 365 and Power Platform News Assistant
-   - Intelligent Document Processing with AI Builder
-   - Enterprise RSS Feed Management
+A. **[Core Use Cases](./Copilot%20Studio%20Use%20Cases/copilot-studio-use-cases.md)**
+   - Service Desk Automation
+   - Employee Onboarding
+   - Customer Service with Snowflake
+   - M365 and Power Platform Assistant
+   - Document Processing with AI Builder
+   - Enterprise RSS Management
 
 B. **[Implementation Examples](./Copilot%20Studio%20Use%20Cases/use-cases.md)**
    - Employee Self-Service Chatbot
