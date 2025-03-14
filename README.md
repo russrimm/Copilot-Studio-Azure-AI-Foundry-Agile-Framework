@@ -90,7 +90,7 @@ For assistance with implementing or learning about any of these technologies, co
     - Real-Time Sales Analytics
     - Developer Productivity with GitHub Copilot
 
-11. **[Detailed Implementation Examples](./use-cases-implementation.md)**
+11. **[Detailed Implementation Examples](<./Copilot Studio Use Cases/use-cases-implementation.md>)**
     - Enterprise Virtual Assistant with Copilot Studio and Azure OpenAI
     - Complete step-by-step implementation instructions
     - Code samples and configuration details
