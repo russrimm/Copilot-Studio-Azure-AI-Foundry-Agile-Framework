@@ -58,7 +58,7 @@ Before you begin, ensure you have:
 3. Go to **Model deployments** in the left menu
 4. Click **Create new deployment**
 5. Select a model:
-   - For most Copilot Studio scenarios, select "gpt-35-turbo" or "gpt-4" (if available)
+   - For most Copilot Studio scenarios, select "gpt-4o"
    - Note: GPT-4 has higher capabilities but costs more and may have stricter quota limits
 6. Provide a **Deployment name** (e.g., "copilot-integration")
 7. Set the **Model version** to the latest available
