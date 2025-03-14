@@ -13,7 +13,7 @@ This repository contains comprehensive guides and documentation for Microsoft Po
    - Application lifecycle management
    - Monitoring & alerting best practices
    
-2. **[Copilot Studio vs. Azure OpenAI / Foundry](./copilot-vs-openai.md)**
+2. **[Copilot Studio vs. Azure OpenAI / Foundry](./copilot-vs-azure-openai.md)**
    - Detailed comparison between the two platforms
    - Primary purposes and target users
    - Development approaches and AI model integration
