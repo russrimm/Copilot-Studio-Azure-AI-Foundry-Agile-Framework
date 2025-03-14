@@ -25,8 +25,8 @@ az cognitiveservices account create \
 az cognitiveservices account deployment create \
   --name "company-virtual-assistant-openai" \
   --resource-group RG-AI-VirtualAssistant \
-  --deployment-name "gpt-35-turbo" \
-  --model-name "gpt-35-turbo" \
+  --deployment-name "gpt-4o" \
+  --model-name "gpt-4o" \
   --model-version "0613" \
   --model-format OpenAI \
   --scale-settings-scale-type "Standard"

@@ -53,8 +53,8 @@ Based on the methodology demonstrated by Microsoft experts, this guide will help
 
 1. In your Azure OpenAI resource, navigate to **Model deployments**
 2. Click **Create**
-3. Select "gpt-4" or "gpt-3.5-turbo" (latest available versions)
-4. Name your deployment (e.g., "copilot-agent-gpt4")
+3. Select "gpt-4o" or other latest available version
+4. Name your deployment (e.g., "copilot-agent-gpt4o")
 5. Click **Create**
 6. Note down the model deployment name
 
