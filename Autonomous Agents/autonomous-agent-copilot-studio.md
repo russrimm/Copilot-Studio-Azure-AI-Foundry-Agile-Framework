@@ -1,6 +1,6 @@
 # Building an Autonomous Agent with Copilot Studio: Step-by-Step Guide
 
-This comprehensive guide walks you through the process of creating an autonomous agent using Microsoft Copilot Studio, enabling your AI to perform tasks independently while maintaining user interaction when needed.
+This comprehensive guide walks you through the process of creating an autonomous agent using Microsoft Copilot Studio, enabling your agents to perform tasks independently while maintaining user interaction when needed.
 
 ## What is an Autonomous Agent?
 
