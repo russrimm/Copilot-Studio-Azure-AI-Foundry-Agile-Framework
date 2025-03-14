@@ -120,4 +120,4 @@ To contribute to this documentation:
 
 ## Contact
 
-For questions or additional support, please contact the IT Support team or open an issue in this repository.
+For questions or additional support, please open an issue on this repo!
