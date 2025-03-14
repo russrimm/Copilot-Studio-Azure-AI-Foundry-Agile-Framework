@@ -45,7 +45,7 @@ C. **[Azure OpenAI with Copilot Studio Integration](./azure-openai-copilot-integ
 ### Implementation Guides
 
 A. **Getting Started**
-   1. [Copilot Studio Tutorial](./Copilot%20Studio%20Step-by-Steps/copilot-studio-tutorial.md)
+   1. [Copilot Studio Tutorial for Beginners](./Copilot%20Studio%20Step-by-Steps/copilot-studio-tutorial.md)
       - Agent interface and core components
       - Knowledge management and generative AI
       - Topic design and system topics
