@@ -92,7 +92,7 @@ This documentation is designed to help you implement Microsoft's AI and automati
 
 1. Start with the [Microsoft AI and Power Platform Adoption Framework](./ms-ai-powerplatform-framework.md) for a comprehensive overview of the implementation approach.
 
-2. Review the [Copilot Studio vs. Azure AI Studio](./copilot-vs-azure-openai.md) comparison to understand which platform is best for your specific requirements.
+2. Review the [Copilot Studio vs. Azure Foundry](./copilot-vs-azure-openai.md) comparison to understand which platform is best for your specific requirements.
 
 3. If you're integrating Azure OpenAI with Copilot Studio, follow the [integration guide](./azure-openai-copilot-integration.md) for step-by-step instructions.
 
