@@ -89,6 +89,7 @@ Azure Foundry is a comprehensive development environment for creating, evaluatin
 - Native integration with Microsoft 365 and Power Platform
 - Pre-built connectors to common business systems
 - Power Automate integration for workflow automation
+- Integration with Power Pipelines
 - Quick deployment to Teams, websites, and mobile apps
 
 **Azure Foundry:**
