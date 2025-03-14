@@ -2,6 +2,8 @@
 
 This repository contains comprehensive guides and documentation for Microsoft Power Platform, Copilot Studio, and Azure Foundry implementations. These resources provide detailed guidance, best practices, and step-by-step instructions to help you successfully implement Microsoft's Agentic and AI powered automation technologies.
 
+For assistance with implementing or learning about any of these technologies, contact your Customer Success Account Manager (CSAM).
+
 ## Documentation Files
 
 ### Framework & Strategy
