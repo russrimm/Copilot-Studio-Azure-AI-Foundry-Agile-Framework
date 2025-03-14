@@ -83,10 +83,9 @@ This framework delivers structured guidance for implementing Microsoft's AI and 
      Move to: "Non-Business" or "Blocked" as desored for environments
      ```
 
-3. **Implement Custom Connector Governance**:
+3. **Implement Custom Connector Endpoint Filtering Governance**:
    ```
-   Power Platform Admin Center > Settings > Product > Custom connectors
-   Set "Who can create and update custom connectors" to "Only specific admins"
+   Power Platform Admin Center > Data Policies
    ```
 
 #### Role-Based Access Control Implementation
