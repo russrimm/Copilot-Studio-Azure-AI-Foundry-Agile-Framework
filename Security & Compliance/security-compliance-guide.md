@@ -1,5 +1,7 @@
 # Security & Compliance Guide for Copilot Studio
 
+This guide provides a high-level overview of security and compliance considerations for Microsoft Copilot Studio. For detailed information on specific aspects, please refer to the [Microsoft Copilot Studio Security and Governance Documentation](../copilot-studio-security-governance.md).
+
 ## Environment Security Management
 
 ### Environment Segregation
@@ -17,10 +19,10 @@
 ## Data Protection and Content Filtering
 
 ### Data Security
-- Encryption (at rest and in transit)
-- Data retention policies
-- Data masking for sensitive information
-- PII/PHI handling procedures
+- [Encryption (at rest and in transit)](../copilot-studio-security-governance.md#encryption)
+- [Data retention policies](../copilot-studio-security-governance.md#data-retention-policies)
+- [Data masking for sensitive information](../copilot-studio-security-governance.md#data-masking-for-sensitive-information)
+- [PII/PHI handling procedures](../copilot-studio-security-governance.md#piiphi-handling-procedures)
 
 ### Content Management
 - Profanity filtering configuration
@@ -53,7 +55,7 @@
 ### Compliance Monitoring
 - Regulatory compliance tracking
 - Data residency monitoring
-- Compliance reporting
+- [Compliance reporting](../copilot-studio-security-governance.md#compliance-frameworks)
 - Violation alerts configuration
 
 ## Security Best Practices
@@ -61,12 +63,12 @@
 ### Development Security
 - Secure development guidelines
 - Code review processes
-- Least privilege implementation
+- [Least privilege implementation](../copilot-studio-security-governance.md#implementation-best-practices)
 - Security testing procedures
 
 ### Operational Security
 - Security assessment procedures
-- Incident response protocols
+- [Incident response protocols](../copilot-studio-security-governance.md#incident-response-for-data-breaches)
 - Patch management
 - Backup procedures
 
@@ -80,9 +82,9 @@
 
 ### Integration Security
 - External system connections
-- Connector security
+- [Connector security](../copilot-studio-security-governance.md#managing-connector-access)
 - Credential management
-- Access monitoring
+- [Access monitoring](../copilot-studio-security-governance.md#dlp-policy-monitoring-and-enforcement)
 
 ## Security Troubleshooting
 
@@ -101,13 +103,13 @@
 ## Compliance Documentation
 
 ### Security Documentation
-- Configuration documentation
+- [Configuration documentation](../copilot-studio-security-governance.md#appendix)
 - Procedure maintenance
 - Guidelines updates
 - Change tracking
 
 ### Compliance Records
-- Compliance documentation
+- [Compliance documentation](../copilot-studio-security-governance.md#regulatory-compliance-references)
 - Audit findings
 - Remediation tracking
-- Status reporting 
+- Status reporting
