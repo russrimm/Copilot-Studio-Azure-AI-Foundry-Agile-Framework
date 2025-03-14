@@ -391,11 +391,304 @@ Now let's create the Copilot Studio agent that will integrate with ServiceNow.
 ### Implement Adaptive Cards
 
 1. In your Power Automate flows, add adaptive card responses:
-   - For ticket creation confirmation
-   - For ticket status display
-   - For knowledge article results
-2. Configure card templates with relevant fields and formatting
-3. Test cards in Teams and other channels
+   
+   a. **For ticket creation confirmation**:
+   - In the "Create ServiceNow Ticket" flow, after the ServiceNow action
+   - Add a step: **Copilot Studio** > **Return value to Copilot Studio**
+   - In the "Return value" section, include a new property called "CardJson" with the following JSON:
+
+```json
+{
+  "type": "AdaptiveCard",
+  "version": "1.3",
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "body": [
+    {
+      "type": "Container",
+      "style": "emphasis",
+      "items": [
+        {
+          "type": "ColumnSet",
+          "columns": [
+            {
+              "type": "Column",
+              "width": "auto",
+              "items": [
+                {
+                  "type": "Image",
+                  "url": "https://adaptivecards.io/content/check_circle.png",
+                  "size": "small"
+                }
+              ]
+            },
+            {
+              "type": "Column",
+              "width": "stretch",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "Ticket Created Successfully",
+                  "weight": "bolder",
+                  "size": "medium"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "Ticket Details",
+          "weight": "bolder",
+          "wrap": true
+        },
+        {
+          "type": "FactSet",
+          "facts": [
+            {
+              "title": "Ticket Number:",
+              "value": "@{outputs('Create_a_record')?['body/number']}"
+            },
+            {
+              "title": "Summary:",
+              "value": "@{triggerBody()['text']['IssueSummary']}"
+            },
+            {
+              "title": "Category:",
+              "value": "@{triggerBody()['text']['IssueCategory']}"
+            },
+            {
+              "title": "Priority:",
+              "value": "@{triggerBody()['text']['IssuePriority']}"
+            },
+            {
+              "title": "Created:",
+              "value": "@{formatDateTime(utcNow(), 'MMM dd, yyyy h:mm tt')}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "TextBlock",
+      "text": "Your IT support request has been submitted. You will be notified when there are updates to your ticket.",
+      "wrap": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.OpenUrl",
+      "title": "View in ServiceNow",
+      "url": "https://yourservicenowinstance.service-now.com/nav_to.do?uri=incident.do?sys_id=@{outputs('Create_a_record')?['body/sys_id']}"
+    },
+    {
+      "type": "Action.Submit",
+      "title": "Check Status Later",
+      "data": {
+        "action": "checkStatus",
+        "ticketNumber": "@{outputs('Create_a_record')?['body/number']}"
+      }
+    }
+  ]
+}
+```
+   
+   b. **For ticket status display**:
+   - In the "Get Ticket Status" flow, after the ServiceNow action
+   - Add a step: **Copilot Studio** > **Return value to Copilot Studio**
+   - In the "Return value" section, include a new property called "StatusCardJson" with the following JSON:
+
+```json
+{
+  "type": "AdaptiveCard",
+  "version": "1.3",
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "body": [
+    {
+      "type": "Container",
+      "style": "emphasis",
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "Ticket Status",
+          "weight": "bolder",
+          "size": "large"
+        }
+      ]
+    },
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "FactSet",
+          "facts": [
+            {
+              "title": "Ticket Number:",
+              "value": "@{first(body('List_records')?['value'])?['number']}"
+            },
+            {
+              "title": "Summary:",
+              "value": "@{first(body('List_records')?['value'])?['short_description']}"
+            },
+            {
+              "title": "Status:",
+              "value": "@{first(body('List_records')?['value'])?['state']}"
+            },
+            {
+              "title": "Priority:",
+              "value": "@{first(body('List_records')?['value'])?['priority']}"
+            },
+            {
+              "title": "Assigned To:",
+              "value": "@{if(empty(first(body('List_records')?['value'])?['assigned_to']), 'Not yet assigned', first(body('List_records')?['value'])?['assigned_to'])}"
+            },
+            {
+              "title": "Updated:",
+              "value": "@{formatDateTime(first(body('List_records')?['value'])?['sys_updated_on'], 'MMM dd, yyyy h:mm tt')}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "Latest Comment:",
+          "weight": "bolder",
+          "wrap": true
+        },
+        {
+          "type": "TextBlock",
+          "text": "@{if(empty(first(body('List_records')?['value'])?['comments']), 'No comments available', first(body('List_records')?['value'])?['comments'])}",
+          "wrap": true
+        }
+      ]
+    },
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "Status Timeline",
+          "weight": "bolder",
+          "wrap": true
+        },
+        {
+          "type": "ColumnSet",
+          "columns": [
+            {
+              "type": "Column",
+              "width": "auto",
+              "items": [
+                {
+                  "type": "Image",
+                  "url": "https://adaptivecards.io/content/CircleGreen.png",
+                  "size": "small"
+                }
+              ]
+            },
+            {
+              "type": "Column",
+              "width": "stretch",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "Created",
+                  "weight": "bolder"
+                },
+                {
+                  "type": "TextBlock",
+                  "text": "@{formatDateTime(first(body('List_records')?['value'])?['sys_created_on'], 'MMM dd, yyyy h:mm tt')}",
+                  "isSubtle": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "ColumnSet",
+          "columns": [
+            {
+              "type": "Column",
+              "width": "auto",
+              "items": [
+                {
+                  "type": "Image",
+                  "url": "@{if(equals(first(body('List_records')?['value'])?['state'], 'Closed'), 'https://adaptivecards.io/content/CircleGreen.png', 'https://adaptivecards.io/content/CircleGray.png')}",
+                  "size": "small"
+                }
+              ]
+            },
+            {
+              "type": "Column",
+              "width": "stretch",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "Resolved",
+                  "weight": "bolder"
+                },
+                {
+                  "type": "TextBlock",
+                  "text": "@{if(equals(first(body('List_records')?['value'])?['state'], 'Closed'), formatDateTime(first(body('List_records')?['value'])?['closed_at'], 'MMM dd, yyyy h:mm tt'), 'Pending')}",
+                  "isSubtle": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.OpenUrl",
+      "title": "View in ServiceNow",
+      "url": "https://yourservicenowinstance.service-now.com/nav_to.do?uri=incident.do?sys_id=@{first(body('List_records')?['value'])?['sys_id']}"
+    },
+    {
+      "type": "Action.Submit",
+      "title": "Add Comment",
+      "data": {
+        "action": "addComment",
+        "ticketNumber": "@{first(body('List_records')?['value'])?['number']}"
+      }
+    }
+  ]
+}
+```
+
+   c. **For knowledge article results**:
+   - In the "Search Knowledge Articles" flow, after the ServiceNow action
+   - Add a step: **Copilot Studio** > **Return value to Copilot Studio**
+   - In the "Return value" section, include a new property called "ArticleCardJson" that displays article content in a card format
+
+2. In Copilot Studio, update your topics to display these adaptive cards:
+
+   a. **For ticket creation confirmation**:
+   - In the "Create IT Ticket" topic, after the Power Automate flow action
+   - Add a node: Message
+   - Select "Adaptive card" as the message type
+   - In the Adaptive card field, enter: `${PowerAutomateResponse.CardJson}`
+
+   b. **For ticket status display**:
+   - In the "Check Ticket Status" topic, after the Power Automate flow action
+   - Add a node: Message
+   - Select "Adaptive card" as the message type
+   - In the Adaptive card field, enter: `${PowerAutomateResponse.StatusCardJson}`
+
+3. Test the cards in different channels to ensure proper rendering.
+
+4. Customize the cards for your specific ServiceNow instance:
+   - Update URLs to point to your ServiceNow instance
+   - Adjust fields based on your ServiceNow configuration
+   - Modify styling to match your organization's branding
 
 ### Configure Language Models
 
