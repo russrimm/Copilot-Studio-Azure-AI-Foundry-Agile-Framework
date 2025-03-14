@@ -51,7 +51,7 @@ This repository contains comprehensive guides and documentation for Microsoft Po
 
 ### Use Cases & Implementation Examples
 
-7. **[Copilot Studio Use Cases and Integrations](./copilot-studio-use-cases.md)**
+7. **[Copilot Studio Use Cases and Integrations](<./Copilot Studio Step-by-Steps/copilot-studio-use-cases.md>)**
    - Detailed implementation guides for various Copilot Studio scenarios
    - Service Desk / Help Desk Automation with ServiceNow integration
    - Employee Onboarding Assistant
