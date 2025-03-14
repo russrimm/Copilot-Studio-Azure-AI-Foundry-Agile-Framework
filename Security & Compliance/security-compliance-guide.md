@@ -112,4 +112,4 @@ This guide provides a high-level overview of security and compliance considerati
 - [Compliance documentation](../copilot-studio-security-governance.md#regulatory-compliance-references)
 - Audit findings
 - Remediation tracking
-- Status reporting
+- Status reporting 
