@@ -69,7 +69,7 @@ B. **Advanced Implementation**
       - Error handling and recovery
       - Monitoring and logging
 
-   2. [Advanced Agent Guide](./Autonomous%20Agents/autonomous-agent-guide.md)
+   2. [Advanced Copilot Studio Agent Guide](./Autonomous%20Agents/autonomous-agent-guide.md)
       - Azure OpenAI service setup
       - Core agent framework
       - System messages
@@ -78,14 +78,14 @@ B. **Advanced Implementation**
       - Multi-agent coordination
 
 C. **Integration Examples**
-   1. [ServiceNow Integration](./Copilot%20Studio%20Step-by-Steps/servicenow-copilot-poc.md)
+   1. [Copilot Studio ServiceNow Integration](./Copilot%20Studio%20Step-by-Steps/servicenow-copilot-poc.md)
       - Complete POC setup
       - User access configuration
       - Agent building walkthrough
       - Custom workflow automation
       - Incident management integration
 
-   2. [HR Assistant Implementation](./Copilot%20Studio%20Step-by-Steps/hr-copilot-studio-guide.md)
+   2. [Copilot Studio HR Assistant Implementation](./Copilot%20Studio%20Step-by-Steps/hr-copilot-studio-guide.md)
       - HR-focused virtual assistant
       - Knowledge base creation
       - System integration
@@ -94,7 +94,7 @@ C. **Integration Examples**
 
 ### Enterprise Implementation
 
-A. **[Security & Compliance Guide](./Security%20%26%20Compliance/security-compliance-guide.md)**
+A. **[Copilot Studio Security & Compliance Guide](./Security%20%26%20Compliance/security-compliance-guide.md)**
    - Environment security management
    - Data protection and content filtering
    - Authentication and authorization
@@ -104,7 +104,7 @@ A. **[Security & Compliance Guide](./Security%20%26%20Compliance/security-compli
    - Security troubleshooting and resolution
    - Compliance documentation and tracking
 
-B. **[Performance & Monitoring](./Performance%20%26%20Monitoring/performance-monitoring-guide.md)**
+B. **[Copilot Studio Performance & Monitoring](./Performance%20%26%20Monitoring/performance-monitoring-guide.md)**
    - Monitoring setup guides
    - Performance optimization
    - Scaling strategies
@@ -113,7 +113,7 @@ B. **[Performance & Monitoring](./Performance%20%26%20Monitoring/performance-mon
 
 ### Use Cases & Examples
 
-A. **[Core Use Cases](./Copilot%20Studio%20Use%20Cases/copilot-studio-use-cases.md)**
+A. **[Copilot Studio Core Use Cases](./Copilot%20Studio%20Use%20Cases/copilot-studio-use-cases.md)**
    - Service Desk Automation
    - Employee Onboarding
    - Customer Service with Snowflake
@@ -124,7 +124,7 @@ A. **[Core Use Cases](./Copilot%20Studio%20Use%20Cases/copilot-studio-use-cases.
    - Compliance and Audit Workflows
    - Data Analytics Integration
 
-B. **[Implementation Examples](./Copilot%20Studio%20Use%20Cases/use-cases.md)**
+B. **[Copilot Studio Implementation Examples](./Copilot%20Studio%20Use%20Cases/use-cases.md)**
    - Employee Self-Service Chatbot
    - Intelligent Document Processing
    - Invoice Automation
