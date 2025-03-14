@@ -15,7 +15,7 @@ This repository contains comprehensive guides and documentation for Microsoft Po
 
 ### Practical Guides & Tutorials
 
-2. **[Fixing SharePoint Knowledge Integration in Copilot Studio](./Copilot Studio Step-by-Steps/sharepoint-knowledge-fix.md)**
+2. **[Fixing SharePoint Knowledge Integration in Copilot Studio](/Copilot Studio Step-by-Steps/sharepoint-knowledge-fix.md)**
    - Step-by-step troubleshooting guide for SharePoint knowledge integration issues
    - Common error scenarios and their solutions
    - Best practices for maintaining SharePoint knowledge sources
