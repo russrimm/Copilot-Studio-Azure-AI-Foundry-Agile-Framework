@@ -21,28 +21,28 @@ This repository contains comprehensive guides and documentation for Microsoft Po
    - Best practices for maintaining SharePoint knowledge sources
    - Prevention tips to avoid future connection problems
 
-3. **[Building an Autonomous Agent with Copilot Studio](./autonomous-agent-copilot-studio.md)**
+3. **[Building an Autonomous Agent with Copilot Studio](<./Autonomous Agents/autonomous-agent-copilot-studio.md>)**
    - Comprehensive guide to creating self-sufficient AI agents
    - Connecting to external systems for autonomous operations
    - Implementing decision-making frameworks
    - Human-in-the-loop mechanisms for oversight
    - Testing, monitoring, and continuous improvement
 
-4. **[Building an Autonomous Agent Guide (Alternative Version)](./autonomous-agent-guide.md)**
+4. **[Building an Autonomous Agent Guide (Alternative Version)](<./Autonomous Agents/autonomous-agent-guide.md>)**
    - Detailed walkthrough for creating autonomous agents with Microsoft Copilot Studio
    - Azure OpenAI service provisioning and configuration
    - Core agent framework development
    - System messages implementation
    - Advanced configurations and troubleshooting
 
-5. **[Building an HR Assistant with Copilot Studio](./hr-copilot-studio-guide.md)**
+5. **[Building an HR Assistant with Copilot Studio](<./Copilot Studio Step-by-Steps/hr-copilot-studio-guide.md>)**
    - Step-by-step guide for creating an HR-focused virtual assistant
    - Knowledge base creation from HR documents
    - Building essential HR topics (benefits, time off, personal information)
    - Authentication implementation
    - Integration with HR systems
 
-6. **[ServiceNow Integration POC Guide](./servicenow-copilot-poc.md)**
+6. **[ServiceNow Integration POC Guide](<./Copilot Studio Step-by-Steps/servicenow-copilot-poc.md>)**
    - Step-by-step guide for implementing a ServiceNow-powered agent with Copilot Studio
    - Setting up ServiceNow developer instance
    - Configuring user access and connections
