@@ -31,7 +31,7 @@ For assistance with implementing or learning about any of these technologies, co
 
 ### Practical Guides & Tutorials
 
-4. **[Microsoft Copilot Studio Tutorial for Beginners](./copilot-studio-tutorial.md)**
+4. **[Microsoft Copilot Studio Tutorial for Beginners](<./Copilot Studio Step-by-Steps/copilot-studio-tutorial.md>)**
    - Comprehensive tutorial for getting started with Copilot Studio
    - Step-by-step instructions for creating your first Copilot
    - Understanding triggers, actions, and conversation flows
