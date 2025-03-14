@@ -1,8 +1,8 @@
-# Copilot Studio vs. Azure AI Studio: Detailed Comparison
+# Copilot Studio vs. Azure Foundry: Detailed Comparison
 
 ## Introduction
 
-Microsoft offers two powerful platforms for creating AI solutions - Copilot Studio and Azure AI Studio (formerly known as Azure AI Foundry). While both platforms enable organizations to build intelligent solutions, they serve different purposes, target different users, and excel in different scenarios. This document provides a comprehensive comparison to help you choose the right platform for your needs.
+Microsoft offers two powerful platforms for creating AI solutions - Copilot Studio and Azure Foundry. While both platforms enable organizations to build intelligent solutions, they serve different purposes, target different users, and excel in different scenarios. This document provides a comprehensive comparison to help you choose the right platform for your needs.
 
 ## Platform Overview
 
@@ -10,9 +10,9 @@ Microsoft offers two powerful platforms for creating AI solutions - Copilot Stud
 
 Microsoft Copilot Studio is a low-code/no-code platform designed to create conversational AI assistants (copilots). It allows organizations to build, test, and deploy custom AI agents that can interact with users through natural language conversations.
 
-### Azure AI Studio
+### Azure Foundry
 
-Azure AI Studio is a comprehensive development environment for creating, evaluating, and deploying enterprise-grade AI solutions. It provides a unified interface for building AI applications using Azure OpenAI models, custom models, and other Azure AI services.
+Azure Foundry is a comprehensive development environment for creating, evaluating, and deploying enterprise-grade AI solutions. It provides a unified interface for building AI applications using Azure OpenAI models, custom models, and other Azure AI services.
 
 ## Key Differences
 
@@ -23,7 +23,7 @@ Azure AI Studio is a comprehensive development environment for creating, evaluat
 - Designed for creating natural dialogue-based experiences
 - Optimized for customer service, employee assistance, and information retrieval scenarios
 
-**Azure AI Studio:**
+**Azure Foundry:**
 - Broader platform for developing various AI solutions beyond just conversational agents
 - Environment for creating, fine-tuning, and deploying AI models
 - Supports development of sophisticated AI applications with advanced prompting, fine-tuning, and evaluation
@@ -35,7 +35,7 @@ Azure AI Studio is a comprehensive development environment for creating, evaluat
 - Subject matter experts who understand business processes
 - IT professionals who need to create conversational solutions quickly
 
-**Azure AI Studio:**
+**Azure Foundry:**
 - Data scientists and AI engineers
 - Software developers building complex AI solutions
 - Organizations that need customized AI models and sophisticated applications
@@ -48,7 +48,7 @@ Azure AI Studio is a comprehensive development environment for creating, evaluat
 - Quick implementation with minimal programming knowledge
 - Extensive templates and pre-built components
 
-**Azure AI Studio:**
+**Azure Foundry:**
 - Code-first approach with more technical flexibility
 - Deep integration with development workflows
 - Support for prompt engineering, model fine-tuning, and evaluation
@@ -62,7 +62,7 @@ Azure AI Studio is a comprehensive development environment for creating, evaluat
 - Out-of-the-box support for common language tasks
 - Limited customization of underlying models
 
-**Azure AI Studio:**
+**Azure Foundry:**
 - Direct access to Azure OpenAI models for fine-tuning
 - Support for model customization and optimization
 - Advanced prompt engineering capabilities
@@ -77,7 +77,7 @@ Azure AI Studio is a comprehensive development environment for creating, evaluat
 - Simple content management through graphical interface
 - Automatic chunking and indexing of content
 
-**Azure AI Studio:**
+**Azure Foundry:**
 - More advanced vector database integrations
 - Support for sophisticated retrieval-augmented generation (RAG) patterns
 - Custom data processing pipelines
@@ -91,7 +91,7 @@ Azure AI Studio is a comprehensive development environment for creating, evaluat
 - Power Automate integration for workflow automation
 - Quick deployment to Teams, websites, and mobile apps
 
-**Azure AI Studio:**
+**Azure Foundry:**
 - Broader integration with Azure ecosystem components
 - Custom APIs and advanced service connections
 - Integration with DevOps pipelines
@@ -105,7 +105,7 @@ Azure AI Studio is a comprehensive development environment for creating, evaluat
 - Environment-based deployment and access control
 - Simpler governance model suitable for business applications
 
-**Azure AI Studio:**
+**Azure Foundry:**
 - Advanced responsible AI features
 - Comprehensive security controls and compliance
 - Fine-grained access management
@@ -120,7 +120,7 @@ Azure AI Studio is a comprehensive development environment for creating, evaluat
 - Simplified performance management
 - Suitable for departmental to enterprise-wide deployments
 
-**Azure AI Studio:**
+**Azure Foundry:**
 - Designed for high-performance AI workloads
 - Advanced scaling options for complex AI applications
 - Performance optimization tools
@@ -151,7 +151,7 @@ Azure AI Studio is a comprehensive development environment for creating, evaluat
    - Projects with limited technical resources
    - Solutions that need frequent business-led updates
 
-### When to Use Azure AI Studio
+### When to Use Azure Foundry
 
 1. **Custom AI Model Development**
    - Fine-tuning models for specialized domains
@@ -179,19 +179,19 @@ Many organizations can benefit from using both platforms together, with each han
 
 ### Complementary Approach
 
-1. **Model Development in Azure AI Studio, Deployment in Copilot Studio**
-   - Use Azure AI Studio to fine-tune and optimize models
+1. **Model Development in Azure Foundry, Deployment in Copilot Studio**
+   - Use Azure Foundry to fine-tune and optimize models
    - Deploy these optimized models for use in Copilot Studio conversations
    - Leverage the strengths of both platforms
 
-2. **Azure AI Studio for Backend Intelligence, Copilot Studio for User Interface**
-   - Develop sophisticated AI processing in Azure AI Studio
+2. **Azure Foundry for Backend Intelligence, Copilot Studio for User Interface**
+   - Develop sophisticated AI processing in Azure Foundry
    - Create user-facing conversational experiences in Copilot Studio
    - Connect the systems through APIs or Power Platform
 
-3. **Start with Copilot Studio, Graduate to Azure AI Studio**
+3. **Start with Copilot Studio, Graduate to Azure Foundry**
    - Begin with simple conversational agents in Copilot Studio
-   - As needs become more complex, transition advanced components to Azure AI Studio
+   - As needs become more complex, transition advanced components to Azure Foundry
    - Maintain a hybrid approach where appropriate
 
 ## Key Technical Considerations
@@ -204,7 +204,7 @@ Many organizations can benefit from using both platforms together, with each han
 - Lower learning curve
 - Better suited for business-led initiatives
 
-**Azure AI Studio:**
+**Azure Foundry:**
 - Requires AI expertise and development skills
 - Longer development cycles but more powerful results
 - Steeper learning curve
@@ -218,7 +218,7 @@ Many organizations can benefit from using both platforms together, with each han
 - Lower initial implementation costs
 - Higher per-interaction costs at scale
 
-**Azure AI Studio:**
+**Azure Foundry:**
 - Pricing based on compute, storage, and API calls
 - More variable cost structure
 - Higher initial implementation costs
@@ -232,7 +232,7 @@ Many organizations can benefit from using both platforms together, with each han
 - Regular platform updates managed by Microsoft
 - Less version control complexity
 
-**Azure AI Studio:**
+**Azure Foundry:**
 - More complex maintenance requirements
 - Updates typically require technical expertise
 - More sophisticated version control and deployment pipelines
@@ -240,17 +240,17 @@ Many organizations can benefit from using both platforms together, with each han
 
 ## Conclusion
 
-Both Copilot Studio and Azure AI Studio represent powerful tools in Microsoft's AI ecosystem, but they serve different purposes and audiences:
+Both Copilot Studio and Azure Foundry represent powerful tools in Microsoft's AI ecosystem, but they serve different purposes and audiences:
 
 - **Copilot Studio** excels at enabling business users and citizen developers to quickly create conversational AI solutions with minimal technical expertise. It's the ideal choice for organizations that need to deploy conversational agents rapidly and want to empower non-technical teams to manage these solutions.
 
-- **Azure AI Studio** provides a comprehensive environment for AI developers, data scientists, and engineers to build sophisticated AI applications with advanced customization and integration capabilities. It's the platform of choice when organizations need deep customization, advanced model optimization, or complex AI workflows.
+- **Azure Foundry** provides a comprehensive environment for AI developers, data scientists, and engineers to build sophisticated AI applications with advanced customization and integration capabilities. It's the platform of choice when organizations need deep customization, advanced model optimization, or complex AI workflows.
 
 Understanding the strengths and limitations of each platform allows organizations to make informed decisions about which tool to use for specific AI initiatives. In many cases, a hybrid approach leveraging both platforms can provide the optimal balance of speed, flexibility, and technical capability.
 
 ## Additional Resources
 
 - [Microsoft Copilot Studio Documentation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
-- [Azure AI Studio Documentation](https://learn.microsoft.com/en-us/azure/ai-studio/)
+- [Azure Foundry Documentation](https://learn.microsoft.com/en-us/azure/ai-studio/)
 - [Microsoft Learn AI Training Modules](https://learn.microsoft.com/en-us/training/browse/?products=ai-services)
 - [Responsible AI Resources](https://www.microsoft.com/en-us/ai/responsible-ai)

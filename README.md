@@ -1,6 +1,8 @@
 # Microsoft Copilot Studio and Azure Foundry Agile Framework
 
-This repository contains comprehensive guides and documentation for Microsoft Power Platform, Copilot Studio, and Azure AI implementation. These resources provide detailed guidance, best practices, and step-by-step instructions to help you successfully implement Microsoft's AI and automation technologies.
+This repository contains comprehensive guides and documentation for Microsoft Power Platform, Copilot Studio, and Azure Foundry implementations. These resources provide detailed guidance, best practices, and step-by-step instructions to help you successfully implement Microsoft's Agentic and AI powered automation technologies.
+
+For assistance with implementing or learning about any of these technologies, contact your Customer Success Account Manager (CSAM).
 
 ## Documentation Files
 
@@ -13,7 +15,7 @@ This repository contains comprehensive guides and documentation for Microsoft Po
    - Application lifecycle management
    - Monitoring & alerting best practices
    
-2. **[Copilot Studio vs. Azure AI Studio](./copilot-vs-ai-studio.md)**
+2. **[Copilot Studio vs. Azure Foundry](./copilot-vs-azure-openai.md)**
    - Detailed comparison between the two platforms
    - Primary purposes and target users
    - Development approaches and AI model integration
@@ -72,7 +74,7 @@ This repository contains comprehensive guides and documentation for Microsoft Po
 
 ### Use Cases & Implementation Examples
 
-10. **[Copilot Studio Use Cases and Integrations](<./Copilot Studio Step-by-Steps/copilot-studio-use-cases.md>)**
+10. **[Copilot Studio Use Cases and Integrations](<./Copilot Studio Use Cases/copilot-studio-use-cases.md>)**
    - Detailed implementation guides for various Copilot Studio scenarios
    - Service Desk / Help Desk Automation with ServiceNow integration
    - Employee Onboarding Assistant
@@ -81,14 +83,14 @@ This repository contains comprehensive guides and documentation for Microsoft Po
    - Intelligent Document Processing with AI Builder
    - Enterprise RSS Feed Management
 
-11. **[Use Cases & Implementation Examples](./use-cases.md)**
+10. **[Use Cases & Implementation Examples](<./Copilot Studio Use Cases/use-cases.md>)**
     - AI Chatbot for Employee Self-Service
     - Intelligent Document Processing
     - Automated Invoice Processing
     - Real-Time Sales Analytics
     - Developer Productivity with GitHub Copilot
 
-12. **[Detailed Implementation Examples](./use-cases-implementation.md)**
+11. **[Detailed Implementation Examples](./use-cases-implementation.md)**
     - Enterprise Virtual Assistant with Copilot Studio and Azure OpenAI
     - Complete step-by-step implementation instructions
     - Code samples and configuration details
@@ -101,7 +103,7 @@ This documentation is designed to help you implement Microsoft's AI and automati
 
 2. If you're new to Copilot Studio, begin with the [Microsoft Copilot Studio Tutorial for Beginners](./copilot-studio-tutorial.md) to learn the fundamentals.
 
-3. Review the [Copilot Studio vs. Azure AI Studio](./copilot-vs-ai-studio.md) comparison to understand which platform is best for your specific requirements.
+3. Review the [Copilot Studio vs. Azure Foundry](./copilot-vs-azure-openai.md) comparison to understand which platform is best for your specific requirements.
 
 4. If you're integrating Azure OpenAI with Copilot Studio, follow the [integration guide](./azure-openai-copilot-integration.md) for step-by-step instructions.
 
