@@ -75,12 +75,12 @@ This framework delivers structured guidance for implementing Microsoft's AI and 
    - Business data connectors:
      ```
      Add connectors: Office 365, Dynamics 365, Dataverse, SharePoint
-     Set access: "Business only"
+     Move to: "Business"
      ```
    - Non-business connectors:
      ```
      Add connectors: Twitter, Facebook, etc.
-     Set access: "Blocked" for production environments
+     Move to: "Non-Business" or "Blocked" as desored for environments
      ```
 
 3. **Implement Custom Connector Governance**:
