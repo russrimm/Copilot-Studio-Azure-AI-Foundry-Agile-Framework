@@ -17,6 +17,7 @@
 ## Data Protection and Content Filtering
 
 ### Data Security
+- Copilot Studio specific DLP Policies
 - Encryption (at rest and in transit)
 - Data retention policies
 - Data masking for sensitive information
