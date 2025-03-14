@@ -19,7 +19,7 @@ This guide provides a high-level overview of security and compliance considerati
 ## Data Protection and Content Filtering
 
 ### Data Security
-- [Encryption (at rest and in transit)](../copilot-studio-security-governance.md#encryption)
+- [Encryption (at rest and in transit)](./copilot-studio-security-governance.md#encryption)
 - [Data retention policies](../copilot-studio-security-governance.md#data-retention-policies)
 - [Data masking for sensitive information](../copilot-studio-security-governance.md#data-masking-for-sensitive-information)
 - [PII/PHI handling procedures](../copilot-studio-security-governance.md#piiphi-handling-procedures)
