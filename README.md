@@ -29,34 +29,41 @@ This repository contains comprehensive guides and documentation for Microsoft Po
 
 ### Practical Guides & Tutorials
 
-4. **[Fixing SharePoint Knowledge Integration in Copilot Studio](<./Copilot Studio Step-by-Steps/sharepoint-knowledge-fix.md>)**
+4. **[Microsoft Copilot Studio Tutorial for Beginners](./copilot-studio-tutorial.md)**
+   - Comprehensive tutorial for getting started with Copilot Studio
+   - Step-by-step instructions for creating your first Copilot
+   - Understanding triggers, actions, and conversation flows
+   - Integrating AI capabilities and connecting to data sources
+   - Testing, publishing, monitoring, and governance best practices
+
+5. **[Fixing SharePoint Knowledge Integration in Copilot Studio](<./Copilot Studio Step-by-Steps/sharepoint-knowledge-fix.md>)**
    - Step-by-step troubleshooting guide for SharePoint knowledge integration issues
    - Common error scenarios and their solutions
    - Best practices for maintaining SharePoint knowledge sources
    - Prevention tips to avoid future connection problems
 
-5. **[Building an Autonomous Agent with Copilot Studio](<./Autonomous Agents/autonomous-agent-copilot-studio.md>)**
+6. **[Building an Autonomous Agent with Copilot Studio](<./Autonomous Agents/autonomous-agent-copilot-studio.md>)**
    - Comprehensive guide to creating self-sufficient AI agents
    - Connecting to external systems for autonomous operations
    - Implementing decision-making frameworks
    - Human-in-the-loop mechanisms for oversight
    - Testing, monitoring, and continuous improvement
 
-6. **[Building an Autonomous Agent Guide (Alternative Version)](<./Autonomous Agents/autonomous-agent-guide.md>)**
+7. **[Building an Autonomous Agent Guide (Alternative Version)](<./Autonomous Agents/autonomous-agent-guide.md>)**
    - Detailed walkthrough for creating autonomous agents with Microsoft Copilot Studio
    - Azure OpenAI service provisioning and configuration
    - Core agent framework development
    - System messages implementation
    - Advanced configurations and troubleshooting
 
-7. **[Building an HR Assistant with Copilot Studio](<./Copilot Studio Step-by-Steps/hr-copilot-studio-guide.md>)**
+8. **[Building an HR Assistant with Copilot Studio](<./Copilot Studio Step-by-Steps/hr-copilot-studio-guide.md>)**
    - Step-by-step guide for creating an HR-focused virtual assistant
    - Knowledge base creation from HR documents
    - Building essential HR topics (benefits, time off, personal information)
    - Authentication implementation
    - Integration with HR systems
 
-8. **[ServiceNow Integration POC Guide](<./Copilot Studio Step-by-Steps/servicenow-copilot-poc.md>)**
+9. **[ServiceNow Integration POC Guide](<./Copilot Studio Step-by-Steps/servicenow-copilot-poc.md>)**
    - Step-by-step guide for implementing a ServiceNow-powered agent with Copilot Studio
    - Setting up ServiceNow developer instance
    - Configuring user access and connections
@@ -65,7 +72,7 @@ This repository contains comprehensive guides and documentation for Microsoft Po
 
 ### Use Cases & Implementation Examples
 
-9. **[Copilot Studio Use Cases and Integrations](<./Copilot Studio Step-by-Steps/copilot-studio-use-cases.md>)**
+10. **[Copilot Studio Use Cases and Integrations](<./Copilot Studio Step-by-Steps/copilot-studio-use-cases.md>)**
    - Detailed implementation guides for various Copilot Studio scenarios
    - Service Desk / Help Desk Automation with ServiceNow integration
    - Employee Onboarding Assistant
@@ -74,14 +81,14 @@ This repository contains comprehensive guides and documentation for Microsoft Po
    - Intelligent Document Processing with AI Builder
    - Enterprise RSS Feed Management
 
-10. **[Use Cases & Implementation Examples](./use-cases.md)**
+11. **[Use Cases & Implementation Examples](./use-cases.md)**
     - AI Chatbot for Employee Self-Service
     - Intelligent Document Processing
     - Automated Invoice Processing
     - Real-Time Sales Analytics
     - Developer Productivity with GitHub Copilot
 
-11. **[Detailed Implementation Examples](./use-cases-implementation.md)**
+12. **[Detailed Implementation Examples](./use-cases-implementation.md)**
     - Enterprise Virtual Assistant with Copilot Studio and Azure OpenAI
     - Complete step-by-step implementation instructions
     - Code samples and configuration details
@@ -92,15 +99,17 @@ This documentation is designed to help you implement Microsoft's AI and automati
 
 1. Start with the [Microsoft AI and Power Platform Adoption Framework](./ms-ai-powerplatform-framework.md) for a comprehensive overview of the implementation approach.
 
-2. Review the [Copilot Studio vs. Azure AI Studio](./copilot-vs-ai-studio.md) comparison to understand which platform is best for your specific requirements.
+2. If you're new to Copilot Studio, begin with the [Microsoft Copilot Studio Tutorial for Beginners](./copilot-studio-tutorial.md) to learn the fundamentals.
 
-3. If you're integrating Azure OpenAI with Copilot Studio, follow the [integration guide](./azure-openai-copilot-integration.md) for step-by-step instructions.
+3. Review the [Copilot Studio vs. Azure AI Studio](./copilot-vs-ai-studio.md) comparison to understand which platform is best for your specific requirements.
 
-4. Explore specific use cases and implementation examples that align with your organization's needs.
+4. If you're integrating Azure OpenAI with Copilot Studio, follow the [integration guide](./azure-openai-copilot-integration.md) for step-by-step instructions.
 
-5. Follow the step-by-step tutorials for specific implementations like building an HR assistant or integrating with ServiceNow.
+5. Explore specific use cases and implementation examples that align with your organization's needs.
 
-6. Refer to the troubleshooting guides when encountering issues with specific components like SharePoint knowledge integration.
+6. Follow the step-by-step tutorials for specific implementations like building an HR assistant or integrating with ServiceNow.
+
+7. Refer to the troubleshooting guides when encountering issues with specific components like SharePoint knowledge integration.
 
 ## Using This Documentation
 
