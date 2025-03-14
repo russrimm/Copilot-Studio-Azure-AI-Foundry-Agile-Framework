@@ -74,7 +74,7 @@ This repository contains comprehensive guides and documentation for Microsoft Po
    - Intelligent Document Processing with AI Builder
    - Enterprise RSS Feed Management
 
-10. **[Use Cases & Implementation Examples](./use-cases.md)**
+10. **[Use Cases & Implementation Examples](<./Copilot Studio Step-by-Steps/use-cases.md>)**
     - AI Chatbot for Employee Self-Service
     - Intelligent Document Processing
     - Automated Invoice Processing
