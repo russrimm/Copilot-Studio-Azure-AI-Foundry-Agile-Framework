@@ -1,8 +1,8 @@
-# Copilot Studio vs. Azure AI Studio: Detailed Comparison
+# Copilot Studio vs. Azure Foundry: Detailed Comparison
 
 ## Introduction
 
-Microsoft offers two powerful platforms for creating AI solutions - Copilot Studio and Azure AI Studio (formerly known as Azure AI Foundry). While both platforms enable organizations to build intelligent solutions, they serve different purposes, target different users, and excel in different scenarios. This document provides a comprehensive comparison to help you choose the right platform for your needs.
+Microsoft offers two powerful platforms for creating AI solutions - Copilot Studio and Azure Foundry. While both platforms enable organizations to build intelligent solutions, they serve different purposes, target different users, and excel in different scenarios. This document provides a comprehensive comparison to help you choose the right platform for your needs.
 
 ## Platform Overview
 
