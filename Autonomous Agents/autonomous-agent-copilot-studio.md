@@ -4,7 +4,7 @@ This comprehensive guide walks you through the process of creating an autonomous
 
 ## What is an Autonomous Agent?
 
-An autonomous agent is an AI system that can:
+An autonomous agent is an agentic solution that can:
 - Execute tasks without continuous human supervision
 - Make decisions based on predefined criteria
 - Interact with external systems and data sources
