@@ -16,8 +16,8 @@ Choose the guide that best matches your current needs:
 
 ### Core Framework & Strategy
 
-A. **[Microsoft AI and Power Platform Adoption Framework](./ms-ai-powerplatform-framework.md)**
-   - Complete implementation guide for Microsoft's AI and automation technologies
+A. **[Microsoft Azure Foundry and Power Platform Adoption Framework](./ms-ai-powerplatform-framework.md)**
+   - Complete implementation guide for Azure Foundry and Copilto Studio technologies
    - Governance & security architecture
    - Implementation strategies for various Power Platform components
    - Application lifecycle management
