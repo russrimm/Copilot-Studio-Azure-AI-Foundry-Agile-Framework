@@ -25,7 +25,7 @@ A. **[Microsoft Azure Foundry and Power Platform Adoption Framework](./ms-ai-pow
    - Cost management and optimization
    - Compliance and data residency considerations
    
-B. **[Copilot Studio vs. Azure Foundry](./copilot-vs-azure-openai.md)**
+B. **[Copilot Studio and Azure Foundry](./copilot-vs-azure-openai.md)**
    - Detailed comparison between the two platforms
    - Primary purposes and target users
    - Development approaches and AI model integration
