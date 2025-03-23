@@ -6,13 +6,13 @@ This repository provides a comprehensive framework for implementing Microsoft Po
 
 > **What's New in Microsoft Copilot Studio** (March 2025)
 >
-> - **[Action Chaining Improvements](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-actions)**: Enhanced action chaining capabilities now support dynamic action selection based on conversational context.
-> - **[Improved Generative Answers with GPT-4o](https://learn.microsoft.com/en-us/microsoft-copilot-studio/configure-generative-answers)**: Integration with Microsoft's latest GPT-4o model for faster, more accurate generative responses.
-> - **[Advanced Teams Integration](https://learn.microsoft.com/en-us/microsoft-copilot-studio/publication-add-bot-to-teams)**: New Teams capabilities including meeting context awareness and collaborative copilot experiences.
-> - **[Enhanced Topic Recognition](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics)**: Improved natural language understanding for more accurate topic matching and intent detection.
-> - **[Expanded Multilingual Support](https://learn.microsoft.com/en-us/microsoft-copilot-studio/configure-multilingual)**: Additional language support and improved translation quality for global deployments.
+> - **[Use generative actions](https://learn.microsoft.com/en-us/power-platform/release-plan/2024wave2/microsoft-copilot-studio/use-generative-actions-now-generally)**: Enhanced action chaining capabilities now support dynamic action selection based on conversational context.
+> - **[Use Azure OpenAI on your data for generative answers](https://learn.microsoft.com/en-us/power-platform/release-plan/2024wave2/microsoft-copilot-studio/use-azure-openai-data-generative-answers)**: Integration with Microsoft's latest GPT-4o model for faster, more accurate generative responses.
+> - **[Create Copilot agents in Microsoft 365 Business Chat and Teams](https://learn.microsoft.com/en-us/power-platform/release-plan/2024wave2/microsoft-copilot-studio/create-copilot-agents-365-business-chat-teams)**: New Teams capabilities including meeting context awareness and collaborative copilot experiences.
+> - **[Enhanced Topic Recognition](https://learn.microsoft.com/en-us/power-platform/release-plan/2024wave2/microsoft-copilot-studio/analyze-knowledge-source-usage-custom-agents)**: Improved natural language understanding for more accurate topic matching and intent detection.
+> - **[Enable Copilot with real-time knowledge from non-Microsoft services](https://learn.microsoft.com/en-us/power-platform/release-plan/2024wave2/microsoft-copilot-studio/enable-copilot-real-time-knowledge-non-microsoft-services)**: Additional language support and improved translation quality for global deployments.
 >
-> [View all recent updates on Microsoft Learn](https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new)
+> [View all recent updates on Microsoft Learn](https://learn.microsoft.com/en-us/power-platform/release-plan/2024wave2/microsoft-copilot-studio/planned-features)
 
 ## Implementation Roadmap
 
