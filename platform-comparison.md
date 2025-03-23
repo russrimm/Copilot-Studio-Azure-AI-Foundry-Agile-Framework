@@ -1,4 +1,4 @@
-# Platform Comparison Guide
+# Platform Selection and Comparison Guide
 
 This guide helps organizations select the appropriate Microsoft AI and Power Platform solutions for their specific requirements.
 
