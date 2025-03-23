@@ -6,11 +6,11 @@ This directory contains documentation and tools for monitoring, analyzing, and o
 
 ### Documentation
 - [Performance Monitoring Guide](./performance-monitoring-reporting.md)
-  - Monitoring setup and configuration
-  - Performance optimization strategies
-  - Scaling considerations
-  - Cost optimization techniques
-  - Usage analytics and reporting
+  - [Monitoring Setup and Configuration](./performance-monitoring-reporting.md#monitoring-setup)
+  - [Performance Optimization Strategies](./performance-monitoring-reporting.md#performance-optimization)
+  - [Scaling Considerations](./performance-monitoring-reporting.md#scaling-strategies)
+  - [Cost Optimization Techniques](./performance-monitoring-reporting.md#cost-optimization)
+  - [Usage Analytics and Reporting](./performance-monitoring-reporting.md#usage-analytics)
 
 ### Tools and Scripts
 - [GetFlowandAppInfo.ps1](./GetFlowandAppInfo.ps1)
