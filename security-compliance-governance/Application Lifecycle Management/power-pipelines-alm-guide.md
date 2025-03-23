@@ -297,7 +297,7 @@ Actions define what happens during the deployment process. Default actions inclu
    - Use arrows to reorder actions if you've added custom ones
    - Click **Save** when finished
 
-> 📚 **Reference**: [Configure solution import settings](https://learn.microsoft.com/en-us/power-platform/alm/pipelines-solution-import-settings)
+> 📚 **Reference**: [Configure solution import settings](https://learn.microsoft.com/en-us/power-platform/alm/pipelines#can-i-specify-advanced-solution-import-behaviors-such-as-update-versus-upgrade)
 
 ### Extending Pipelines with Custom Actions
 
