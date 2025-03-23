@@ -1,4 +1,4 @@
-# Microsoft Copilot Studio and Azure Foundry Agile Framework
+# Microsoft Copilot Studio and Azure Foundry Framework
 
 This repository contains comprehensive guides and documentation for Microsoft Power Platform, Copilot Studio, and Azure Foundry implementations. These resources provide detailed guidance, best practices, and step-by-step instructions to help you successfully implement Microsoft's Agentic and AI powered automation technologies.
 
