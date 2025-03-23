@@ -6,7 +6,7 @@ This repository provides a comprehensive framework for implementing Microsoft Po
 
 > **What's New in Microsoft Copilot Studio** (March 2025)
 >
-> - **[Action Chaining Improvements](https://learn.microsoft.com/en-us/microsoft-copilot-studio/action-chaining)**: Enhanced action chaining capabilities now support dynamic action selection based on conversational context.
+> - **[Action Chaining Improvements](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-actions)**: Enhanced action chaining capabilities now support dynamic action selection based on conversational context.
 > - **[Improved Generative Answers with GPT-4o](https://learn.microsoft.com/en-us/microsoft-copilot-studio/configure-bots-for-teams)**: Integration with Microsoft's latest GPT-4o model for faster, more accurate generative responses.
 > - **[Advanced Teams Integration](https://learn.microsoft.com/en-us/microsoft-copilot-studio/publication-add-bot-to-teams)**: New Teams capabilities including meeting context awareness and collaborative copilot experiences.
 > - **[Enhanced Topic Recognition](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-ai-features)**: Improved natural language understanding for more accurate topic matching and intent detection.
