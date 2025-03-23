@@ -30,7 +30,7 @@ This framework follows a logical progression for enterprise implementation:
 
 6. **Advanced Capabilities**: Explore [Advanced Implementation](./Autonomous%20Agents/autonomous-agent-guide.md) options for more complex scenarios.
 
-7. **Enterprise Integration**: Leverage integration guides for [Salesforce](./Copilot%20Studio%20Step-by-Steps/salesforce-copilot-integration.md), [ServiceNow](./Copilot%20Studio%20Step-by-Steps/servicenow-copilot-poc.md), or [HR systems](./Copilot%20Studio%20Step-by-Steps/hr-copilot-studio-guide.md).
+7. **Enterprise Integration**: Leverage integration guides for [Salesforce](./Copilot%20Studio%20Step-by-Steps/copilot-salesforce-integration.md), [ServiceNow](./Copilot%20Studio%20Step-by-Steps/servicenow-copilot-poc.md), or [HR systems](./Copilot%20Studio%20Step-by-Steps/hr-copilot-studio-guide.md).
 
 8. **ALM & DevOps**: Implement [Application Lifecycle Management](./security-compliance-governance/Application%20Lifecycle%20Management/power-pipelines-alm-guide.md) to ensure sustainable development practices.
 
@@ -56,11 +56,11 @@ This framework follows a logical progression for enterprise implementation:
   - [Use Case Recommendations](./platform-comparison.md#use-cases)
   - [Integration Strategies](./platform-comparison.md#integration)
   - [Technical Requirements & Considerations](./platform-comparison.md#requirements)
-- [Azure OpenAI Integration Guide](./azure-openai-copilot-integration.md)
-  - [Custom Model Deployment](./azure-openai-copilot-integration.md#deployment)
-  - [Integration with Copilot Studio](./azure-openai-copilot-integration.md#integration)
-  - [Security & Governance Controls](./azure-openai-copilot-integration.md#security)
-  - [Cost Management Strategies](./azure-openai-copilot-integration.md#cost-management)
+- [Azure OpenAI Integration Guide](./azure-foundry-openai-copilot-studio-integration/azure-openai-copilot-integration.md)
+  - [Custom Model Deployment](./azure-foundry-openai-copilot-studio-integration/azure-openai-copilot-integration.md#deployment)
+  - [Integration with Copilot Studio](./azure-foundry-openai-copilot-studio-integration/azure-openai-copilot-integration.md#integration)
+  - [Security & Governance Controls](./azure-foundry-openai-copilot-studio-integration/azure-openai-copilot-integration.md#security)
+  - [Cost Management Strategies](./azure-foundry-openai-copilot-studio-integration/azure-openai-copilot-integration.md#cost-management)
 
 ### 3. Implementation Guides
 
@@ -94,14 +94,14 @@ This framework follows a logical progression for enterprise implementation:
   - [Complex Workflow Handling](./Autonomous%20Agents/autonomous-agent-guide.md#workflows)
 
 #### Integration Examples
-- [Salesforce Integration Guide](./Copilot%20Studio%20Step-by-Steps/salesforce-copilot-integration.md)
-  - [Salesforce Developer Account Setup](./Copilot%20Studio%20Step-by-Steps/salesforce-copilot-integration.md#account-setup)
-  - [Connected App Configuration](./Copilot%20Studio%20Step-by-Steps/salesforce-copilot-integration.md#connected-app)
-  - [Authentication and API Access](./Copilot%20Studio%20Step-by-Steps/salesforce-copilot-integration.md#authentication)
-  - [Custom Actions Implementation](./Copilot%20Studio%20Step-by-Steps/salesforce-copilot-integration.md#custom-actions)
-  - [Conversation Flow Design](./Copilot%20Studio%20Step-by-Steps/salesforce-copilot-integration.md#conversation-flow)
-  - [Testing and Troubleshooting](./Copilot%20Studio%20Step-by-Steps/salesforce-copilot-integration.md#testing)
-  - [Best Practices and Governance](./Copilot%20Studio%20Step-by-Steps/salesforce-copilot-integration.md#best-practices)
+- [Salesforce Integration Guide](./Copilot%20Studio%20Step-by-Steps/copilot-salesforce-integration.md)
+  - [Salesforce Developer Account Setup](./Copilot%20Studio%20Step-by-Steps/copilot-salesforce-integration.md#account-setup)
+  - [Connected App Configuration](./Copilot%20Studio%20Step-by-Steps/copilot-salesforce-integration.md#connected-app)
+  - [Authentication and API Access](./Copilot%20Studio%20Step-by-Steps/copilot-salesforce-integration.md#authentication)
+  - [Custom Actions Implementation](./Copilot%20Studio%20Step-by-Steps/copilot-salesforce-integration.md#custom-actions)
+  - [Conversation Flow Design](./Copilot%20Studio%20Step-by-Steps/copilot-salesforce-integration.md#conversation-flow)
+  - [Testing and Troubleshooting](./Copilot%20Studio%20Step-by-Steps/copilot-salesforce-integration.md#testing)
+  - [Best Practices and Governance](./Copilot%20Studio%20Step-by-Steps/copilot-salesforce-integration.md#best-practices)
 - [ServiceNow Integration Guide](./Copilot%20Studio%20Step-by-Steps/servicenow-copilot-poc.md)
   - [Complete POC Setup](./Copilot%20Studio%20Step-by-Steps/servicenow-copilot-poc.md#setup)
   - [User Access Configuration](./Copilot%20Studio%20Step-by-Steps/servicenow-copilot-poc.md#access)
@@ -172,7 +172,7 @@ This framework follows a logical progression for enterprise implementation:
   - [Testing Methodology](./Copilot%20Studio%20Step-by-Steps/copilot-studio-tutorial.md#phase-6-testing-and-refinement)
   - [Evaluation Framework](./Copilot%20Studio%20Step-by-Steps/copilot-studio-tutorial.md#phase-8-evaluation-and-next-steps)
 - [ServiceNow POC Guide](./Copilot%20Studio%20Step-by-Steps/servicenow-copilot-poc.md#setup)
-- [Salesforce Integration POC](./Copilot%20Studio%20Step-by-Steps/salesforce-copilot-integration.md)
+- [Salesforce Integration POC](./Copilot%20Studio%20Step-by-Steps/copilot-salesforce-integration.md)
 
 ### 7. Microsoft Teams Integration
 - **[NEW: Enhanced Teams Integration](https://learn.microsoft.com/en-us/microsoft-copilot-studio/configure-bots-for-teams)**
@@ -183,7 +183,7 @@ This framework follows a logical progression for enterprise implementation:
   - [Adaptive Cards for Teams](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-adaptive-cards)
 
 ### 8. Additional Resources
-- [Microsoft Copilot Studio Documentation](./microsoft-copilot-studio.pdf) - Official reference guide
+- [Microsoft Copilot Studio Documentation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) - Official reference guide
 - [Exploring Copilot Studio Governance](./security-compliance-governance/Exploring%20Copilot%20Studio%20Governance_English.pdf) - Comprehensive governance framework
 - [Microsoft Learn Resources](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) - Official Microsoft training
 - [Power Platform Community](https://powerusers.microsoft.com/) - Community support and examples
