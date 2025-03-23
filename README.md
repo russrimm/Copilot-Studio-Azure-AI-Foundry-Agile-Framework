@@ -7,7 +7,7 @@ This repository contains comprehensive guides and documentation for Microsoft Po
 Choose the guide that best matches your current needs:
 
 1. Start with the [Microsoft AI and Power Platform Adoption Framework](./ms-ai-powerplatform-framework.md) for a comprehensive overview
-2. Review the [Copilot Studio vs. Azure Foundry](./copilot-vs-azure-openai.md) comparison to choose your platform
+2. Review the [Copilot Studio vs. Azure Foundry](./copilot-vs-azure-openai.md) comparison to understand when to use one or both of the solutions
 3. For Azure OpenAI integration, follow the [integration guide](./azure-openai-copilot-integration.md)
 4. Check the [Security & Compliance Guide](./Security%20%26%20Compliance/security-compliance-guide.md) for enterprise requirements
 5. Review [Performance & Monitoring](./Performance%20%26%20Monitoring/performance-monitoring-guide.md) best practices
@@ -16,8 +16,8 @@ Choose the guide that best matches your current needs:
 
 ### Core Framework & Strategy
 
-A. **[Microsoft AI and Power Platform Adoption Framework](./ms-ai-powerplatform-framework.md)**
-   - Complete implementation guide for Microsoft's AI and automation technologies
+A. **[Microsoft Azure Foundry and Power Platform Adoption Framework](./ms-ai-powerplatform-framework.md)**
+   - Complete implementation guide for Azure Foundry and Copilto Studio technologies
    - Governance & security architecture
    - Implementation strategies for various Power Platform components
    - Application lifecycle management
@@ -25,7 +25,7 @@ A. **[Microsoft AI and Power Platform Adoption Framework](./ms-ai-powerplatform-
    - Cost management and optimization
    - Compliance and data residency considerations
    
-B. **[Copilot Studio vs. Azure Foundry](./copilot-vs-azure-openai.md)**
+B. **[Copilot Studio and Azure Foundry](./copilot-vs-azure-openai.md)**
    - Detailed comparison between the two platforms
    - Primary purposes and target users
    - Development approaches and AI model integration
