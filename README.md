@@ -2,6 +2,41 @@
 
 This repository contains comprehensive guides and documentation for Microsoft Power Platform, Copilot Studio, and Azure Foundry implementations. These resources provide detailed guidance, best practices, and step-by-step instructions to help you successfully implement Microsoft's Agentic and AI powered automation technologies.
 
+## Table of Contents
+
+### Core Framework & Strategy
+- [Microsoft AI and Power Platform Adoption Framework](./ms-ai-powerplatform-framework.md)
+- [Copilot Studio vs. Azure Foundry](./copilot-vs-azure-openai.md)
+- [Azure OpenAI with Copilot Studio Integration](./azure-openai-copilot-integration.md)
+
+### Implementation Guides
+#### Getting Started
+- [Copilot Studio Tutorial for Beginners](./Copilot%20Studio%20Step-by-Steps/copilot-studio-tutorial.md)
+- [SharePoint Knowledge Integration](./Copilot%20Studio%20Step-by-Steps/sharepoint-knowledge-fix.md)
+
+#### Advanced Implementation
+- [Building an Autonomous Agent](./Autonomous%20Agents/autonomous-agent-copilot-studio.md)
+- [Advanced Copilot Studio Agent Guide](./Autonomous%20Agents/autonomous-agent-guide.md)
+
+#### Integration Examples
+- [Copilot Studio ServiceNow Integration](./Copilot%20Studio%20Step-by-Steps/servicenow-copilot-poc.md)
+- [Copilot Studio HR Assistant Implementation](./Copilot%20Studio%20Step-by-Steps/hr-copilot-studio-guide.md)
+
+### Enterprise Implementation
+- [Copilot Studio Security & Compliance Guide](./security-compliance-governance/security-compliance-guide.md)
+- [Copilot Studio Security Governance](./security-compliance-governance/copilot-studio-security-governance.md)
+- [Power Pipelines ALM Guide](./security-compliance-governance/Application%20Lifecycle%20Management/power-pipelines-alm-guide.md)
+- [Copilot Studio Performance & Monitoring](./performance-monitoring-reporting/performance-monitoring-reporting.md)
+
+### Use Cases & Examples
+- [Copilot Studio Core Use Cases](./Copilot%20Studio%20Use%20Cases/copilot-studio-use-cases.md)
+- [Copilot Studio Implementation Examples](./Copilot%20Studio%20Use%20Cases/use-cases.md)
+- [Detailed Solutions](./Copilot%20Studio%20Use%20Cases/use-cases-implementation.md)
+
+### Additional Resources
+- [Microsoft Copilot Studio Documentation](./microsoft-copilot-studio.pdf)
+- [Exploring Copilot Studio Governance](./security-compliance-governance/Exploring%20Copilot%20Studio%20Governance_English.pdf)
+
 ## Quick Start Guide
 
 Choose the guide that best matches your current needs:
