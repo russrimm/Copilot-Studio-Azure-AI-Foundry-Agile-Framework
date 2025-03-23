@@ -20,7 +20,7 @@ This framework follows a logical progression for enterprise implementation:
 
 1. **Assessment & Strategy**: Begin with the [Platform Selection and Comparison Guide](./platform-comparison.md) to develop your overall strategy and use case prioritization.
 
-2. **Basic Implementation**: Follow the [Copilot Studio Tutorial for Beginners](./Copilot%20Studio%20Step-by-Steps/copilot-studio-tutorial.md) to build your first agent and understand core capabilities.
+2. **Basic Implementation**: Follow the [Copilot Studio Walkthrough and Tutorial](./Copilot%20Studio%20Step-by-Steps/copilot-studio-tutorial.md) to build your first agent and understand core capabilities.
 
 3. **Knowledge Integration**: Implement [SharePoint Knowledge Integration](./Copilot%20Studio%20Step-by-Steps/sharepoint-knowledge-fix.md) to enhance your agent with enterprise content.
 
