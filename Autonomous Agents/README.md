@@ -6,7 +6,6 @@ This directory contains comprehensive guides for implementing autonomous agents 
 
 ### Core Documentation
 - [Building an Autonomous Agent](./autonomous-agent-copilot-studio.md) - Step-by-step guide for creating your first autonomous agent
-- [Advanced Agent Guide](./autonomous-agent-guide.md) - Comprehensive guide for advanced autonomous agent implementation
 
 ## Key Topics Covered
 
