@@ -1,88 +1,46 @@
-# Microsoft Copilot Studio and Azure Foundry Framework
+# Copilot Studio Step-by-Step Guides
 
-This repository contains comprehensive guides and documentation for Microsoft Power Platform, Copilot Studio, and Azure Foundry implementations. These resources provide detailed guidance, best practices, and step-by-step instructions to help you successfully implement Microsoft's Agentic and AI powered automation technologies.
+This directory contains detailed, step-by-step guides for implementing various features and integrations with Microsoft Copilot Studio.
 
-## Table of Contents
+## Contents
 
-### 1. Getting Started
-- [Microsoft AI and Power Platform Adoption Framework](./ms-ai-powerplatform-framework.md)
-- [Platform Comparison Guide](./platform-comparison.md)
-- [Quick Start Guide](./Copilot%20Studio%20Step-by-Steps/copilot-studio-tutorial.md)
+### Getting Started
+- [Copilot Studio Tutorial for Beginners](./copilot-studio-tutorial.md)
+  - [Agent Interface and Core Components](./copilot-studio-tutorial.md#agent-interface)
+  - [Knowledge Management and Generative AI](./copilot-studio-tutorial.md#knowledge)
+  - [Topic Design and System Topics](./copilot-studio-tutorial.md#topics)
+  - [Power Platform Actions and Custom Code](./copilot-studio-tutorial.md#actions)
+  - [Activity Monitoring and Debugging](./copilot-studio-tutorial.md#monitoring)
+  - [Analytics and Performance Tracking](./copilot-studio-tutorial.md#analytics)
+  - [Multi-channel Deployment](./copilot-studio-tutorial.md#deployment)
+  - [Security and Compliance](./copilot-studio-tutorial.md#security)
 
-### 2. Platform Selection & Architecture
-- [Platform Comparison Guide](./platform-comparison.md)
-  - Platform Overview
-  - Use Case Recommendations
-  - Integration Strategies
-  - Technical Considerations
-- [Azure OpenAI Integration Guide](./azure-openai-copilot-integration.md)
+- [SharePoint Knowledge Integration](./sharepoint-knowledge-fix.md)
+  - [Troubleshooting and Solutions](./sharepoint-knowledge-fix.md#troubleshooting)
+  - [Best Practices and Maintenance](./sharepoint-knowledge-fix.md#best-practices)
+  - [Content Organization Strategies](./sharepoint-knowledge-fix.md#organization)
+  - [Performance Optimization](./sharepoint-knowledge-fix.md#performance)
 
-### 3. Implementation Guides
-#### Basic Implementation
-- [Copilot Studio Tutorial for Beginners](./Copilot%20Studio%20Step-by-Steps/copilot-studio-tutorial.md)
-- [SharePoint Knowledge Integration](./Copilot%20Studio%20Step-by-Steps/sharepoint-knowledge-fix.md)
+### Integration Examples
+- [Copilot Studio Salesforce Integration](./salesforce-copilot-integration.md)
+  - [Salesforce Developer Account Setup](./salesforce-copilot-integration.md#account-setup)
+  - [Connected App Configuration](./salesforce-copilot-integration.md#connected-app)
+  - [Authentication and API Access](./salesforce-copilot-integration.md#authentication)
+  - [Custom Actions Implementation](./salesforce-copilot-integration.md#custom-actions)
+  - [Conversation Flow Design](./salesforce-copilot-integration.md#conversation-flow)
+  - [Testing and Troubleshooting](./salesforce-copilot-integration.md#testing)
+  - [Best Practices and Governance](./salesforce-copilot-integration.md#best-practices)
 
-#### Advanced Implementation
-- [Building an Autonomous Agent](./Autonomous%20Agents/autonomous-agent-copilot-studio.md)
-- [Advanced Copilot Studio Agent Guide](./Autonomous%20Agents/autonomous-agent-guide.md)
+- [Copilot Studio ServiceNow Integration](./servicenow-copilot-poc.md)
+  - [Complete POC Setup](./servicenow-copilot-poc.md#setup)
+  - [User Access Configuration](./servicenow-copilot-poc.md#access)
+  - [Agent Building Walkthrough](./servicenow-copilot-poc.md#building)
+  - [Custom Workflow Automation](./servicenow-copilot-poc.md#workflow)
+  - [Incident Management Integration](./servicenow-copilot-poc.md#incidents)
 
-#### Integration Examples
-- [Salesforce Integration Guide](./Copilot%20Studio%20Step-by-Steps/salesforce-copilot-integration.md)
-- [ServiceNow Integration Guide](./Copilot%20Studio%20Step-by-Steps/servicenow-copilot-poc.md)
-- [Copilot Studio HR Assistant Implementation](./Copilot%20Studio%20Step-by-Steps/hr-copilot-studio-guide.md)
-
-### 4. Enterprise Implementation
-#### Security & Compliance
-- [Security & Compliance Guide](./security-compliance-governance/security-compliance-guide.md)
-- [Security Governance](./security-compliance-governance/copilot-studio-security-governance.md)
-- [Application Lifecycle Management](./security-compliance-governance/Application%20Lifecycle%20Management/power-pipelines-alm-guide.md)
-
-#### Performance & Monitoring
-- [Performance & Monitoring Guide](./performance-monitoring-reporting/performance-monitoring-reporting.md)
-
-### 5. Use Cases & Examples
-- [Core Use Cases](./Copilot%20Studio%20Use%20Cases/copilot-studio-use-cases.md)
-- [Implementation Examples](./Copilot%20Studio%20Use%20Cases/use-cases.md)
-- [Detailed Solutions](./Copilot%20Studio%20Use%20Cases/use-cases-implementation.md)
-
-### 6. Additional Resources
-- [Microsoft Copilot Studio Documentation](./microsoft-copilot-studio.pdf)
-- [Exploring Copilot Studio Governance](./security-compliance-governance/Exploring%20Copilot%20Studio%20Governance_English.pdf)
-
-## Quick Start Guide
-
-Choose the guide that best matches your current needs:
-
-1. Start with the [Microsoft AI and Power Platform Adoption Framework](./ms-ai-powerplatform-framework.md) for a comprehensive overview
-2. Review the [Platform Comparison Guide](./platform-comparison.md) to understand when to use Copilot Studio, Azure Foundry, or Azure OpenAI
-3. Follow the [Quick Start Guide](./Copilot%20Studio%20Step-by-Steps/copilot-studio-tutorial.md) for basic implementation
-4. Check the [Security & Compliance Guide](./security-compliance-governance/security-compliance-guide.md) for enterprise requirements
-5. Review [Performance & Monitoring](./performance-monitoring-reporting/performance-monitoring-reporting.md) best practices
-
-## Using This Documentation
-
-- All guides use Markdown format for easy viewing
-- Each guide includes code samples and configuration details
-- Security and governance considerations are highlighted
-- Real-world scenarios with implementation steps
-- Performance benchmarks and metrics
-- Troubleshooting guides and common issues
-- Version compatibility information
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Submit a pull request
-4. Follow formatting guidelines
-5. Include test cases where applicable
-6. Update relevant documentation
-
-## Support
-
-For questions or support:
-- Open an issue in this repository
-- Contact your Customer Success Account Manager (CSAM)
-- Join our community discussions
-- Check our FAQ section
-- Review known issues
+- [Copilot Studio HR Assistant Implementation](./hr-copilot-studio-guide.md)
+  - [HR-focused Virtual Assistant](./hr-copilot-studio-guide.md#assistant)
+  - [Knowledge Base Creation](./hr-copilot-studio-guide.md#knowledge)
+  - [System Integration](./hr-copilot-studio-guide.md#integration)
+  - [Employee Data Privacy Handling](./hr-copilot-studio-guide.md#privacy)
+  - [Multi-language Support](./hr-copilot-studio-guide.md#language)
