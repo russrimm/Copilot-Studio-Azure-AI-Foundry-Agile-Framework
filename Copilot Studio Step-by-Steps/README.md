@@ -22,6 +22,15 @@ This directory contains detailed, step-by-step guides for implementing various f
   - [Performance Optimization](./sharepoint-knowledge-fix.md#performance)
 
 ### Integration Examples
+- [Copilot Studio Salesforce Integration](./salesforce-copilot-integration.md)
+  - [Salesforce Developer Account Setup](./salesforce-copilot-integration.md#acquiring-a-free-salesforce-developer-account)
+  - [Connected App Configuration](./salesforce-copilot-integration.md#creating-a-connected-app-in-salesforce)
+  - [Authentication and API Access](./salesforce-copilot-integration.md#configuring-authentication-and-api-access)
+  - [Custom Actions Implementation](./salesforce-copilot-integration.md#creating-custom-actions-in-copilot-studio)
+  - [Conversation Flow Design](./salesforce-copilot-integration.md#implementing-salesforce-api-calls)
+  - [Testing and Troubleshooting](./salesforce-copilot-integration.md#testing-the-integration)
+  - [Best Practices and Governance](./salesforce-copilot-integration.md#best-practices-and-governance)
+
 - [Copilot Studio ServiceNow Integration](./servicenow-copilot-poc.md)
   - [Complete POC Setup](./servicenow-copilot-poc.md#setup)
   - [User Access Configuration](./servicenow-copilot-poc.md#access)
@@ -34,4 +43,4 @@ This directory contains detailed, step-by-step guides for implementing various f
   - [Knowledge Base Creation](./hr-copilot-studio-guide.md#knowledge-base)
   - [System Integration](./hr-copilot-studio-guide.md#system-integration)
   - [Employee Data Privacy Handling](./hr-copilot-studio-guide.md#privacy)
-  - [Multi-language Support](./hr-copilot-studio-guide.md#multi-language) 
+  - [Multi-language Support](./hr-copilot-studio-guide.md#multi-language)

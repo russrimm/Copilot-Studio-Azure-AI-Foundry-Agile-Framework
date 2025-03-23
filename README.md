@@ -27,7 +27,7 @@ This repository contains comprehensive guides and documentation for Microsoft Po
 - [Advanced Copilot Studio Agent Guide](./Autonomous%20Agents/autonomous-agent-guide.md)
 
 #### Integration Examples
-- [Copilot Studio ServiceNow Integration](./Copilot%20Studio%20Step-by-Steps/servicenow-copilot-poc.md)
+- [ServiceNow Integration Guide](./Copilot%20Studio%20Step-by-Steps/servicenow-copilot-poc.md)
 - [Copilot Studio HR Assistant Implementation](./Copilot%20Studio%20Step-by-Steps/hr-copilot-studio-guide.md)
 
 ### 4. Enterprise Implementation
