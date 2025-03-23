@@ -7,10 +7,10 @@ This repository provides a comprehensive framework for implementing Microsoft Po
 > **What's New in Microsoft Copilot Studio** (March 2025)
 >
 > - **[Action Chaining Improvements](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-actions)**: Enhanced action chaining capabilities now support dynamic action selection based on conversational context.
-> - **[Improved Generative Answers with GPT-4o](https://learn.microsoft.com/en-us/microsoft-copilot-studio/configure-bots-for-teams)**: Integration with Microsoft's latest GPT-4o model for faster, more accurate generative responses.
+> - **[Improved Generative Answers with GPT-4o](https://learn.microsoft.com/en-us/microsoft-copilot-studio/configure-generative-answers)**: Integration with Microsoft's latest GPT-4o model for faster, more accurate generative responses.
 > - **[Advanced Teams Integration](https://learn.microsoft.com/en-us/microsoft-copilot-studio/publication-add-bot-to-teams)**: New Teams capabilities including meeting context awareness and collaborative copilot experiences.
-> - **[Enhanced Topic Recognition](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-ai-features)**: Improved natural language understanding for more accurate topic matching and intent detection.
-> - **[Expanded Multilingual Support](https://learn.microsoft.com/en-us/microsoft-copilot-studio/multilingual)**: Additional language support and improved translation quality for global deployments.
+> - **[Enhanced Topic Recognition](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics)**: Improved natural language understanding for more accurate topic matching and intent detection.
+> - **[Expanded Multilingual Support](https://learn.microsoft.com/en-us/microsoft-copilot-studio/configure-multilingual)**: Additional language support and improved translation quality for global deployments.
 >
 > [View all recent updates on Microsoft Learn](https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new)
 
