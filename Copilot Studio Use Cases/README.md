@@ -6,7 +6,6 @@ This directory contains comprehensive documentation of various use cases and imp
 
 ### Core Use Cases
 - [Core Use Cases](./copilot-studio-use-cases.md) - Detailed overview of primary use cases and applications
-- [Implementation Examples](./use-cases.md) - Real-world examples and case studies
 
 ## Key Use Cases Covered
 
