@@ -18,23 +18,21 @@ This repository provides a comprehensive framework for implementing Microsoft Po
 
 This framework follows a logical progression for enterprise implementation:
 
-1. **Assessment & Strategy**: Begin with the [Microsoft AI and Power Platform Adoption Framework](./ms-ai-powerplatform-framework.md) to develop your overall strategy and use case prioritization.
+1. **Assessment & Strategy**: Begin with the [Platform Comparison Guide](./platform-comparison.md) to develop your overall strategy and use case prioritization.
 
-2. **Platform Selection**: Use the [Platform Comparison Guide](./platform-comparison.md) to determine the appropriate technologies for your specific requirements.
+2. **Basic Implementation**: Follow the [Copilot Studio Tutorial for Beginners](./Copilot%20Studio%20Step-by-Steps/copilot-studio-tutorial.md) to build your first agent and understand core capabilities.
 
-3. **Basic Implementation**: Follow the [Copilot Studio Tutorial for Beginners](./Copilot%20Studio%20Step-by-Steps/copilot-studio-tutorial.md) to build your first agent and understand core capabilities.
+3. **Knowledge Integration**: Implement [SharePoint Knowledge Integration](./Copilot%20Studio%20Step-by-Steps/sharepoint-knowledge-fix.md) to enhance your agent with enterprise content.
 
-4. **Knowledge Integration**: Implement [SharePoint Knowledge Integration](./Copilot%20Studio%20Step-by-Steps/sharepoint-knowledge-fix.md) to enhance your agent with enterprise content.
+4. **Governance Setup**: Configure [Security & Compliance](./security-compliance-governance/security-compliance-guide.md) guardrails before scaling your implementation.
 
-5. **Governance Setup**: Configure [Security & Compliance](./security-compliance-governance/security-compliance-guide.md) guardrails before scaling your implementation.
+5. **Advanced Capabilities**: Explore [Advanced Implementation](./Autonomous%20Agents/autonomous-agent-copilot-studio.md) options for more complex scenarios.
 
-6. **Advanced Capabilities**: Explore [Advanced Implementation](./Autonomous%20Agents/autonomous-agent-copilot-studio.md) options for more complex scenarios.
+6. **Enterprise Integration**: Leverage integration guides for [Salesforce](./Copilot%20Studio%20Step-by-Steps/copilot-salesforce-integration.md), [ServiceNow](./Copilot%20Studio%20Step-by-Steps/servicenow-copilot-poc.md), or [HR systems](./Copilot%20Studio%20Step-by-Steps/hr-copilot-studio-guide.md).
 
-7. **Enterprise Integration**: Leverage integration guides for [Salesforce](./Copilot%20Studio%20Step-by-Steps/copilot-salesforce-integration.md), [ServiceNow](./Copilot%20Studio%20Step-by-Steps/servicenow-copilot-poc.md), or [HR systems](./Copilot%20Studio%20Step-by-Steps/hr-copilot-studio-guide.md).
+7. **ALM & DevOps**: Implement [Application Lifecycle Management](./security-compliance-governance/Application%20Lifecycle%20Management/power-pipelines-alm-guide.md) to ensure sustainable development practices.
 
-8. **ALM & DevOps**: Implement [Application Lifecycle Management](./security-compliance-governance/Application%20Lifecycle%20Management/power-pipelines-alm-guide.md) to ensure sustainable development practices.
-
-9. **Monitoring & Optimization**: Implement [Performance & Monitoring](./performance-monitoring-reporting/performance-monitoring-reporting.md) to ensure ongoing reliability and effectiveness.
+8. **Monitoring & Optimization**: Implement [Performance & Monitoring](./performance-monitoring-reporting/performance-monitoring-reporting.md) to ensure ongoing reliability and effectiveness.
 
 ## Key Framework Principles
 
