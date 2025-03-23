@@ -288,8 +288,8 @@ A service principal is required for delegated deployments. You have two options 
      - Set the **Supported account types** (usually "Single tenant")
      - Click **Register**
 
-5. **Assign Azure AD Roles**:
-   - In the "Assign Azure AD roles" section, select "Application Administrator" role
+5. **Assign Emtra ID Roles**:
+   - In the "Assign Entra ID roles" section, select "Application Administrator" role
    - Click **Next**
 
 6. **Assign Environment Roles**:
@@ -489,7 +489,7 @@ Custom actions allow you to extend pipeline functionality beyond standard soluti
    - Verify client ID, secret, and tenant ID are correct
    - Ensure secret hasn't expired
    - Check that service principal has required permissions
-   - Verify the application registration is still active in Azure AD
+   - Verify the application registration is still active in Entra ID
 
 2. **Deployment Failures**:
    - Review detailed logs in the pipeline run
