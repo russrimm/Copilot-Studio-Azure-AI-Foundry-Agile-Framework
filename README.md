@@ -4,13 +4,21 @@ This repository contains comprehensive guides and documentation for Microsoft Po
 
 ## Table of Contents
 
-### Core Framework & Strategy
+### 1. Getting Started
 - [Microsoft AI and Power Platform Adoption Framework](./ms-ai-powerplatform-framework.md)
-- [Copilot Studio vs. Azure Foundry](./copilot-vs-azure-openai.md)
-- [Azure OpenAI with Copilot Studio Integration](./azure-openai-copilot-integration.md)
+- [Platform Comparison Guide](./platform-comparison.md)
+- [Quick Start Guide](./Copilot%20Studio%20Step-by-Steps/copilot-studio-tutorial.md)
 
-### Implementation Guides
-#### Getting Started
+### 2. Platform Selection & Architecture
+- [Platform Comparison Guide](./platform-comparison.md)
+  - Platform Overview
+  - Use Case Recommendations
+  - Integration Strategies
+  - Technical Considerations
+- [Azure OpenAI Integration Guide](./azure-openai-copilot-integration.md)
+
+### 3. Implementation Guides
+#### Basic Implementation
 - [Copilot Studio Tutorial for Beginners](./Copilot%20Studio%20Step-by-Steps/copilot-studio-tutorial.md)
 - [SharePoint Knowledge Integration](./Copilot%20Studio%20Step-by-Steps/sharepoint-knowledge-fix.md)
 
@@ -22,208 +30,33 @@ This repository contains comprehensive guides and documentation for Microsoft Po
 - [Copilot Studio ServiceNow Integration](./Copilot%20Studio%20Step-by-Steps/servicenow-copilot-poc.md)
 - [Copilot Studio HR Assistant Implementation](./Copilot%20Studio%20Step-by-Steps/hr-copilot-studio-guide.md)
 
-### Enterprise Implementation
-- [Copilot Studio Security & Compliance Guide](./security-compliance-governance/security-compliance-guide.md)
-- [Copilot Studio Security Governance](./security-compliance-governance/copilot-studio-security-governance.md)
-- [Power Pipelines ALM Guide](./security-compliance-governance/Application%20Lifecycle%20Management/power-pipelines-alm-guide.md)
-- [Copilot Studio Performance & Monitoring](./performance-monitoring-reporting/performance-monitoring-reporting.md)
+### 4. Enterprise Implementation
+#### Security & Compliance
+- [Security & Compliance Guide](./security-compliance-governance/security-compliance-guide.md)
+- [Security Governance](./security-compliance-governance/copilot-studio-security-governance.md)
+- [Application Lifecycle Management](./security-compliance-governance/Application%20Lifecycle%20Management/power-pipelines-alm-guide.md)
 
-### Use Cases & Examples
-- [Copilot Studio Core Use Cases](./Copilot%20Studio%20Use%20Cases/copilot-studio-use-cases.md)
-- [Copilot Studio Implementation Examples](./Copilot%20Studio%20Use%20Cases/use-cases.md)
+#### Performance & Monitoring
+- [Performance & Monitoring Guide](./performance-monitoring-reporting/performance-monitoring-reporting.md)
+
+### 5. Use Cases & Examples
+- [Core Use Cases](./Copilot%20Studio%20Use%20Cases/copilot-studio-use-cases.md)
+- [Implementation Examples](./Copilot%20Studio%20Use%20Cases/use-cases.md)
 - [Detailed Solutions](./Copilot%20Studio%20Use%20Cases/use-cases-implementation.md)
 
-### Additional Resources
+### 6. Additional Resources
 - [Microsoft Copilot Studio Documentation](./microsoft-copilot-studio.pdf)
 - [Exploring Copilot Studio Governance](./security-compliance-governance/Exploring%20Copilot%20Studio%20Governance_English.pdf)
-
-## Technology Selection Guide
-
-### When to Use Copilot Studio
-- **Custom conversational experiences**: When you need to build and deploy tailored AI assistants for specific business functions or domains
-- **Business process automation**: For implementing conversational interfaces that can trigger business workflows and integrate with Power Platform
-- **Multi-channel deployment**: When you need to deploy AI assistants across Teams, web sites, custom applications, and mobile apps
-- **Structured customer service**: For scenarios requiring guided conversations with defined paths and integration with business systems
-- **Content-specific knowledge bases**: When answers must be drawn from specific organizational documents, SharePoint sites, or approved content sources
-- **System integration requirements**: When your AI assistant needs to connect to and work with line-of-business applications and data sources
-- **Compliance-sensitive scenarios**: For implementations requiring strict data governance, DLP policies, and audit trails
-
-### When to Use Copilot for M365
-- **General productivity assistance**: For enhancing everyday work across Microsoft 365 applications
-- **Document creation and summarization**: When users need help drafting emails, creating presentations, or summarizing meetings
-- **Data analysis in Excel**: For quick data insights and formula creation without specialized skills
-- **Meeting assistance**: For real-time transcription, summarization, and follow-up task generation
-- **Email management**: To help prioritize, summarize, and draft responses to emails
-- **Enterprise knowledge exploration**: When users need to search and synthesize information across the Microsoft Graph
-- **Unstructured, ad-hoc requests**: For general questions that don't require custom business logic or specialized domain knowledge
-
-### When to Use Azure OpenAI in Azure Foundry
-- **Advanced AI model customization**: When you need fine-tuned models tailored to specific domains or use cases
-- **Complex reasoning tasks**: For applications requiring sophisticated problem-solving, code generation, or analysis
-- **Highly customized prompts**: When you need precise control over system messages and engineering techniques
-- **High-volume processing**: For scenarios requiring batch processing or high-throughput AI operations
-- **Developer-centric applications**: When building AI features directly into applications using code-first approaches
-- **Research and experimentation**: For exploring model capabilities and testing different approaches
-- **Specialized content generation**: When creating specific formats of content requiring detailed control
-- **Advanced data security requirements**: For scenarios with stringent data handling needs requiring custom implementation
-
-### When to Combine Technologies
-- **Enterprise-wide AI strategy**: Implement a comprehensive approach that leverages each platform's strengths
-- **Complex organizational scenarios**: Address varied business needs with the most appropriate technology for each use case
-- **Escalation paths**: Create seamless handoffs between general Copilot for M365 and specialized Copilot Studio agents
-- **Enhanced capabilities**: Use Azure OpenAI's advanced models to power Copilot Studio for more sophisticated reasoning
-- **Hybrid solutions**: Combine no-code/low-code approaches with custom development for optimal results
-- **Layered knowledge access**: Use Copilot for M365 for broad knowledge and Copilot Studio for domain-specific information
-
-### Benefits of Combined Implementation
-- **Unified user experience**: Provide consistent AI assistance across all interaction points
-- **Optimized cost efficiency**: Use each technology where it provides the most value at the best price point
-- **Comprehensive capabilities**: Address a wider range of use cases than any single technology alone
-- **Reduced implementation time**: Leverage no-code solutions where appropriate while using custom development for complex needs
-- **Scalable architecture**: Build foundations that can grow with organizational AI maturity
-- **Governance alignment**: Apply appropriate controls based on use case sensitivity and requirements
-- **Innovation acceleration**: Enable both business users and developers to contribute to AI transformation
-- **Enterprise readiness**: Ensure solutions meet security, compliance, and performance needs at scale
 
 ## Quick Start Guide
 
 Choose the guide that best matches your current needs:
 
 1. Start with the [Microsoft AI and Power Platform Adoption Framework](./ms-ai-powerplatform-framework.md) for a comprehensive overview
-2. Review the [Copilot Studio vs. Azure Foundry](./copilot-vs-azure-openai.md) comparison to understand when to use one or both of the solutions
-3. For Azure OpenAI integration, follow the [integration guide](./azure-openai-copilot-integration.md)
+2. Review the [Platform Comparison Guide](./platform-comparison.md) to understand when to use Copilot Studio, Azure Foundry, or Azure OpenAI
+3. Follow the [Quick Start Guide](./Copilot%20Studio%20Step-by-Steps/copilot-studio-tutorial.md) for basic implementation
 4. Check the [Security & Compliance Guide](./security-compliance-governance/security-compliance-guide.md) for enterprise requirements
 5. Review [Performance & Monitoring](./performance-monitoring-reporting/performance-monitoring-reporting.md) best practices
-
-## Documentation Structure
-
-### Core Framework & Strategy
-
-A. **[Microsoft Azure Foundry and Power Platform Adoption Framework](./ms-ai-powerplatform-framework.md)**
-   - Complete implementation guide for Azure Foundry and Copilto Studio technologies
-   - Governance & security architecture
-   - Implementation strategies for various Power Platform components
-   - Application lifecycle management
-   - Monitoring & alerting best practices
-   - Cost management and optimization
-   - Compliance and data residency considerations
-   
-B. **[Copilot Studio and Azure Foundry](./copilot-vs-azure-openai.md)**
-   - Detailed comparison between the two platforms
-   - Primary purposes and target users
-   - Development approaches and AI model integration
-   - Use case recommendations and integration strategies
-   - Technical considerations for choosing the right platform
-   - Performance and scalability comparison
-   - Cost analysis and licensing models
-
-C. **[Azure OpenAI with Copilot Studio Integration](./azure-openai-copilot-integration.md)**
-   - End-to-end guide for integrating Azure OpenAI with Copilot Studio
-   - Setting up Azure OpenAI resources and connecting to Copilot Studio
-   - Implementing generative answers and AI-powered topics
-   - System message configuration and optimization techniques
-   - Model selection and fine-tuning strategies
-   - Prompt engineering best practices
-
-### Implementation Guides
-
-A. **Getting Started**
-   1. [Copilot Studio Tutorial for Beginners](./Copilot%20Studio%20Step-by-Steps/copilot-studio-tutorial.md)
-      - Agent interface and core components
-      - Knowledge management and generative AI
-      - Topic design and system topics
-      - Power Platform actions and custom code
-      - Activity monitoring and debugging
-      - Analytics and performance tracking
-      - Multi-channel deployment
-      - Security and compliance
-
-   2. [SharePoint Knowledge Integration](./Copilot%20Studio%20Step-by-Steps/sharepoint-knowledge-fix.md)
-      - Troubleshooting and solutions
-      - Best practices and maintenance
-      - Content organization strategies
-      - Performance optimization
-
-B. **Advanced Implementation**
-   1. [Building an Autonomous Agent](./Autonomous%20Agents/autonomous-agent-copilot-studio.md)
-      - Creating self-sufficient AI agents
-      - External systems integration
-      - Decision-making frameworks
-      - Error handling and recovery
-      - Monitoring and logging
-
-   2. [Advanced Copilot Studio Agent Guide](./Autonomous%20Agents/autonomous-agent-guide.md)
-      - Azure OpenAI service setup
-      - Core agent framework
-      - System messages
-      - Advanced prompt engineering
-      - Memory management
-      - Multi-agent coordination
-
-C. **Integration Examples**
-   1. [Copilot Studio ServiceNow Integration](./Copilot%20Studio%20Step-by-Steps/servicenow-copilot-poc.md)
-      - Complete POC setup
-      - User access configuration
-      - Agent building walkthrough
-      - Custom workflow automation
-      - Incident management integration
-
-   2. [Copilot Studio HR Assistant Implementation](./Copilot%20Studio%20Step-by-Steps/hr-copilot-studio-guide.md)
-      - HR-focused virtual assistant
-      - Knowledge base creation
-      - System integration
-      - Employee data privacy handling
-      - Multi-language support
-
-### Enterprise Implementation
-
-A. **[Copilot Studio Security & Compliance Guide](./security-compliance-governance/security-compliance-guide.md)**
-   - Environment security management
-   - Data protection and content filtering
-   - Authentication and authorization
-   - Audit logging and compliance monitoring
-   - Security best practices and documentation
-   - Channel and integration security
-   - Security troubleshooting and resolution
-   - Compliance documentation and tracking
-
-B. **[Copilot Studio Performance & Monitoring](./performance-monitoring-reporting/performance-monitoring-reporting.md)**
-   - Monitoring setup guides
-   - Performance optimization
-   - Scaling strategies
-   - Cost optimization
-   - Usage analytics
-
-### Use Cases & Examples
-
-A. **[Copilot Studio Core Use Cases](./Copilot%20Studio%20Use%20Cases/copilot-studio-use-cases.md)**
-   - Service Desk Automation
-   - Employee Onboarding
-   - Customer Service with Snowflake
-   - M365 and Power Platform Assistant
-   - Document Processing with AI Builder
-   - Enterprise RSS Management
-   - Multi-lingual Support Implementation
-   - Compliance and Audit Workflows
-   - Data Analytics Integration
-
-B. **[Copilot Studio Implementation Examples](./Copilot%20Studio%20Use%20Cases/use-cases.md)**
-   - Employee Self-Service Chatbot
-   - Intelligent Document Processing
-   - Invoice Automation
-   - Sales Analytics
-   - Developer Productivity
-   - Security and Compliance Automation
-   - Cross-platform Integration Examples
-   - Mobile-first Implementation
-
-C. **[Detailed Solutions](./Copilot%20Studio%20Use%20Cases/use-cases-implementation.md)**
-   - Enterprise Virtual Assistant
-   - Step-by-step instructions
-   - Code samples and configurations
-   - Performance optimization techniques
-   - Scalability patterns
-   - Disaster recovery setup
 
 ## Using This Documentation
 
