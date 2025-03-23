@@ -1,21 +1,30 @@
-# Autonomous Agents
+# Autonomous Agents Documentation
 
-This directory contains documentation and guides for implementing autonomous AI agents using Microsoft Copilot Studio and Azure Foundry.
+This directory contains comprehensive guides for implementing autonomous agents using Microsoft Copilot Studio.
 
-## Contents
+## Available Guides
 
 ### Core Documentation
-- [Building an Autonomous Agent](./autonomous-agent-copilot-studio.md)
-  - [Creating Self-sufficient AI Agents](./autonomous-agent-copilot-studio.md#self-sufficient-agents)
-  - [External Systems Integration](./autonomous-agent-copilot-studio.md#external-integration)
-  - [Decision-making Frameworks](./autonomous-agent-copilot-studio.md#decision-making)
-  - [Error Handling and Recovery](./autonomous-agent-copilot-studio.md#error-handling)
-  - [Monitoring and Logging](./autonomous-agent-copilot-studio.md#monitoring)
+- [Building an Autonomous Agent](./autonomous-agent-copilot-studio.md) - Step-by-step guide for creating your first autonomous agent
+- [Advanced Agent Guide](./autonomous-agent-guide.md) - Comprehensive guide for advanced autonomous agent implementation
 
-- [Advanced Copilot Studio Agent Guide](./autonomous-agent-guide.md)
-  - [Azure OpenAI Service Setup](./autonomous-agent-guide.md#azure-openai-setup)
-  - [Core Agent Framework](./autonomous-agent-guide.md#core-framework)
-  - [System Messages](./autonomous-agent-guide.md#system-messages)
-  - [Advanced Prompt Engineering](./autonomous-agent-guide.md#prompt-engineering)
-  - [Memory Management](./autonomous-agent-guide.md#memory-management)
-  - [Multi-agent Coordination](./autonomous-agent-guide.md#multi-agent) 
+## Key Topics Covered
+
+### Basic Implementation
+- Multi-step reasoning and decision making
+- Tool integration and custom actions
+- Context management and state handling
+- Basic workflow automation
+
+### Advanced Features
+- Advanced prompt engineering techniques
+- Hybrid intelligence models
+- Complex workflow handling
+- Custom action chaining
+- Error handling and recovery
+
+## Additional Resources
+
+- [Main Framework Documentation](../README.md)
+- [Security & Compliance Guide](../security-compliance-governance/security-compliance-guide.md)
+- [Performance & Monitoring Guide](../performance-monitoring-reporting/performance-monitoring-reporting.md) 

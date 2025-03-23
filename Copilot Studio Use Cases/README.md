@@ -1,37 +1,37 @@
 # Copilot Studio Use Cases
 
-This directory contains comprehensive documentation of real-world use cases and implementation examples for Microsoft Copilot Studio.
+This directory contains comprehensive documentation of various use cases and implementation examples for Microsoft Copilot Studio.
 
-## Contents
+## Available Documentation
 
 ### Core Use Cases
-- [Copilot Studio Core Use Cases](./copilot-studio-use-cases.md)
-  - [Service Desk Automation](./copilot-studio-use-cases.md#service-desk)
-  - [Employee Onboarding](./copilot-studio-use-cases.md#employee-onboarding)
-  - [Customer Service with Snowflake](./copilot-studio-use-cases.md#customer-service)
-  - [M365 and Power Platform Assistant](./copilot-studio-use-cases.md#m365-assistant)
-  - [Document Processing with AI Builder](./copilot-studio-use-cases.md#document-processing)
-  - [Enterprise RSS Management](./copilot-studio-use-cases.md#rss-management)
-  - [Multi-lingual Support Implementation](./copilot-studio-use-cases.md#multi-lingual)
-  - [Compliance and Audit Workflows](./copilot-studio-use-cases.md#compliance)
-  - [Data Analytics Integration](./copilot-studio-use-cases.md#analytics)
+- [Core Use Cases](./copilot-studio-use-cases.md) - Detailed overview of primary use cases and applications
+- [Implementation Examples](./use-cases.md) - Real-world examples and case studies
+- [Detailed Solutions](./use-cases-implementation.md) - Technical implementation details and patterns
 
-### Implementation Examples
-- [Copilot Studio Implementation Examples](./use-cases.md)
-  - [Employee Self-Service Chatbot](./use-cases.md#self-service)
-  - [Intelligent Document Processing](./use-cases.md#document-processing)
-  - [Invoice Automation](./use-cases.md#invoice)
-  - [Sales Analytics](./use-cases.md#sales)
-  - [Developer Productivity](./use-cases.md#developer)
-  - [Security and Compliance Automation](./use-cases.md#security)
-  - [Cross-platform Integration Examples](./use-cases.md#cross-platform)
-  - [Mobile-first Implementation](./use-cases.md#mobile)
+## Key Use Cases Covered
 
-### Detailed Solutions
-- [Detailed Solutions](./use-cases-implementation.md)
-  - [Enterprise Virtual Assistant](./use-cases-implementation.md#virtual-assistant)
-  - [Step-by-step Instructions](./use-cases-implementation.md#step-by-step)
-  - [Code Samples and Configurations](./use-cases-implementation.md#code-samples)
-  - [Performance Optimization Techniques](./use-cases-implementation.md#performance)
-  - [Scalability Patterns](./use-cases-implementation.md#scalability)
-  - [Disaster Recovery Setup](./use-cases-implementation.md#disaster-recovery) 
+### Customer Service
+- Customer support automation
+- Ticket management and routing
+- Knowledge base integration
+- Multi-channel support
+
+### Employee Support
+- HR assistance and queries
+- IT help desk automation
+- Employee onboarding
+- Policy and procedure guidance
+
+### Business Operations
+- Sales and marketing assistance
+- Process automation
+- Data analysis and reporting
+- Workflow optimization
+
+## Additional Resources
+
+- [Main Framework Documentation](../README.md)
+- [Step-by-Step Guides](../Copilot%20Studio%20Step-by-Steps/README.md)
+- [Security & Compliance Guide](../security-compliance-governance/security-compliance-guide.md)
+- [Performance & Monitoring Guide](../performance-monitoring-reporting/performance-monitoring-reporting.md) 

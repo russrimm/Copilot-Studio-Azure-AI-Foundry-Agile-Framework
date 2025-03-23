@@ -1,46 +1,27 @@
 # Copilot Studio Step-by-Step Guides
 
-This directory contains detailed, step-by-step guides for implementing various features and integrations with Microsoft Copilot Studio.
+This directory contains detailed step-by-step guides for implementing various Copilot Studio solutions and integrations.
 
-## Contents
+## Available Guides
 
-### Getting Started
-- [Copilot Studio Tutorial for Beginners](./copilot-studio-tutorial.md)
-  - [Agent Interface and Core Components](./copilot-studio-tutorial.md#agent-interface)
-  - [Knowledge Management and Generative AI](./copilot-studio-tutorial.md#knowledge)
-  - [Topic Design and System Topics](./copilot-studio-tutorial.md#topics)
-  - [Power Platform Actions and Custom Code](./copilot-studio-tutorial.md#actions)
-  - [Activity Monitoring and Debugging](./copilot-studio-tutorial.md#monitoring)
-  - [Analytics and Performance Tracking](./copilot-studio-tutorial.md#analytics)
-  - [Multi-channel Deployment](./copilot-studio-tutorial.md#deployment)
-  - [Security and Compliance](./copilot-studio-tutorial.md#security)
+### Basic Implementation
+- [Copilot Studio Tutorial for Beginners](./copilot-studio-tutorial.md) - Comprehensive guide for building your first Copilot Studio agent
+- [SharePoint Knowledge Integration](./sharepoint-knowledge-fix.md) - Guide for integrating SharePoint content with your Copilot Studio agent
 
-- [SharePoint Knowledge Integration](./sharepoint-knowledge-fix.md)
-  - [Troubleshooting and Solutions](./sharepoint-knowledge-fix.md#troubleshooting)
-  - [Best Practices and Maintenance](./sharepoint-knowledge-fix.md#best-practices)
-  - [Content Organization Strategies](./sharepoint-knowledge-fix.md#organization)
-  - [Performance Optimization](./sharepoint-knowledge-fix.md#performance)
+### Enterprise Integrations
+- [Salesforce Integration](./copilot-salesforce-integration.md) - Step-by-step guide for integrating Copilot Studio with Salesforce
+- [ServiceNow Integration](./servicenow-copilot-poc.md) - Detailed guide for implementing a ServiceNow integration with Copilot Studio
+- [HR Assistant Implementation](./hr-copilot-studio-guide.md) - Guide for building an HR-focused virtual assistant using Copilot Studio
 
-### Integration Examples
-- [Copilot Studio Salesforce Integration](./salesforce-copilot-integration.md)
-  - [Salesforce Developer Account Setup](./salesforce-copilot-integration.md#account-setup)
-  - [Connected App Configuration](./salesforce-copilot-integration.md#connected-app)
-  - [Authentication and API Access](./salesforce-copilot-integration.md#authentication)
-  - [Custom Actions Implementation](./salesforce-copilot-integration.md#custom-actions)
-  - [Conversation Flow Design](./salesforce-copilot-integration.md#conversation-flow)
-  - [Testing and Troubleshooting](./salesforce-copilot-integration.md#testing)
-  - [Best Practices and Governance](./salesforce-copilot-integration.md#best-practices)
+## Getting Started
 
-- [Copilot Studio ServiceNow Integration](./servicenow-copilot-poc.md)
-  - [Complete POC Setup](./servicenow-copilot-poc.md#setup)
-  - [User Access Configuration](./servicenow-copilot-poc.md#access)
-  - [Agent Building Walkthrough](./servicenow-copilot-poc.md#building)
-  - [Custom Workflow Automation](./servicenow-copilot-poc.md#workflow)
-  - [Incident Management Integration](./servicenow-copilot-poc.md#incidents)
+1. Start with the [Copilot Studio Tutorial for Beginners](./copilot-studio-tutorial.md) to understand the basics
+2. Choose the integration guide that matches your needs
+3. Follow the step-by-step instructions in each guide
+4. Refer to the troubleshooting sections if you encounter any issues
 
-- [Copilot Studio HR Assistant Implementation](./hr-copilot-studio-guide.md)
-  - [HR-focused Virtual Assistant](./hr-copilot-studio-guide.md#assistant)
-  - [Knowledge Base Creation](./hr-copilot-studio-guide.md#knowledge)
-  - [System Integration](./hr-copilot-studio-guide.md#integration)
-  - [Employee Data Privacy Handling](./hr-copilot-studio-guide.md#privacy)
-  - [Multi-language Support](./hr-copilot-studio-guide.md#language)
+## Additional Resources
+
+- [Main Framework Documentation](../README.md)
+- [Security & Compliance Guide](../security-compliance-governance/security-compliance-guide.md)
+- [Performance & Monitoring Guide](../performance-monitoring-reporting/performance-monitoring-reporting.md)
