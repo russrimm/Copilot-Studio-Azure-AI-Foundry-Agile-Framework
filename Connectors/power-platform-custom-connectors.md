@@ -81,34 +81,30 @@ Insomnia is a popular, free, and user-friendly API testing tool. Here's how to i
    - Click to launch the application
    - On first launch, you may be asked to sign up for an account (this is optional and you can skip it)
 
-#### Creating a Wikipedia API Request in Insomnia
+#### Creating and Sending Wikipedia API Requests in Insomnia
 
-Now let's create a request to Wikipedia's API to search for articles:
+Now let's create a request to Wikipedia's API to search for articles, following the official [Insomnia documentation](https://docs.insomnia.rest/insomnia/send-your-first-request):
 
-1. **Create a New Request Collection**:
-   - In Insomnia, click the "+" button in the left sidebar
-   - Select "Request Collection"
-   - Name it "Wikipedia API" and click "Create"
-   
-   *Explanation: A collection is a group of related API requests. Organizing requests into collections helps keep your work organized, especially when working with multiple APIs.*
-
-2. **Create a New Request**:
-   - Right-click on your "Wikipedia API" collection
-   - Select "New Request"
-   - Name it "Search Wikipedia"
-   - Leave the request type as "GET"
+1. **Create a New Request**:
+   - After launching Insomnia, click "Create" in the top-left corner
+   - Select "Request Collection" to create a new collection
+   - Name it "Wikipedia API" and select "Create"
+   - Now click the dropdown next to your new collection and select "New Request"
+   - Name your request "Search Wikipedia"
+   - Select "GET" as the method from the dropdown
    - Click "Create"
    
-   *Explanation: A GET request retrieves information from the API without modifying any data. This is the most common type of request for searching or retrieving information.*
+   *Explanation: A collection in Insomnia organizes related requests together. A GET request retrieves information without changing any data on the server.*
 
-3. **Configure the Request URL**:
-   - In the URL field at the top, enter: `https://en.wikipedia.org/w/api.php`
+2. **Configure the Request URL**:
+   - In the URL bar at the top of the request panel, enter:
+     `https://en.wikipedia.org/w/api.php`
    
-   *Explanation: This is the base URL for Wikipedia's API. All requests to the Wikipedia API start with this address.*
+   *Explanation: This is the endpoint URL for Wikipedia's API. All API requests will use this base URL with different parameters.*
 
-4. **Add Query Parameters**:
+3. **Add Query Parameters**:
    - Click the "Query" tab below the URL field
-   - Add the following parameters (click "Add" after each):
+   - For each parameter, click "Add" and enter the name and value:
      
      | Name | Value | Description |
      |------|-------|-------------|
@@ -118,28 +114,35 @@ Now let's create a request to Wikipedia's API to search for articles:
      | srsearch | Power Platform | The search term (you can change this to anything) |
      | srlimit | 5 | Limits the results to 5 articles |
    
-   *Explanation: Query parameters are additional pieces of information sent with the request to customize what data you want. They appear in the URL after a question mark (?) and are separated by ampersands (&).*
+   *Explanation: Query parameters customize your request. They appear in the URL after a "?" and are separated by "&" symbols.*
 
-5. **Send the Request**:
-   - Click the "Send" button
-   - Wait for the response to appear in the right panel
+4. **Send the Request**:
+   - Click the purple "Send" button
+   - Insomnia will display the API response in the right panel
    
-   *Explanation: When you click Send, Insomnia creates an HTTP request to Wikipedia's servers with your specified parameters. The server processes your request and sends back data matching your search criteria.*
+   *Explanation: When you send the request, Insomnia connects to Wikipedia's servers, passes your parameters, and displays the response.*
 
-6. **Examine the Response**:
-   - You should see a JSON response with search results
-   - The response includes article titles, page IDs, and snippets
+5. **View and Analyze the Response**:
+   - The response appears in the right panel
+   - You'll see the HTTP status code (typically 200 OK for successful requests)
+   - Below that is the response body containing your search results
+   - You can choose between "Preview" (formatted view) and "Raw" (unformatted) tabs
    
-   *Explanation: The response is in JSON format, which is a structured way to organize data. The response contains information about articles that match your search term, including their titles, unique page IDs, and brief excerpts.*
+   *Explanation: A status code of 200 means your request was successful. The response body contains the actual data returned by the API.*
 
-7. **Create a Request to Get Article Content**:
-   - Right-click on your "Wikipedia API" collection
-   - Select "New Request"
+6. **Save Your Request**:
+   - Your request is automatically saved in your "Wikipedia API" collection
+   - You can click on it again in the left sidebar to run it again or modify it
+   
+   *Explanation: Saved requests allow you to quickly rerun the same API call without reconfiguring everything.*
+
+7. **Create a Second Request for Article Content**:
+   - Click the dropdown next to your collection and select "New Request" again
    - Name it "Get Article Content"
-   - Leave the request type as "GET"
+   - Keep "GET" as the method
    - Click "Create"
-   - In the URL field, enter: `https://en.wikipedia.org/w/api.php`
-   - In the "Query" tab, add the following parameters:
+   - Enter the same URL: `https://en.wikipedia.org/w/api.php`
+   - Add the following query parameters:
      
      | Name | Value | Description |
      |------|-------|-------------|
@@ -149,13 +152,30 @@ Now let's create a request to Wikipedia's API to search for articles:
      | pageids | [page ID from search results] | The page ID of an article from your search results |
      | explaintext | true | Returns plain text instead of HTML |
    
-   *Explanation: This request uses a different set of parameters to retrieve the actual content of an article. The "pageids" parameter should be a number you copy from the previous search results.*
+   *Explanation: This request uses different parameters to get the actual content of a specific article. For "pageids", use a number you found in the search results (in the "pageid" field).*
 
-8. **Send the Request and View Article Content**:
-   - Click "Send"
-   - The response will contain the text extract of the Wikipedia article
+8. **Send and Review the Second Request**:
+   - Click "Send" to execute the request
+   - Review the response to see the article content
    
-   *Explanation: This request retrieves a text extract from the specific article you identified by its page ID. The "explaintext" parameter ensures you get readable text without HTML formatting.*
+   *Explanation: This request retrieves the text content of a specific Wikipedia article based on its unique ID.*
+
+9. **Use Environment Variables (Optional)**:
+   - Click on "No Environment" in the top-left corner
+   - Select "Manage Environments"
+   - Create a new environment named "Wikipedia"
+   - Add variables like `baseUrl` with value `https://en.wikipedia.org/w/api.php`
+   - In your requests, change the URL to `{{ _.baseUrl }}`
+   
+   *Explanation: Environment variables let you reuse values across multiple requests and easily switch between different environments (like development and production).*
+
+10. **Export Your Collection**:
+    - Right-click on your "Wikipedia API" collection in the sidebar
+    - Select "Export"
+    - Choose "Insomnia v4 (JSON)" as the format
+    - Save the file to your computer
+    
+    *Explanation: Exporting saves all your requests to a file that you can share with others or import into other tools.*
 
 #### Exporting Your Requests for a Custom Connector
 
