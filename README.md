@@ -28,7 +28,7 @@ This framework follows a logical progression for enterprise implementation:
 
 5. **Governance Setup**: Configure [Security & Compliance](./security-compliance-governance/security-compliance-guide.md) guardrails before scaling your implementation.
 
-6. **Advanced Capabilities**: Explore [Advanced Implementation](./Autonomous%20Agents/autonomous-agent-guide.md) options for more complex scenarios.
+6. **Advanced Capabilities**: Explore [Advanced Implementation](./Autonomous%20Agents/autonomous-agent-copilot-studio.md) options for more complex scenarios.
 
 7. **Enterprise Integration**: Leverage integration guides for [Salesforce](./Copilot%20Studio%20Step-by-Steps/copilot-salesforce-integration.md), [ServiceNow](./Copilot%20Studio%20Step-by-Steps/servicenow-copilot-poc.md), or [HR systems](./Copilot%20Studio%20Step-by-Steps/hr-copilot-studio-guide.md).
 
@@ -83,10 +83,10 @@ This framework follows a logical progression for enterprise implementation:
 
 #### Advanced Implementation
 - [Building an Autonomous Agent](./Autonomous%20Agents/autonomous-agent-copilot-studio.md)
-  - [Multi-step Reasoning](./Autonomous%20Agents/autonomous-agent-copilot-studio.md#reasoning)
-  - [Tool Integration](./Autonomous%20Agents/autonomous-agent-copilot-studio.md#tools)
-  - [Custom Action Design](./Autonomous%20Agents/autonomous-agent-copilot-studio.md#actions)
-  - [Chained Actions Architecture](./Autonomous%20Agents/autonomous-agent-copilot-studio.md#chaining) - **[NEW: Enhanced with Dynamic Action Selection](https://learn.microsoft.com/en-us/microsoft-copilot-studio/action-chaining)**
+  - [Multi-step Reasoning](./Autonomous%20Agents/autonomous-agent-copilot-studio.md#implementing-multi-step-reasoning)
+  - [Tool Integration](./Autonomous%20Agents/autonomous-agent-copilot-studio.md#creating-actions-with-power-automate)
+  - [Custom Action Design](./Autonomous%20Agents/autonomous-agent-copilot-studio.md#step-1-create-action-framework-topic)
+  - [Chained Actions Architecture](./Autonomous%20Agents/autonomous-agent-copilot-studio.md#step-4-create-main-execution-flow) - **[NEW: Enhanced with Dynamic Action Selection](https://learn.microsoft.com/en-us/microsoft-copilot-studio/action-chaining)**
 - [Advanced Copilot Studio Agent Guide](./Autonomous%20Agents/autonomous-agent-guide.md)
   - [Advanced Prompt Engineering](./Autonomous%20Agents/autonomous-agent-guide.md#prompts)
   - [Context Management](./Autonomous%20Agents/autonomous-agent-guide.md#context)
