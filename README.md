@@ -9,8 +9,8 @@ Choose the guide that best matches your current needs:
 1. Start with the [Microsoft AI and Power Platform Adoption Framework](./ms-ai-powerplatform-framework.md) for a comprehensive overview
 2. Review the [Copilot Studio vs. Azure Foundry](./copilot-vs-azure-openai.md) comparison to understand when to use one or both of the solutions
 3. For Azure OpenAI integration, follow the [integration guide](./azure-openai-copilot-integration.md)
-4. Check the [Security & Compliance Guide](./Security%20%26%20Compliance/security-compliance-guide.md) for enterprise requirements
-5. Review [Performance & Monitoring](./Performance%20%26%20Monitoring/performance-monitoring-guide.md) best practices
+4. Check the [Security & Compliance Guide](./security-compliance-governance/security-compliance-guide.md) for enterprise requirements
+5. Review [Performance & Monitoring](./performance-monitoring-reporting/performance-monitoring-reporting.md) best practices
 
 ## Documentation Structure
 
@@ -94,7 +94,7 @@ C. **Integration Examples**
 
 ### Enterprise Implementation
 
-A. **[Copilot Studio Security & Compliance Guide](./Security%20%26%20Compliance/security-compliance-guide.md)**
+A. **[Copilot Studio Security & Compliance Guide](./security-compliance-governance/security-compliance-guide.md)**
    - Environment security management
    - Data protection and content filtering
    - Authentication and authorization
@@ -104,7 +104,7 @@ A. **[Copilot Studio Security & Compliance Guide](./Security%20%26%20Compliance/
    - Security troubleshooting and resolution
    - Compliance documentation and tracking
 
-B. **[Copilot Studio Performance & Monitoring](./Performance%20%26%20Monitoring/performance-monitoring-guide.md)**
+B. **[Copilot Studio Performance & Monitoring](./performance-monitoring-reporting/performance-monitoring-reporting.md)**
    - Monitoring setup guides
    - Performance optimization
    - Scaling strategies
