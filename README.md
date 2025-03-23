@@ -37,6 +37,54 @@ This repository contains comprehensive guides and documentation for Microsoft Po
 - [Microsoft Copilot Studio Documentation](./microsoft-copilot-studio.pdf)
 - [Exploring Copilot Studio Governance](./security-compliance-governance/Exploring%20Copilot%20Studio%20Governance_English.pdf)
 
+## Technology Selection Guide
+
+### When to Use Copilot Studio
+- **Custom conversational experiences**: When you need to build and deploy tailored AI assistants for specific business functions or domains
+- **Business process automation**: For implementing conversational interfaces that can trigger business workflows and integrate with Power Platform
+- **Multi-channel deployment**: When you need to deploy AI assistants across Teams, web sites, custom applications, and mobile apps
+- **Structured customer service**: For scenarios requiring guided conversations with defined paths and integration with business systems
+- **Content-specific knowledge bases**: When answers must be drawn from specific organizational documents, SharePoint sites, or approved content sources
+- **System integration requirements**: When your AI assistant needs to connect to and work with line-of-business applications and data sources
+- **Compliance-sensitive scenarios**: For implementations requiring strict data governance, DLP policies, and audit trails
+
+### When to Use Copilot for M365
+- **General productivity assistance**: For enhancing everyday work across Microsoft 365 applications
+- **Document creation and summarization**: When users need help drafting emails, creating presentations, or summarizing meetings
+- **Data analysis in Excel**: For quick data insights and formula creation without specialized skills
+- **Meeting assistance**: For real-time transcription, summarization, and follow-up task generation
+- **Email management**: To help prioritize, summarize, and draft responses to emails
+- **Enterprise knowledge exploration**: When users need to search and synthesize information across the Microsoft Graph
+- **Unstructured, ad-hoc requests**: For general questions that don't require custom business logic or specialized domain knowledge
+
+### When to Use Azure OpenAI in Azure Foundry
+- **Advanced AI model customization**: When you need fine-tuned models tailored to specific domains or use cases
+- **Complex reasoning tasks**: For applications requiring sophisticated problem-solving, code generation, or analysis
+- **Highly customized prompts**: When you need precise control over system messages and engineering techniques
+- **High-volume processing**: For scenarios requiring batch processing or high-throughput AI operations
+- **Developer-centric applications**: When building AI features directly into applications using code-first approaches
+- **Research and experimentation**: For exploring model capabilities and testing different approaches
+- **Specialized content generation**: When creating specific formats of content requiring detailed control
+- **Advanced data security requirements**: For scenarios with stringent data handling needs requiring custom implementation
+
+### When to Combine Technologies
+- **Enterprise-wide AI strategy**: Implement a comprehensive approach that leverages each platform's strengths
+- **Complex organizational scenarios**: Address varied business needs with the most appropriate technology for each use case
+- **Escalation paths**: Create seamless handoffs between general Copilot for M365 and specialized Copilot Studio agents
+- **Enhanced capabilities**: Use Azure OpenAI's advanced models to power Copilot Studio for more sophisticated reasoning
+- **Hybrid solutions**: Combine no-code/low-code approaches with custom development for optimal results
+- **Layered knowledge access**: Use Copilot for M365 for broad knowledge and Copilot Studio for domain-specific information
+
+### Benefits of Combined Implementation
+- **Unified user experience**: Provide consistent AI assistance across all interaction points
+- **Optimized cost efficiency**: Use each technology where it provides the most value at the best price point
+- **Comprehensive capabilities**: Address a wider range of use cases than any single technology alone
+- **Reduced implementation time**: Leverage no-code solutions where appropriate while using custom development for complex needs
+- **Scalable architecture**: Build foundations that can grow with organizational AI maturity
+- **Governance alignment**: Apply appropriate controls based on use case sensitivity and requirements
+- **Innovation acceleration**: Enable both business users and developers to contribute to AI transformation
+- **Enterprise readiness**: Ensure solutions meet security, compliance, and performance needs at scale
+
 ## Quick Start Guide
 
 Choose the guide that best matches your current needs:
