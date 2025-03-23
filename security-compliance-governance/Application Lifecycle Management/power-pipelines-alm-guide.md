@@ -1,4 +1,166 @@
-## Advanced Pipeline Configuration
+## Part 8: Dataverse Git Integration
+
+Dataverse Git integration is a powerful feature that allows makers to directly connect their solutions to Git repositories, enabling version control and collaborative development without leaving the maker experience.
+
+### Benefits of Git Integration
+
+1. **Native Version Control for Low-Code Development**:
+   - Track changes to solutions directly from Power Apps maker portal
+   - Maintain version history of all components including apps, flows, and tables
+   - Easily roll back to previous versions when needed
+
+2. **Streamlined Collaboration**:
+   - Multiple makers can work on the same solution simultaneously
+   - Conflicts are managed through Git's branching and merging capabilities
+   - Review changes before they're committed to main branches
+
+3. **Enhanced ALM Integration**:
+   - Seamless integration with Power Platform deployment pipelines
+   - No need to manually export/import solutions for source control
+   - Automated commit history for audit and compliance purposes
+
+4. **Bridge Between Pro-Code and Low-Code**:
+   - Pro developers can review and contribute to solutions using familiar Git tooling
+   - Low-code makers can leverage Git without learning complex commands
+   - Enables true fusion development teams
+
+5. **Environment-Independent Development**:
+   - Reduced dependency on multiple development environments
+   - Branch-based development strategy instead of environment-based
+   - More efficient resource utilization
+
+### Setting Up Git Integration
+
+#### Prerequisites
+
+Before setting up Git integration, ensure you have:
+
+1. **Required Permissions**:
+   - Environment Maker role or System Administrator role
+   - Solution owner permissions for the solution you want to connect
+   - Appropriate permissions in your Git provider (GitHub, Azure DevOps, etc.)
+
+2. **Supported Git Provider**:
+   - GitHub (public or private repositories)
+   - Azure DevOps (Cloud)
+   - BitBucket Cloud
+
+3. **Supported Solution Type**:
+   - Unmanaged solutions (Managed solutions cannot be connected to Git)
+
+#### Connecting a Solution to Git
+
+1. **Create or Select an Existing Solution**:
+   - From the maker portal, go to **Solutions**
+   - Create a new solution or select an existing unmanaged solution
+
+2. **Initialize Git Integration**:
+   - From the solution view, click **Settings** (gear icon)
+   - Select **Connect to source control**
+   - If this is your first time, you'll need to authenticate with your Git provider
+
+3. **Connect to GitHub**:
+   - Click **Connect to GitHub**
+   - Sign in to your GitHub account
+   - Authorize the Power Platform GitHub app when prompted
+   - Select the organization or personal GitHub account
+   - Choose an existing repository or create a new one
+   - Select the branch (typically 'main' or 'master')
+   - Click **Connect**
+
+4. **Connect to Azure DevOps**:
+   - Click **Connect to Azure DevOps**
+   - Sign in to your Azure DevOps account
+   - Select the organization and project
+   - Choose an existing repository or create a new one
+   - Select the branch
+   - Click **Connect**
+
+5. **Initial Commit**:
+   - After connecting, you'll be prompted to make an initial commit
+   - Enter a commit message describing your solution
+   - Click **Commit**
+   - This exports your solution to the repository in the Microsoft Power Platform CLI format
+
+6. **Verify Connection**:
+   - The solution will show as connected to source control
+   - A new Git icon appears in the solution header
+
+### Working with Git-Connected Solutions
+
+#### Making Changes and Committing
+
+1. **Change Tracking**:
+   - Make changes to your solution components as normal
+   - Git integration automatically tracks changes
+   - A badge appears on the solution showing the number of uncommitted changes
+
+2. **Committing Changes**:
+   - Click the Git icon in the solution header
+   - Review the changed components
+   - Enter a commit message
+   - Click **Commit**
+
+3. **Working with Branches**:
+   - Click the branch name in the solution header
+   - Select **New branch** to create a branch
+   - Enter a branch name and select the source branch
+   - Work on your branch and commit changes
+   - When ready, create a pull request from the Git provider's interface
+
+4. **Handling Conflicts**:
+   - If conflicts occur during branch switches or pulls, the system will notify you
+   - Review the conflicts and decide which changes to keep
+   - Resolve conflicts through the maker portal interface
+
+#### Integration with Pipelines
+
+1. **Setting Up Pipeline Triggers**:
+   - Create a pipeline as described in earlier sections
+   - Connect the same repository used for Git integration
+   - Configure branch-based or pull request triggers
+
+2. **Branch-Based Development Workflow**:
+   - Develop features in feature branches
+   - Use pull requests to merge to main/develop branches
+   - Configure pipeline to deploy from specific branches to corresponding environments
+
+3. **Pull Request Validation**:
+   - Configure pull request triggers to validate changes
+   - Run automated checks before merging
+   - Ensure code quality and standards compliance
+
+### Best Practices
+
+1. **Branch Strategy**:
+   - Implement a Git branching strategy such as GitFlow or GitHub Flow
+   - Use feature branches for development
+   - Protect main/master branches with pull request policies
+
+2. **Commit Frequency**:
+   - Commit changes frequently with meaningful commit messages
+   - Group related changes in a single commit
+   - Follow conventional commit message formats
+
+3. **Team Collaboration**:
+   - Define clear ownership of solution components
+   - Use pull requests for code reviews
+   - Document branch naming conventions
+
+4. **Solution Management**:
+   - Keep solutions focused and modular
+   - Minimize dependencies between solutions
+   - Consider component grouping for efficient development
+
+5. **Security Considerations**:
+   - Manage access to both Dataverse and Git repositories
+   - Implement branch protection rules
+   - Regularly audit access permissions
+
+6. **Performance Tips**:
+   - Be aware that large solutions may take longer to commit
+   - Consider breaking down very large solutions
+   - Schedule commits during off-peak hours for large updates## Advanced Pipeline Configuration
 
 This section covers advanced configuration options for Power Platform pipelines to handle complex deployment scenarios.
 
@@ -195,14 +357,20 @@ This document provides step-by-step instructions for setting up Power Pipelines 
    - [Setting Up Triggers](#setting-up-triggers)
    - [Configuring Actions](#configuring-actions)
    - [Extending Pipelines with Custom Actions](#extending-pipelines-with-custom-actions)
+   - [Gated Extensions and Step Started Triggers](#gated-extensions-and-step-started-triggers)
 6. [Part 5: Setting Up Pre-Deployment Stage Approvals](#part-5-setting-up-pre-deployment-stage-approvals)
 7. [Part 6: Testing Your Pipeline](#part-6-testing-your-pipeline)
 8. [Part 7: Service Principal Ownership of Power Automate Flows](#part-7-service-principal-ownership-of-power-automate-flows)
-9. [Advanced Pipeline Configuration](#advanced-pipeline-configuration)
-   - [Solution Deployment Strategies](#solution-deployment-strategies)
-   - [Environment Variables](#environment-variables)
-   - [Connection References](#connection-references)
-10. [Troubleshooting](#troubleshooting)
+9. [Part 8: Dataverse Git Integration](#part-8-dataverse-git-integration)
+   - [Benefits of Git Integration](#benefits-of-git-integration)
+   - [Setting Up Git Integration](#setting-up-git-integration)
+   - [Working with Git-Connected Solutions](#working-with-git-connected-solutions)
+   - [Best Practices](#best-practices)
+10. [Advanced Pipeline Configuration](#advanced-pipeline-configuration)
+    - [Solution Deployment Strategies](#solution-deployment-strategies)
+    - [Environment Variables](#environment-variables)
+    - [Connection References](#connection-references)
+11. [Troubleshooting](#troubleshooting)
 
 ## Prerequisites
 
@@ -288,8 +456,8 @@ A service principal is required for delegated deployments. You have two options 
      - Set the **Supported account types** (usually "Single tenant")
      - Click **Register**
 
-5. **Assign Emtra ID Roles**:
-   - In the "Assign Entra ID roles" section, select "Application Administrator" role
+5. **Assign Azure AD Roles**:
+   - In the "Assign Azure AD roles" section, select "Application Administrator" role
    - Click **Next**
 
 6. **Assign Environment Roles**:
@@ -479,6 +647,74 @@ Custom actions allow you to extend pipeline functionality beyond standard soluti
    - Run a manual deployment to verify custom actions work as expected
    - Check logs to troubleshoot any issues
 
+### Gated Extensions and Step Started Triggers
+
+Gated extensions allow you to implement approval checkpoints at critical stages of your deployment pipeline. Understanding when to use each type is essential for implementing effective governance.
+
+1. **Available Gated Extensions**:
+   - **Pre-export step**: Runs before solutions are exported from the source environment
+   - **Pre-deployment step**: Runs before solutions are imported into the target environment
+   - **Post-deployment step**: Runs after solutions are imported into the target environment
+
+2. **When to Use Pre-Export Gates**:
+   - **Quality assurance**: Ensure only properly tested components are exported
+   - **Dependency validation**: Check that all required dependencies are included
+   - **Metadata inspection**: Validate solution components meet organizational standards
+   - **Versioning verification**: Ensure proper version increments before packaging
+   - **Security reviews**: Verify no security anti-patterns are present in solution
+
+3. **When to Use Pre-Deployment Gates**:
+   - **Environment readiness**: Check if target environment meets prerequisites
+   - **Configuration validation**: Verify environment variables and connection references
+   - **Resource allocation**: Ensure sufficient capacity for deployment
+   - **Change window confirmation**: Verify deployment falls within approved time windows
+   - **Impact analysis**: Assess potential impact on existing processes
+
+4. **When to Use Post-Deployment Gates**:
+   - **Validation testing**: Run automated tests to verify functionality
+   - **Performance checks**: Measure performance after deployment
+   - **User notification**: Inform stakeholders of completed deployment
+   - **Documentation updates**: Trigger updates to system documentation
+   - **Monitoring setup**: Configure monitoring for new components
+
+5. **Step Started Triggers**:
+   - Step Started triggers allow you to execute custom logic when specific deployment steps begin
+   - To configure:
+     - Navigate to **Pipelines** → your pipeline → **Settings** → **Advanced settings**
+     - Under **Extensions**, select the appropriate step type
+     - Click **+ Add extension**
+     - Select your extension type (Cloud Flow, Custom API, CLI)
+     - Configure when the extension should run
+
+6. **Pre-Export Step Required Setting**:
+   - When enabled, this setting requires the pre-export step to complete successfully before solutions can be exported
+   - **When to enable**: 
+     - In environments with strict quality or security requirements
+     - When solution exports must follow standardized processes
+     - When automated validations are essential before packaging solutions
+   - To enable:
+     - Go to **Pipelines** → your pipeline → **Settings** → **Advanced settings**
+     - Under **Solution export**, enable **Pre-export step required**
+     - Click **Save**
+
+7. **Pre-Deployment Step Required Setting**:
+   - When enabled, this setting requires the pre-deployment step to complete successfully before solutions can be imported
+   - **When to enable**:
+     - For production environments with change management requirements
+     - When target environments require specific validations before deployment
+     - When compliance or regulatory requirements mandate pre-deployment checks
+   - To enable:
+     - Go to **Pipelines** → your pipeline → **Settings** → **Advanced settings**
+     - Under **Solution import**, enable **Pre-deployment step required**
+     - Click **Save**
+
+8. **Using Gated Extensions for Compliance and Governance**:
+   - Implement pre-export gates to enforce development standards
+   - Use pre-deployment gates to ensure proper change management
+   - Configure post-deployment gates for validation and documentation
+   - Create a comprehensive audit trail of all deployment activities
+   - Combine with approval requirements for multi-layered governance
+
 ## Troubleshooting
 
 ### Troubleshooting
@@ -489,7 +725,7 @@ Custom actions allow you to extend pipeline functionality beyond standard soluti
    - Verify client ID, secret, and tenant ID are correct
    - Ensure secret hasn't expired
    - Check that service principal has required permissions
-   - Verify the application registration is still active in Entra ID
+   - Verify the application registration is still active in Azure AD
 
 2. **Deployment Failures**:
    - Review detailed logs in the pipeline run
