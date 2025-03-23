@@ -18,7 +18,12 @@ This repository provides a comprehensive framework for implementing Microsoft Po
 
 This framework follows a logical progression for enterprise implementation:
 
-1. **Assessment & Strategy**: Begin with the [Platform Comparison Guide](./platform-comparison.md) to develop your overall strategy and use case prioritization.
+1. **Assessment & Strategy**: 
+   - Begin with [Business Value Assessment](./platform-comparison.md#use-case-recommendations) to identify high-impact opportunities
+   - Conduct [Technology Readiness Assessment](./platform-comparison.md#technical-requirements) to evaluate your environment
+   - Develop [AI Implementation Strategy](./platform-comparison.md#platform-selection-strategy) aligned with business goals
+   - Create [Change Management Plan](https://learn.microsoft.com/en-us/power-platform/guidance/adoption/methodology) for organizational adoption
+   - Perform [Capability & Skills Assessment](https://learn.microsoft.com/en-us/power-platform/guidance/adoption/capacity-and-skills) for team readiness
 
 2. **Basic Implementation**: Follow the [Copilot Studio Tutorial for Beginners](./Copilot%20Studio%20Step-by-Steps/copilot-studio-tutorial.md) to build your first agent and understand core capabilities.
 
@@ -51,16 +56,38 @@ This framework follows a logical progression for enterprise implementation:
 ### 2. Platform Selection & Architecture
 - [Platform Comparison Guide](./platform-comparison.md)
   - [Platform Capabilities & Limitations](./platform-comparison.md#capabilities)
-  - [Use Case Recommendations](./platform-comparison.md#use-cases)
+  - [Use Case Recommendations](./platform-comparison.md#use-case-recommendations)
   - [Integration Strategies](./platform-comparison.md#integration)
-  - [Technical Requirements & Considerations](./platform-comparison.md#requirements)
+  - [Technical Requirements & Considerations](./platform-comparison.md#technical-requirements)
 - [Azure OpenAI Integration Guide](./azure-foundry-openai-copilot-studio-integration/azure-openai-copilot-integration.md)
   - [Custom Model Deployment](./azure-foundry-openai-copilot-studio-integration/azure-openai-copilot-integration.md#deployment)
   - [Integration with Copilot Studio](./azure-foundry-openai-copilot-studio-integration/azure-openai-copilot-integration.md#integration)
   - [Security & Governance Controls](./azure-foundry-openai-copilot-studio-integration/azure-openai-copilot-integration.md#security)
   - [Cost Management Strategies](./azure-foundry-openai-copilot-studio-integration/azure-openai-copilot-integration.md#cost-management)
 
-### 3. Implementation Guides
+### 3. Assessment & Strategy Resources
+- [Business Value Assessment](./platform-comparison.md#use-case-recommendations)
+  - [ROI Calculation Templates](https://learn.microsoft.com/en-us/power-platform/guidance/adoption/business-value)
+  - [Case Studies by Industry](./Copilot%20Studio%20Use%20Cases/use-cases.md#industry)
+  - [Value Measurement Framework](https://learn.microsoft.com/en-us/power-platform/guidance/adoption/business-value-measurement)
+- [Technology Readiness Assessment](./platform-comparison.md#technical-requirements)
+  - [Environment Planning Guide](https://learn.microsoft.com/en-us/power-platform/admin/environments-overview)
+  - [Integration Readiness Checklist](./platform-comparison.md#integration-strategies)
+  - [Security & Compliance Requirements](./security-compliance-governance/security-compliance-guide.md)
+- [Implementation Strategy Development](./platform-comparison.md#platform-selection-strategy)
+  - [Phased Implementation Approach](./Copilot%20Studio%20Step-by-Steps/copilot-studio-tutorial.md#poc-implementation)
+  - [Platform Selection Decision Tree](./platform-comparison.md#platform-selection-strategy)
+  - [Integration Architecture Models](./platform-comparison.md#integration-approach-azure-ai-foundryopenai-with-copilot-studio)
+- [Change Management & Adoption](https://learn.microsoft.com/en-us/power-platform/guidance/adoption/methodology)
+  - [Stakeholder Engagement Plan](https://learn.microsoft.com/en-us/power-platform/guidance/adoption/strategy-template)
+  - [Training Strategy Development](https://learn.microsoft.com/en-us/power-platform/guidance/adoption/training-strategy)
+  - [Center of Excellence Setup](https://learn.microsoft.com/en-us/power-platform/guidance/coe/overview)
+- [Case Studies & Implementation Examples](./platform-comparison.md#case-studies-platform-selection-examples)
+  - [Financial Services Implementation](./platform-comparison.md#example-1-financial-services-chatbot)
+  - [Healthcare Knowledge System](./platform-comparison.md#example-2-healthcare-knowledge-system)
+  - [Manufacturing Process Assistant](./platform-comparison.md#example-3-manufacturing-process-assistant)
+
+### 4. Implementation Guides
 
 #### Basic Implementation
 - [Copilot Studio Tutorial for Beginners](./Copilot%20Studio%20Step-by-Steps/copilot-studio-tutorial.md)
@@ -113,7 +140,7 @@ This framework follows a logical progression for enterprise implementation:
   - [Employee Data Privacy Handling](./Copilot%20Studio%20Step-by-Steps/hr-copilot-studio-guide.md#privacy)
   - [Multi-language Support](./Copilot%20Studio%20Step-by-Steps/hr-copilot-studio-guide.md#language) - **[NEW: Expanded Language Support](https://learn.microsoft.com/en-us/microsoft-copilot-studio/multilingual)**
 
-### 4. Enterprise Implementation
+### 5. Enterprise Implementation
 
 #### Security & Compliance
 - [Security & Compliance Guide](./security-compliance-governance/security-compliance-guide.md)
@@ -144,7 +171,7 @@ This framework follows a logical progression for enterprise implementation:
   - [Capacity Planning](./performance-monitoring-reporting/performance-monitoring-reporting.md#capacity)
   - [Logging and Diagnostics](./performance-monitoring-reporting/performance-monitoring-reporting.md#logging)
 
-### 5. Use Cases & Examples
+### 6. Use Cases & Examples
 - [Core Use Cases](./Copilot%20Studio%20Use%20Cases/copilot-studio-use-cases.md)
   - [Customer Service Automation](./Copilot%20Studio%20Use%20Cases/copilot-studio-use-cases.md#customer-service)
   - [Employee Help Desk](./Copilot%20Studio%20Use%20Cases/copilot-studio-use-cases.md#help-desk)
@@ -161,7 +188,7 @@ This framework follows a logical progression for enterprise implementation:
   - [Integration Patterns](./Copilot%20Studio%20Use%20Cases/use-cases-implementation.md#patterns)
   - [Code Samples and Walkthroughs](./Copilot%20Studio%20Use%20Cases/use-cases-implementation.md#code-samples)
 
-### 6. Proof of Concept Resources
+### 7. Proof of Concept Resources
 - [POC Implementation Guide](./Copilot%20Studio%20Step-by-Steps/copilot-studio-tutorial.md#poc-implementation)
   - [Scoping and Planning](./Copilot%20Studio%20Step-by-Steps/copilot-studio-tutorial.md#phase-1-define-and-scope)
   - [Environment Setup](./Copilot%20Studio%20Step-by-Steps/copilot-studio-tutorial.md#phase-2-environment-setup)
@@ -172,7 +199,7 @@ This framework follows a logical progression for enterprise implementation:
 - [ServiceNow POC Guide](./Copilot%20Studio%20Step-by-Steps/servicenow-copilot-poc.md#setup)
 - [Salesforce Integration POC](./Copilot%20Studio%20Step-by-Steps/copilot-salesforce-integration.md)
 
-### 7. Microsoft Teams Integration
+### 8. Microsoft Teams Integration
 - **[NEW: Enhanced Teams Integration](https://learn.microsoft.com/en-us/microsoft-copilot-studio/configure-bots-for-teams)**
   - [Meeting-Aware Copilots](https://learn.microsoft.com/en-us/microsoft-copilot-studio/teams-meeting-extensibility)
   - [Collaborative Experiences](https://learn.microsoft.com/en-us/microsoft-copilot-studio/publication-add-bot-to-teams)
@@ -180,7 +207,7 @@ This framework follows a logical progression for enterprise implementation:
   - [Authentication in Teams](https://learn.microsoft.com/en-us/microsoft-copilot-studio/configuration-authentication)
   - [Adaptive Cards for Teams](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-adaptive-cards)
 
-### 8. Additional Resources
+### 9. Additional Resources
 - [Microsoft Copilot Studio Documentation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) - Official reference guide
 - [Exploring Copilot Studio Governance](./security-compliance-governance/Exploring%20Copilot%20Studio%20Governance_English.pdf) - Comprehensive governance framework
 - [Microsoft Learn Resources](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) - Official Microsoft training
