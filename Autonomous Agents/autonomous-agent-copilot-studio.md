@@ -1,6 +1,21 @@
-# Building an Autonomous Agent with Copilot Studio: Step-by-Step Guide
+# Building an Autonomous Agent with Copilot Studio: Comprehensive Guide
 
-This comprehensive guide walks you through the process of creating an autonomous agent using Microsoft Copilot Studio, enabling your agents to perform tasks independently while maintaining user interaction when needed.
+This comprehensive guide walks you through creating an autonomous agent using Microsoft Copilot Studio. An autonomous agent can perform tasks on behalf of users by understanding requests, planning actions, and executing them through integrations. Unlike traditional chatbots that simply respond to queries, autonomous agents can take initiative to complete complex sequences of actions.
+
+## Table of Contents
+
+- [What is an Autonomous Agent?](#what-is-an-autonomous-agent)
+- [Prerequisites](#prerequisites)
+- [Part 1: Setting Up Your Environment](#part-1-setting-up-your-environment)
+- [Part 2: Creating Your Autonomous Agent](#part-2-creating-your-autonomous-agent)
+- [Part 3: Configuring the AI Model](#part-3-configuring-the-ai-model)
+- [Part 4: Building the Core Agent Framework](#part-4-building-the-core-agent-framework)
+- [Part 5: Creating Actions with Power Automate](#part-5-creating-actions-with-power-automate)
+- [Part 6: Implementing System Messages](#part-6-implementing-system-messages)
+- [Part 7: Testing and Iterating](#part-7-testing-and-iterating)
+- [Part 8: Deployment and Monitoring](#part-8-deployment-and-monitoring)
+- [Advanced Configurations](#advanced-configurations)
+- [Troubleshooting](#troubleshooting)
 
 ## What is an Autonomous Agent?
 
@@ -15,249 +30,558 @@ An autonomous agent is an agentic solution that can:
 
 Before starting this tutorial, ensure you have:
 - A Microsoft 365 account with Copilot Studio access
-- Appropriate permissions to create and publish copilots
-- Basic understanding of Power Platform components
-- Access to necessary connectors and data sources
+- Power Platform environment with maker permissions
+- Microsoft Azure subscription with Azure OpenAI service provisioned
+- Power Automate license
+- Basic understanding of prompt engineering concepts
+- Familiarity with Power Platform components
 
-## Step 1: Setting Up Your Copilot Studio Environment
+## Part 1: Setting Up Your Environment
 
-1. Navigate to [Copilot Studio](https://copilotstudio.microsoft.com)
-2. Sign in with your Microsoft 365 credentials
-3. Create a new copilot by clicking "Create a copilot"
-4. Give your autonomous agent a name and description
-5. Select your organization and environment
-6. Choose "Start from scratch"
+### Step 1: Set Up Azure OpenAI Service
 
-## Step 2: Defining Your Agent's Capabilities
+1. Log in to the [Azure Portal](https://portal.azure.com)
+2. Search for "Azure OpenAI" and select it
+3. Click **Create**
+4. Fill in the required details:
+   - **Subscription**: Your Azure subscription
+   - **Resource group**: Create new or select existing
+   - **Region**: Choose a region where Azure OpenAI is available
+   - **Name**: Enter a unique name (e.g., "copilot-agent-ai")
+   - **Pricing tier**: Select Standard S0
+5. Click **Review + create**, then **Create**
+6. Once deployed, navigate to the resource
+7. Go to **Keys and Endpoint** and note down:
+   - API Key
+   - Endpoint URL
 
-1. In the Copilot Studio dashboard, go to your new copilot
-2. Navigate to the **Topics** section
-3. Create the following essential topics:
-   - Greeting and introduction
-   - Help/assistance
-   - Escalation to human
-   - Error handling
-   - Task completion confirmation
+### Step 2: Deploy GPT Models
 
-## Step 3: Implementing Core Conversational Flows
+1. In your Azure OpenAI resource, navigate to **Model deployments**
+2. Click **Create**
+3. Select "gpt-4o" or other latest available version
+4. Name your deployment (e.g., "copilot-agent-gpt4o")
+5. Click **Create**
+6. Note down the model deployment name
 
-1. For each topic, define:
-   - Trigger phrases (how users initiate the conversation)
-   - Entity extraction (what information your agent needs to collect)
-   - Conversation nodes (the flow of dialogue)
-   - Response variations (multiple ways to respond naturally)
+### Step 3: Prepare Your Power Platform Environment
 
-2. Ensure your agent can:
-   - Understand user intent
-   - Extract necessary information
-   - Confirm understanding before proceeding
-   - Handle interruptions and context switching
+1. Go to [Power Apps maker portal](https://make.powerapps.com)
+2. Ensure you have the correct environment selected
+3. Create a new solution:
+   - Click **Solutions** > **New solution**
+   - Name: "Autonomous Agent Solution"
+   - Publisher: Select your organization's publisher
+   - Version: "1.0.0"
+4. Click **Create**
 
-## Step 4: Connecting to External Systems
+## Part 2: Creating Your Autonomous Agent
 
-To make your agent truly autonomous, connect it to external systems:
+### Step 1: Create a New Copilot
 
-1. Go to the **Actions** section in Copilot Studio
-2. Click "Create an action"
-3. Select "Power Automate" as the connection type
-4. Create flows for each system your agent needs to interact with:
-   - Database queries
-   - Document processing systems
-   - Email and communication tools
-   - Business applications
-   - File storage solutions
+1. Navigate to [Microsoft Copilot Studio](https://copilotstudio.microsoft.com)
+2. Click **Create a copilot**
+3. Fill in the details:
+   - **Name**: "Autonomous Agent"
+   - **Description**: "An agent that can perform autonomous actions based on user requests"
+   - **Language**: Select your primary language
+4. Click **Create**
 
-## Step 5: Adding Cognitive Abilities
+### Step 2: Configure Basic Settings
 
-Enhance your agent with AI capabilities:
-
-1. Navigate to **AI capabilities** in your copilot settings
-2. Enable and configure:
-   - Natural language understanding
-   - Entity recognition
-   - Sentiment analysis
-   - Language detection
-   - Summarization
-   - Knowledge base integration
-
-## Step 6: Implementing the Autonomous Workflow
-
-Now, create the core autonomous functionality:
-
-1. In Power Automate, create a new scheduled flow
-2. Set the trigger according to your needs (time-based, event-based, etc.)
-3. Add an initialization step to set variables and prepare the environment
-4. Implement decision trees for autonomy:
+1. Go to **Settings** > **General**
+2. Configure a greeting message:
    ```
-   IF [condition met]
-   THEN [execute action independently]
-   ELSE [prepare for human interaction]
+   Hello! I'm your autonomous agent assistant. I can help you complete tasks like managing schedules, retrieving information, and more. How can I assist you today?
    ```
-5. Add logging and monitoring steps to track all autonomous actions
+3. Set a fallback message:
+   ```
+   I'm sorry, I couldn't understand what you need. Could you please rephrase your request or provide more details about what you'd like me to do?
+   ```
+4. Save your changes
 
-## Step 7: Building the Decision-Making Framework
+## Part 3: Configuring the AI Model
 
-1. Create a comprehensive decision matrix for your agent:
-   - Define clear criteria for autonomous decisions
-   - Establish thresholds for confidence levels
-   - Set boundaries for actions the agent can take without supervision
-   - Create escalation paths for complex scenarios
+### Step 1: Connect to Azure OpenAI
 
-2. Implement this matrix using:
-   - Condition cards in Copilot Studio
-   - Condition actions in Power Automate
-   - Custom expressions for complex logic
+1. In your copilot, go to **Settings** > **AI models**
+2. Click **Add AI model**
+3. Select **Azure OpenAI**
+4. Fill in the connection details:
+   - **Connection name**: "Autonomous Agent AI"
+   - **Azure subscription**: Select your subscription
+   - **Resource group**: Select the resource group containing your OpenAI resource
+   - **Azure OpenAI resource**: Select your OpenAI resource
+   - **Deployment name**: Enter the model deployment name you noted earlier
+5. Click **Test connection** to verify it works
+6. Click **Save**
 
-## Step 8: Implementing Human-in-the-Loop Mechanisms
+### Step 2: Configure AI Model Settings
 
-Even autonomous agents need human oversight:
+1. In **AI models**, select your newly added Azure OpenAI connection
+2. Configure the following settings:
+   - **System message**: Leave blank for now (we'll configure this later)
+   - **Temperature**: Set to 0.3 (lower for more consistent, predictable responses)
+   - **Top P**: Set to 0.95
+   - **Response length**: Medium
+   - **Frequency penalty**: 0
+   - **Presence penalty**: 0
+3. Click **Save**
 
-1. Create interruption points where the agent can:
-   - Notify human operators of actions taken
-   - Request approval for sensitive operations
-   - Escalate unusual situations
-   - Present summaries of completed work
+## Part 4: Building the Core Agent Framework
 
-2. Implement using:
-   - Email notifications
-   - Teams messages
-   - Approval workflows
-   - Dashboard alerts
+### Step 1: Create the Main Topic
 
-## Step 9: Knowledge Integration and Learning
+1. Go to **Topics** and click **Add**
+2. Create the main agent topic:
+   - **Name**: "Autonomous Agent Handler"
+   - **Trigger phrases**:
+     ```
+     I need help with a task
+     Can you do something for me
+     I have a request
+     I need you to handle something
+     perform a task
+     ```
+3. Click **Save**
 
-Equip your agent with knowledge to make informed decisions:
+### Step 2: Design the Conversation Flow
 
-1. Go to the **Knowledge** section
-2. Add knowledge sources:
-   - SharePoint documents
-   - FAQ pages
-   - Process documentation
-   - Previous conversation history
-   - External websites (with proper permissions)
+1. Design the initial conversation:
+   - First message: `I'd be happy to help with your task. What would you like me to do?`
+   - Add entity extraction for user request:
+     - Create a variable `UserRequest` of type String
+     - Add a Question node: `Please describe what you'd like me to accomplish:`
 
-3. Configure knowledge processing:
-   - Set relevance thresholds
-   - Define citation formats
-   - Establish confidence scoring
+2. Add a processing message:
+   - Add a Message node: `I'll analyze your request and determine the best way to help. One moment...`
 
-## Step 10: Testing Your Autonomous Agent
+3. Create a Power Automate flow node:
+   - Click the plus sign to add a node
+   - Select **Power Automate flow**
+   - Click **Create a flow**
 
-1. Use the **Test your copilot** feature
-2. Create test scenarios for:
-   - Happy path (everything works as expected)
-   - Error handling (system failures, unexpected inputs)
-   - Edge cases (unusual but valid scenarios)
-   - Security boundaries (attempting unauthorized actions)
+### Step 3: Create the Task Analysis Flow
 
-3. Document all test results and refine your agent accordingly
+1. In the Power Automate flow creation window:
+   - Name your flow: "Analyze User Request"
+   - Use the trigger: "When a topic flow calls a Power Automate flow"
 
-## Step 11: Monitoring and Analytics
+2. Add an action: **Azure OpenAI** > **Completions**
+   - Connection name: Create a new connection to your Azure OpenAI
+   - Deployment: Select your GPT-4 or GPT-3.5 deployment
+   - Prompt: 
+     ```
+     You are an autonomous agent tasked with analyzing user requests and determining the necessary actions to fulfill them.
 
-1. Configure analytics in Copilot Studio:
-   - Enable conversation tracking
-   - Set up custom telemetry
-   - Create performance dashboards
+     USER REQUEST: {{triggerBody()['text']['UserRequest']}}
 
-2. Monitor key metrics:
-   - Autonomous task completion rate
-   - Error frequency and types
-   - Human intervention frequency
-   - User satisfaction scores
-   - Response time and efficiency
+     Please analyze this request and provide:
+     1. A clear understanding of what the user wants to accomplish
+     2. The specific actions needed to complete this task
+     3. Any additional information you would need from the user
+     4. A step-by-step plan for completing the task
 
-## Step 12: Security and Compliance
+     Format your response as JSON with the following structure:
+     {
+         "understanding": "Brief description of what you understand the user wants",
+         "required_actions": ["action1", "action2"],
+         "missing_information": ["info1", "info2"],
+         "execution_plan": "Step-by-step plan",
+         "doable": true/false
+     }
+     ```
 
-Ensure your autonomous agent follows best practices:
+3. Add a Parse JSON action:
+   - Content: Output from the OpenAI completions step
+   - Schema: Click "Generate from sample" and use:
+     ```json
+     {
+         "understanding": "The user wants to schedule a meeting with the marketing team for tomorrow at 2 PM",
+         "required_actions": ["Check calendar availability", "Create calendar event", "Send invites to team members"],
+         "missing_information": ["List of attendees", "Meeting duration"],
+         "execution_plan": "1. Check calendar availability for tomorrow at 2 PM\n2. Create calendar event\n3. Add required attendees\n4. Set meeting duration\n5. Include meeting agenda\n6. Send invites",
+         "doable": true
+     }
+     ```
 
-1. Review all data handling procedures
-2. Implement proper authentication for system access
-3. Ensure compliance with:
-   - Data residency requirements
-   - Industry regulations
-   - Company policies
-   - Privacy standards
+4. Add a "Return value to Copilot Studio" action:
+   - Understanding: `understanding` from the Parse JSON step
+   - RequiredActions: `required_actions` from Parse JSON
+   - MissingInfo: `missing_information` from Parse JSON
+   - ExecutionPlan: `execution_plan` from Parse JSON
+   - IsDoable: `doable` from Parse JSON
 
-4. Document all security measures for audit purposes
+5. Save your flow
 
-## Step 13: Deployment and Going Live
+### Step 4: Complete the Conversation Flow
 
-1. Conduct a final review of all components
-2. Create a rollout plan with phases:
-   - Limited pilot with controlled users
-   - Expanded testing with monitoring
-   - Full deployment with continued observation
+1. Return to your Copilot Studio topic
+2. After the Power Automate flow node, add a condition:
+   - If `PowerAutomateResponse.IsDoable` equals `true`, follow the "Yes" branch
+   - Otherwise, follow the "No" branch
 
-3. In Copilot Studio:
-   - Click "Publish" to make your copilot live
-   - Configure channel availability (Teams, web, mobile, etc.)
-   - Set up access controls
+3. In the "Yes" branch:
+   - Add a message: `I understand that you want to {{PowerAutomateResponse.Understanding}}.`
+   - Add a message: `Here's my plan to help you:`
+   - Add a message: `{{PowerAutomateResponse.ExecutionPlan}}`
 
-## Step 14: Continuous Improvement
+4. Create a condition to check if missing information exists:
+   - Use the expression: `length(PowerAutomateResponse.MissingInfo) > 0`
+   - In the "Yes" branch, add a message:
+     ```
+     Before I can proceed, I need some additional information:
+     {{PowerAutomateResponse.MissingInfo}}
+     ```
+   - Add nodes to collect the missing information
 
-1. Establish a regular review cycle for:
-   - Conversational performance
-   - Task completion accuracy
-   - User feedback and satisfaction
-   - System integration reliability
+5. In the "No" branch (when task is not doable):
+   - Add a message: `I understand that you want to {{PowerAutomateResponse.Understanding}}, but I'm unable to complete this task autonomously. Here's why:`
+   - Add a message explaining the limitations
+   - Offer alternatives: `Would you like me to help with something else instead?`
 
-2. Implement an iterative improvement process:
-   - Analyze performance data
-   - Identify improvement opportunities
-   - Implement changes
-   - Test and validate
-   - Re-deploy
+6. Save your topic
 
-## Advanced Customizations
+## Part 5: Creating Actions with Power Automate
 
-### Custom Entity Extraction
+### Step 1: Create Action Framework Topic
 
-For complex data extraction needs:
+1. Go to **Topics** and click **Add**
+2. Create a new topic:
+   - **Name**: "Execute Action"
+   - **Trigger phrases**: (Leave empty as this will be called internally)
+3. Design the conversation flow:
+   - Create variables:
+     - `ActionType` (String): The type of action to perform
+     - `ActionParameters` (String): JSON string of parameters
+   - Add a Switch/Case node based on `ActionType` with cases for different actions
 
-1. Go to **Entities** in Copilot Studio
-2. Create custom entities with:
-   - Regular expressions for structured data
-   - ML-based recognition for unstructured data
-   - List-based matching for known values
+### Step 2: Create Calendar Action Flow
 
-### Multi-Step Autonomous Workflows
+1. For the "Create Calendar Event" case, add a Power Automate flow node
+2. Create a new flow:
+   - Name: "Create Calendar Event"
+   - Trigger: "When a topic flow calls a Power Automate flow"
 
-For complex, multi-stage processes:
+3. Add an action: **Parse JSON**
+   - Content: `triggerBody()['text']['ActionParameters']`
+   - Schema:
+     ```json
+     {
+         "subject": "Marketing Team Meeting",
+         "start_time": "2023-10-20T14:00:00",
+         "end_time": "2023-10-20T15:00:00",
+         "attendees": ["person1@example.com", "person2@example.com"],
+         "location": "Conference Room A",
+         "body": "Discuss Q4 marketing strategy"
+     }
+     ```
 
-1. Break down the workflow into discrete stages
-2. Create state management variables to track progress
-3. Implement checkpoints between stages
-4. Add validation steps to ensure data integrity
-5. Build rollback mechanisms for error recovery
+4. Add an action: **Office 365 Outlook** > **Create event**
+   - Calendar id: Primary
+   - Subject: `subject` from Parse JSON
+   - Start time: `start_time` from Parse JSON
+   - End time: `end_time` from Parse JSON
+   - Body: `body` from Parse JSON
+   - Location: `location` from Parse JSON
+   - Attendees: `attendees` from Parse JSON
 
-### Integration with Azure AI Services
+5. Add a "Return value to Copilot Studio" action:
+   - Success: true
+   - EventId: ID from the created event
+   - EventLink: Web link from the created event
 
-For advanced AI capabilities:
+6. Save your flow
 
-1. Connect your agent to Azure AI services
-2. Implement custom ML models for specialized tasks
-3. Use Azure Cognitive Services for enhanced understanding
-4. Leverage Azure OpenAI Service for complex reasoning
+### Step 3: Create Email Action Flow
 
-## Troubleshooting Common Issues
+1. For the "Send Email" case in your Execute Action topic, add another Power Automate flow node
+2. Create a new flow:
+   - Name: "Send Email"
+   - Trigger: "When a topic flow calls a Power Automate flow"
 
-| Issue | Solution |
-|-------|----------|
-| Agent misunderstands intent | Refine trigger phrases and add more training examples |
-| External system connection fails | Check authentication, network permissions, and API limits |
-| Decision logic produces unexpected results | Review condition statements and test with controlled inputs |
-| Knowledge retrieval returns irrelevant information | Adjust relevance thresholds and improve knowledge organization |
-| Performance degradation over time | Implement caching strategies and optimize flow execution |
+3. Add an action: **Parse JSON**
+   - Content: `triggerBody()['text']['ActionParameters']`
+   - Schema:
+     ```json
+     {
+         "to": ["recipient@example.com"],
+         "cc": ["cc@example.com"],
+         "subject": "Project Update",
+         "body": "Here is the latest project update...",
+         "importance": "Normal"
+     }
+     ```
 
-## Conclusion
+4. Add an action: **Office 365 Outlook** > **Send an email**
+   - To: `to` from Parse JSON
+   - CC: `cc` from Parse JSON
+   - Subject: `subject` from Parse JSON
+   - Body: `body` from Parse JSON
+   - Importance: `importance` from Parse JSON
 
-Building an autonomous agent with Copilot Studio combines conversational AI capabilities with robust workflow automation. By following this guide, you've created an intelligent system that can operate independently while maintaining appropriate human oversight.
+5. Add a "Return value to Copilot Studio" action:
+   - Success: true
+   - EmailId: ID from the sent email
 
-Remember that autonomous agents are powerful tools that should be deployed responsibly, with proper monitoring and governance to ensure they always act in accordance with your organization's values and objectives.
+6. Save your flow
 
-## Resources for Further Learning
+### Step 4: Create Main Execution Flow
 
-- [Microsoft Copilot Studio Documentation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
-- [Power Automate Documentation](https://learn.microsoft.com/en-us/power-automate/)
-- [Microsoft AI Principles](https://www.microsoft.com/en-us/ai/responsible-ai)
-- [Azure AI Services](https://azure.microsoft.com/en-us/products/ai-services)
+1. Return to your "Autonomous Agent Handler" topic
+2. After confirming all missing information is collected, add a new Power Automate flow node
+3. Create a new flow:
+   - Name: "Execute Task Plan"
+   - Trigger: "When a topic flow calls a Power Automate flow"
+
+4. Add a "Initialize variable" action:
+   - Name: "ActionResults"
+   - Type: Array
+   - Value: `[]`
+
+5. Add an "Apply to each" action:
+   - Output from: `triggerBody()['text']['PowerAutomateResponse']['RequiredActions']`
+   - Inside the loop, add a Switch action based on "Current item" with cases for each action type
+
+6. For each case, add a "Call child flow" action to call the specific action flow
+   - Pass necessary parameters based on the action type
+
+7. Add an "Append to array variable" action:
+   - Array name: "ActionResults"
+   - Value: Result from child flow
+
+8. After the loop, add a "Return value to Copilot Studio" action:
+   - Results: ActionResults
+   - Completed: true
+
+9. Save your flow
+
+10. Return to your Copilot Studio topic and complete the execution branch:
+    - Add a message: `I've completed the requested tasks. Here's a summary:`
+    - Add a message with the results
+    - Add a final message: `Is there anything else you'd like me to help with?`
+
+## Part 6: Implementing System Messages
+
+### Step 1: Create the Agent System Message
+
+1. Go to **Settings** > **AI models**
+2. Select your Azure OpenAI connection
+3. In the System message field, enter:
+   ```
+   You are an autonomous agent assistant capable of understanding user requests and taking actions to complete tasks.
+
+   Your capabilities include:
+   1. Creating calendar events
+   2. Sending emails
+   3. Finding information
+   4. Managing tasks and to-do lists
+
+   When responding to users:
+   - Be helpful and efficient
+   - Understand the intent behind requests
+   - Break down complex tasks into manageable steps
+   - Ask for clarification when needed
+   - Explain your thinking process
+   - Confirm when tasks are completed
+   - Provide detailed summaries of actions taken
+
+   You should always:
+   - Protect user privacy and security
+   - Be transparent about your capabilities and limitations
+   - Seek permission before taking significant actions
+   - Verify understanding before proceeding
+   - Provide status updates during multi-step processes
+
+   Remember that you represent the organization and should maintain a professional, helpful demeanor at all times.
+   ```
+
+4. Click **Save**
+
+### Step 2: Configure Generative Answers
+
+1. Go to **Topics** > **Generative answers**
+2. Enable generative answers
+3. Configure settings:
+   - Response type: Balanced
+   - Include citations: Yes
+   - Generate answers using: Your Azure OpenAI connection
+4. Click **Save**
+
+## Part 7: Testing and Iterating
+
+### Step 1: Initial Testing
+
+1. Go to **Test your copilot**
+2. Enter test requests such as:
+   - "Schedule a team meeting for tomorrow at 2 PM"
+   - "Send an email to the marketing team about the project status"
+   - "Find information about our Q3 sales figures"
+
+3. Evaluate the agent's responses:
+   - Does it correctly understand the request?
+   - Does it identify the necessary actions?
+   - Does it request appropriate missing information?
+   - Does it execute the actions correctly?
+   - Are the responses clear and helpful?
+
+### Step 2: Refine the Implementation
+
+1. Analyze test results and identify areas for improvement:
+   - Update trigger phrases if the agent isn't recognizing certain requests
+   - Refine the system message to better guide the AI model
+   - Adjust the analysis prompt to improve task breakdown
+   - Enhance action flows to handle edge cases
+
+2. Add error handling:
+   - In Power Automate flows, add try/catch patterns
+   - Implement fallback options when actions fail
+   - Add user-friendly error messages
+
+3. Improve natural language understanding:
+   - Add more training examples
+   - Refine entity extraction
+   - Adjust AI model parameters if needed
+
+### Step 3: Advanced Testing
+
+1. Test complex multi-step scenarios:
+   - "Schedule a meeting with the marketing team, prepare an agenda based on last month's metrics, and send it to all participants"
+   - "Find information about our top customers, summarize their recent purchases, and create a report"
+
+2. Test edge cases and error handling:
+   - Invalid email addresses
+   - Non-existent calendar slots
+   - Insufficient permissions
+   - Ambiguous requests
+
+3. Conduct user acceptance testing with a small group of users
+
+## Part 8: Deployment and Monitoring
+
+### Step 1: Prepare for Production
+
+1. Review and finalize all topics and flows
+2. Set up environment variables for sensitive information
+3. Implement appropriate security measures:
+   - Authentication for sensitive actions
+   - Data loss prevention policies
+   - Audit logging
+
+### Step 2: Deploy to Teams
+
+1. Go to **Channels** > **Teams**
+2. Click **Set up** for Teams
+3. Configure Teams app details:
+   - **App name**: "Autonomous Agent"
+   - **Description**: "An AI assistant that can autonomously complete tasks"
+   - **App icon**: Upload an appropriate icon
+   - **Accent color**: Choose a brand-appropriate color
+
+4. Configure scope and capabilities
+5. Review and create
+6. Publish to your organization's Teams app catalog
+
+### Step 3: Set Up Monitoring
+
+1. Configure analytics:
+   - Go to **Insights**
+   - Review session metrics
+   - Set up custom event tracking for key actions
+
+2. Implement logging in Power Automate flows:
+   - Add "Create a new row" actions to log execution details to Dataverse
+   - Include success/failure status, timing, and error messages
+
+3. Create a Power BI dashboard for monitoring:
+   - Usage patterns
+   - Success rates
+   - Common user requests
+   - Error trends
+
+4. Set up alerts for critical failures
+
+## Advanced Configurations
+
+### Implementing Memory and Context
+
+1. Create a session state management system:
+   - Add a Dataverse table to store conversation context
+   - Create flows to retrieve and update context based on conversation ID
+   - Implement context injection into AI prompts
+
+2. Configure context retention:
+   - Define rules for which information to remember
+   - Implement expiration policies for sensitive information
+   - Create mechanisms for users to explicitly manage stored context
+
+### Adding Domain-Specific Knowledge
+
+1. Create a knowledge base:
+   - Go to **Knowledge**
+   - Add relevant documents and FAQs
+   - Configure knowledge retrieval settings
+
+2. Enhance the system message:
+   - Add instructions for using domain knowledge
+   - Define priorities for knowledge source selection
+   - Specify citation requirements
+
+3. Test knowledge retrieval and integration into responses
+
+### Implementing Multi-step Reasoning
+
+1. Enhance the task analysis flow:
+   - Add a "chain of thought" approach to the AI prompt
+   - Implement verification steps between actions
+   - Create feedback loops to assess action results
+
+2. Create planning and execution separation:
+   - First generate a detailed plan
+   - Have a verification step for user approval
+   - Execute with progress tracking
+   - Provide summary and reflection
+
+## Troubleshooting
+
+### Common Issues and Solutions
+
+#### AI Model Not Generating Expected Responses
+
+1. Check the system message for clarity and specificity
+2. Review temperature settings (lower for more deterministic outputs)
+3. Verify that the prompt provides clear instructions
+4. Test the model directly in Azure OpenAI Studio to isolate issues
+
+#### Power Automate Flows Failing
+
+1. Check connection credentials and permissions
+2. Verify input/output parameter mapping
+3. Review run history for specific error messages
+4. Implement better error handling and retry logic
+5. Test flows independently outside of Copilot Studio
+
+#### Agent Not Understanding User Requests
+
+1. Add more varied trigger phrases
+2. Review and refine entity extraction
+3. Test with different phrasings of the same request
+4. Implement a feedback mechanism to improve understanding over time
+
+#### Actions Not Executing Correctly
+
+1. Verify parameter formatting and mapping
+2. Check for missing required fields
+3. Review API permissions and throttling limits
+4. Implement more robust error handling
+5. Add validation steps before executing actions
+
+### Getting Support
+
+For additional help:
+
+1. Consult the [Microsoft Copilot Studio documentation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
+2. Visit the [Power Platform Community forums](https://powerusers.microsoft.com/)
+3. Review the [Azure OpenAI Service documentation](https://learn.microsoft.com/en-us/azure/ai-services/openai/)
+4. Contact Microsoft Support through the admin portal
+5. Engage with Microsoft partners specializing in AI solutions
