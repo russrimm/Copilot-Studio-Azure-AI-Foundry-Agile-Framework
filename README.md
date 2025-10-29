@@ -181,40 +181,6 @@ This framework follows a logical progression for enterprise implementation:
 - [Power Platform Community](https://powerusers.microsoft.com/) - Community support and examples
 - [Microsoft Technical Documentation](https://learn.microsoft.com/en-us/power-platform/) - Detailed technical guides
 
-## New and Noteworthy
-
-### Latest Copilot Studio Enhancements (March 2025)
-
-- **[GPT-4o Integration](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-ai-features)**: Microsoft Copilot Studio now supports GPT-4o model integration, providing improved:
-  - Faster response generation
-  - Enhanced understanding of complex queries
-  - More accurate contextual responses
-  - Better multilingual capabilities
-
-- **[Dynamic Action Chaining](https://learn.microsoft.com/en-us/microsoft-copilot-studio/action-chaining)**: 
-  - Enables Copilots to dynamically select which actions to run based on conversation context
-  - Supports more natural conversational flows
-  - Reduces the need for complex conditional logic in topic design
-  - Improves handling of complex multi-step processes
-
-- **[Teams Integration Enhancements](https://learn.microsoft.com/en-us/microsoft-copilot-studio/teams-meeting-extensibility)**:
-  - Meeting awareness capabilities for context-sensitive assistance
-  - Enhanced collaborative experiences
-  - Improved adaptive card rendering
-  - Better authentication flows in Teams environment
-
-- **[Enhanced Topic Recognition](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-topics)**:
-  - More accurate matching of user intents to topics
-  - Better handling of ambiguous requests
-  - Improved context maintenance across conversation turns
-  - Enhanced entity extraction capabilities
-
-- **[Expanded Multilingual Support](https://learn.microsoft.com/en-us/microsoft-copilot-studio/multilingual)**:
-  - Support for additional languages
-  - Improved translation quality
-  - Better handling of regional variations
-  - Enhanced multilingual content management
-
 ## Contributing to This Framework
 
 1. Fork the repository
