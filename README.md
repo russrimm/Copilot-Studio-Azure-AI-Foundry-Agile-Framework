@@ -18,7 +18,7 @@ This repository provides a comprehensive framework for implementing Microsoft Po
 
 This framework follows a logical progression for enterprise implementation:
 
-1. **Assessment & Strategy**: Begin with the [Platform Comparison Guide](./platform-comparison.md) to develop your overall strategy and use case prioritization.
+1. **Assessment & Strategy**: Begin with the [Microsoft AI Platform Decision Framework](./microsoft-ai-platform-decision-framework.md) for interactive platform selection, then use the [Platform Comparison Guide](./platform-comparison.md) to develop your overall strategy and use case prioritization.
 
 2. **Basic Implementation**: Follow the [Copilot Studio Tutorial for Beginners](./Copilot%20Studio%20Step-by-Steps/copilot-studio-tutorial.md) to build your first agent and understand core capabilities.
 
@@ -44,10 +44,16 @@ This framework follows a logical progression for enterprise implementation:
 ## Table of Contents
 
 ### 1. Getting Started
+- [Microsoft AI Platform Decision Framework](./microsoft-ai-platform-decision-framework.md) - **NEW: Interactive decision tree for choosing between Microsoft 365 Copilot, Copilot Studio, and Azure AI Foundry**
 - [Platform Comparison Guide](./platform-comparison.md) - Select the right platform for your specific use cases
 - [Quick Start Guide](./Copilot%20Studio%20Step-by-Steps/copilot-studio-tutorial.md) - Start building your first Copilot Studio agent
 
 ### 2. Platform Selection & Architecture
+- [Microsoft AI Platform Decision Framework](./microsoft-ai-platform-decision-framework.md) - **Visual decision tree with ROI, effort, and skills analysis**
+  - [Interactive Decision Tree](./microsoft-ai-platform-decision-framework.md#visual-decision-tree) - Step-by-step platform selection guidance
+  - [Implementation Effort Comparison](./microsoft-ai-platform-decision-framework.md#key-decision-factors-comparison) - Effort, timeline, and skills requirements
+  - [Cost Analysis & ROI Expectations](./microsoft-ai-platform-decision-framework.md#cost-considerations-monthly-estimates) - Budget planning and ROI timelines
+  - [Multiple Platform Overlap Scenarios](./microsoft-ai-platform-decision-framework.md#multiple-platform-overlap-scenarios) - When multiple options work
 - [Platform Comparison Guide](./platform-comparison.md)
   - [Platform Capabilities & Limitations](./platform-comparison.md#capabilities)
   - [Use Case Recommendations](./platform-comparison.md#use-case-recommendations)
@@ -60,6 +66,11 @@ This framework follows a logical progression for enterprise implementation:
   - [Cost Management Strategies](./azure-foundry-openai-copilot-studio-integration/azure-openai-copilot-integration.md#cost-management)
 
 ### 3. Assessment & Strategy Resources
+- **[Microsoft AI Platform Decision Framework](./microsoft-ai-platform-decision-framework.md) - Complete decision guidance with visual flowchart**
+  - [ROI Timeline Analysis](./microsoft-ai-platform-decision-framework.md#roi-timeline-expectations) - Time to value and break-even analysis
+  - [Skills & Resource Requirements](./microsoft-ai-platform-decision-framework.md#required-skills--resources) - Team capability assessment
+  - [Cost Planning & Budget Estimation](./microsoft-ai-platform-decision-framework.md#cost-considerations-monthly-estimates) - Comprehensive cost analysis
+  - [Risk Mitigation Strategies](./microsoft-ai-platform-decision-framework.md#risk-mitigation-strategies) - Implementation risk management
 - [Business Value Assessment](./platform-comparison.md#use-case-recommendations)
   - [Case Studies by Industry](./Copilot%20Studio%20Use%20Cases/copilot-studio-use-cases.md#industry)
 - [Technology Readiness Assessment](./platform-comparison.md#technical-requirements)
@@ -171,6 +182,7 @@ This framework follows a logical progression for enterprise implementation:
   - [Evaluation Framework](./Copilot%20Studio%20Step-by-Steps/copilot-studio-tutorial.md#phase-8-evaluation-and-next-steps)
 
 ### 8. Additional Resources
+- **[Microsoft AI Platform Decision Framework](./microsoft-ai-platform-decision-framework.md) - Platform selection guidance and decision tree**
 - [Microsoft Copilot Studio Documentation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) - Official reference guide
 - [Exploring Copilot Studio Governance](./security-compliance-governance/Exploring%20Copilot%20Studio%20Governance_English.pdf) - Comprehensive governance framework
 - [Microsoft Learn Resources](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) - Official Microsoft training
