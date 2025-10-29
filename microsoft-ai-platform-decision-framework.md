@@ -15,6 +15,24 @@ The decision process evaluates six primary Microsoft AI platforms:
 ## Visual Decision Tree
 
 ```mermaid
+%%{init: { 'theme': 'default', 'themeVariables': {
+    'background': '#ffffff',
+    'fontFamily': 'Segoe UI, Arial, sans-serif',
+    'fontSize': '16px',
+    'primaryColor': '#222222',
+    'edgeLabelBackground':'#ffffff',
+    'nodeTextColor': '#222222',
+    'textColor': '#222222',
+    'clusterBkg': '#f5f5f5',
+    'clusterBorder': '#cccccc',
+    'darkModeBackground': '#222222',
+    'darkModeTextColor': '#ffffff',
+    'darkModeNodeTextColor': '#ffffff',
+    'darkModePrimaryColor': '#ffffff',
+    'darkModeEdgeLabelBackground': '#222222',
+    'darkModeClusterBkg': '#333333',
+    'darkModeClusterBorder': '#888888'
+} } }%%
 flowchart TD
     Start([Start: AI Platform Selection]) --> LicenseCheck{Current Microsoft\nLicensing?}
     
