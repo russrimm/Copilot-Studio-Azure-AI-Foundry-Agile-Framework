@@ -107,7 +107,7 @@ flowchart TD
 
 **Note**: GitHub Copilot can be utilized to supplement all development efforts across these platforms, accelerating code generation, debugging, and best practice implementation regardless of skill level.
 
-### Cost Considerations (Per-License Pricing)
+### Cost Considerations
 | Platform | Primary Licensing Model | Per-User Cost | Credit/Usage Model | Key Cost Factors |
 |----------|------------------------|---------------|-------------------|------------------|
 | **Microsoft 365 Copilot** | User-based subscription | $30/user/month | N/A | Requires M365 E3/E5 base license |
