@@ -105,36 +105,24 @@ This guide helps organizations select the appropriate Microsoft AI and Power Pla
   - Event-driven architectures
   - Security and governance integration
 
-### Power Platform
-- **Process automation**: Streamline business processes through automated workflows and reduced manual intervention.
-  - Trigger-based automation
-  - Condition-based routing
-  - System integration capabilities
-  - Error handling and exception management
-  
-- **App development**: Create custom applications to address specific business needs using low-code tools.
-  - Responsive design capabilities
-  - Form and data collection tools
-  - Business logic implementation
-  - Integration with data sources
-  
-- **Data visualization**: Transform complex data into actionable insights through interactive dashboards and reports.
-  - Interactive dashboard creation
-  - Real-time data monitoring
-  - Self-service analytics
-  - Embedded reporting capabilities
-  
-- **Workflow management**: Design and implement business processes with sophisticated logic and integration.
-  - Approval workflows
-  - Multi-step processes
-  - Parallel processing capabilities
-  - Process monitoring and analytics
-  
-- **Business intelligence**: Convert data into business insights that drive decision-making and strategic planning.
-  - Data modeling capabilities
-  - Advanced analytics functions
-  - Natural language query
-  - Data storytelling tools
+
+### Microsoft 365 Copilot
+- **Embedded AI in productivity apps**: AI-powered assistance directly within Word, Excel, Outlook, Teams, and PowerPoint.
+  - Content generation, summarization, and rewriting
+  - Data analysis and visualization in Excel
+  - Email drafting, scheduling, and triage in Outlook
+  - Meeting recap, action item extraction, and chat summarization in Teams
+  - Presentation creation and design in PowerPoint
+- **Natural language interface**: Use conversational prompts to automate tasks, retrieve information, and generate content.
+  - Context-aware suggestions and actions
+  - Integration with Microsoft Graph for organizational data
+- **Enterprise security and compliance**: Inherits Microsoft 365’s security, privacy, and compliance controls.
+  - Data residency, DLP, audit logging, and compliance certifications
+- **Extensibility**: Supports custom plugins, connectors, and knowledge sources for tailored scenarios.
+  - No-code/low-code extensibility for business users
+  - Integration with Copilot Studio for advanced workflows
+- **Rapid adoption**: Minimal setup for organizations already using Microsoft 365.
+  - Leverages existing licensing and infrastructure
 
 ## Platform Selection Strategy
 
@@ -332,30 +320,27 @@ For organizations that need both custom AI capabilities and conversational inter
   - Centralized AI governance
   - Organization-wide AI enablement
 
-### Power Platform Best For
-- **Business process automation**: Streamline operations through automated workflows.
-  - Approval processes
-  - Document generation and routing
-  - System integration workflows
-  - Exception handling and escalation
 
-- **Custom applications**: Develop tailored solutions for specific business requirements.
-  - Line-of-business applications
-  - Field service solutions
-  - Customer engagement portals
-  - Employee self-service tools
+### Microsoft 365 Copilot Best For
+- **Productivity enhancement**: Empower users to work smarter and faster within familiar Microsoft 365 apps.
+  - Automated content creation and editing
+  - Data analysis and visualization in Excel
+  - Email and calendar management in Outlook
+  - Meeting and collaboration support in Teams
+  - Presentation design in PowerPoint
 
-- **Data visualization**: Transform complex data into actionable insights.
-  - Executive dashboards
-  - Operational reporting
-  - KPI tracking
-  - Interactive data exploration
+- **Knowledge management**: Surface and summarize organizational knowledge directly in productivity tools.
+  - Document discovery and summarization
+  - Contextual information delivery
+  - Knowledge base integration
 
-- **Workflow management**: Design and implement complex business processes.
-  - Multi-step approval flows
-  - Conditional process branching
-  - Cross-system orchestration
-  - Status tracking and reporting
+- **Workflow automation**: Automate routine tasks and processes using natural language prompts.
+  - Task automation within apps
+  - Integration with Copilot Studio for advanced workflows
+
+- **Rapid deployment**: Deliver immediate value with minimal IT overhead.
+  - Leverage existing Microsoft 365 infrastructure
+  - Minimal setup for end users
 
 ## Integration Strategies
 
@@ -409,30 +394,25 @@ For organizations that need both custom AI capabilities and conversational inter
   - Mainframe data access
   - Industry-specific systems
 
-### Power Platform Integration
-- **Microsoft 365**: Deep integration with productivity and collaboration tools.
-  - Outlook workflow automation
-  - Teams process integration
-  - SharePoint form processing
-  - OneDrive file handling
 
-- **Dynamics 365**: Extend CRM and ERP capabilities with custom functionality.
-  - Custom entity processing
-  - Enhanced business logic
-  - Extended user interfaces
-  - Specialized reporting
+### Microsoft 365 Copilot Integration
+- **Microsoft 365 apps**: Native integration with Word, Excel, Outlook, Teams, and PowerPoint.
+  - Content and data automation within each app
+  - Meeting and collaboration support in Teams
+  - Email and calendar management in Outlook
+  - Document summarization and insights in Word and Excel
 
-- **Custom connectors**: Connect to virtually any system with custom connector development.
-  - Legacy system integration
-  - Third-party SaaS connections
-  - Industry-specific solutions
-  - Proprietary system access
+- **Copilot Studio**: Extend Copilot with custom conversational workflows and integrations.
+  - Advanced workflow automation
+  - Custom knowledge and data source integration
 
-- **Enterprise systems**: Link core business processes across organizational boundaries.
-  - Cross-departmental workflows
-  - System-to-system orchestration
-  - End-to-end process automation
-  - Multi-system data synchronization
+- **SharePoint and OneDrive**: Access and summarize organizational documents and knowledge.
+  - Document search and retrieval
+  - Knowledge base integration
+
+- **Enterprise systems**: Integrate with business applications via connectors and plugins.
+  - Data retrieval and updates
+  - Task automation across systems
 
 ## Technical Requirements
 
@@ -486,30 +466,26 @@ For organizations that need both custom AI capabilities and conversational inter
   - Security assessment processes
   - Threat modeling implementation
 
-### Power Platform
-- **Microsoft 365 license**: Appropriate licensing for Power Platform access and usage.
-  - Power Apps per-user/per-app licenses
-  - Power Automate licenses
-  - Power BI licenses
-  - Environment capacity allocation
 
-- **Power Platform environment**: Properly configured environment structure for development lifecycle.
-  - Environment strategy
-  - Data policies
-  - Admin configuration
-  - Capacity management
+### Microsoft 365 Copilot
+- **Microsoft 365 license**: Appropriate licensing for Copilot features and extensibility.
+  - Microsoft 365 E3/E5 with Copilot add-ons
+  - Copilot Studio licensing for advanced workflows
+  - Session-based consumption options
 
-- **Network connectivity**: Network access for cloud and on-premises resources.
-  - On-premises data gateway
-  - API connectivity
-  - Connection security
-  - Firewall configuration
+- **Microsoft 365 environment**: Properly configured tenant and app access.
+  - User and group management
+  - Security and compliance configuration
+  - Data policies and access controls
 
-- **Security compliance**: Implementation of security controls and governance.
-  - Center of Excellence Toolkit
-  - DLP policies
-  - Access control configuration
-  - Audit and monitoring setup
+- **Network connectivity**: Internet access for Microsoft 365 cloud services.
+  - Firewall and proxy configuration
+  - Secure access to cloud resources
+
+- **Security compliance**: Adherence to organizational and regulatory standards.
+  - Data residency and compliance certifications
+  - DLP and audit logging
+  - Access control and monitoring
 
 ## Case Studies: Platform Selection Examples
 
