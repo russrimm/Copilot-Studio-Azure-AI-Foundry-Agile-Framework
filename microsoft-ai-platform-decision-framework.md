@@ -96,6 +96,7 @@ flowchart TD
     class AzureFull,AzureEasy complexOption
     class EAPath,PayGPath,M365OnlyPath infoOption
 ```
+| Platform | User Type | Authoring Model | Code Level |
 |----------|------------------|---------------------|-------------------|
 | **Microsoft 365 Copilot** | 🟢 End-user training only | 🟢 Configuration-based | 🟢 Low-Code |
 | **Copilot Studio lite** | 🟢 Information workers | 🟢 Natural language authoring | 🟢 Low-Code |
