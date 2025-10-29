@@ -25,13 +25,15 @@ The decision process evaluates six primary Microsoft AI platforms:
     'textColor': '#222222',
     'clusterBkg': '#f5f5f5',
     'clusterBorder': '#cccccc',
+    'lineColor': '#cccccc',
     'darkModeBackground': '#222222',
     'darkModeTextColor': '#ffffff',
     'darkModeNodeTextColor': '#ffffff',
     'darkModePrimaryColor': '#ffffff',
     'darkModeEdgeLabelBackground': '#222222',
     'darkModeClusterBkg': '#333333',
-    'darkModeClusterBorder': '#888888'
+    'darkModeClusterBorder': '#cccccc',
+    'darkModeLineColor': '#cccccc'
 } } }%%
 flowchart TD
     Start([Start: AI Platform Selection]) --> LicenseCheck{Current Microsoft\nLicensing?}
