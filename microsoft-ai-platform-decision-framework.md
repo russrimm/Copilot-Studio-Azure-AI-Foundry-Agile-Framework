@@ -204,7 +204,7 @@ Copilot Studio (full) provides native OAuth2 support for secure third-party data
 | **Microsoft 365 Copilot** | ✅ OS-agnostic (cloud) | 🟢 None - fully managed | 🟢 Not required |
 | **Copilot Studio lite** | ✅ OS-agnostic (cloud) | 🟢 None - M365 integrated | 🟢 Not required |
 | **Copilot Studio full** | ✅ OS-agnostic (cloud) | 🟢 Minimal - Power Platform | 🟡 Optional for large data |
-| **Azure AI Foundry** | ✅ Linux/Windows support | 🔴 Significant - full Azure stack | ✅ Often required |
+| **Azure AI Foundry** | ✅ Linux/Windows support | 🔴 Most - full Azure stack | ✅ Often required |
 | **AI Builder** | ✅ OS-agnostic (cloud) | 🟢 None - fully managed | 🟢 Not required |
 | **Power Platform** | ✅ OS-agnostic (cloud) | 🟡 Data gateway for on-prem | 🟡 Dataverse as alternative |
 
