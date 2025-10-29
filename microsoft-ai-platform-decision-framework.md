@@ -136,15 +136,6 @@ flowchart TD
 - **Choose Pay-as-You-Go** for: Variable usage patterns, departmental budgets, flexible scaling needs
 - **Choose Hybrid** for: Mixed usage patterns, some predictable workloads
 
-#### Existing License Optimization Opportunities
-
-| Current License State | M365 Copilot Path | Copilot Studio Path | Azure AI Foundry Path |
-|----------------------|-------------------|-------------------|---------------------|
-| **M365 E5 + Azure EA** | ✅ Optimal - Included | ✅ Good - Use EA credits | ✅ Excellent - Full EA benefits |
-| **M365 E3 + Azure EA** | 🟡 Upgrade to E5 needed | ✅ Good - Use EA credits | ✅ Excellent - Full EA benefits |
-| **M365 E5 + Pay-per-use** | ✅ Optimal - No Azure needed | 🟡 Direct Azure billing | 🟡 Direct Azure billing |
-| **M365 E3 + Pay-per-use** | 🟡 Requires E5 upgrade | 🟡 Direct Azure billing | 🟡 Direct Azure billing|
-
 ### Data Source Integration Analysis
 
 #### Microsoft Data Sources - Pros & Cons
