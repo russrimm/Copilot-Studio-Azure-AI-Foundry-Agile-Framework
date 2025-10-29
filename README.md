@@ -4,15 +4,7 @@ This repository provides a comprehensive framework for implementing Microsoft Po
 
 ## Latest Updates and Announcements
 
-> **What's New in Microsoft Copilot Studio** (March 2025)
->
-> - **[Use generative actions](https://learn.microsoft.com/en-us/power-platform/release-plan/2024wave2/microsoft-copilot-studio/use-generative-actions-now-generally)**: Enhanced action chaining capabilities now support dynamic action selection based on conversational context.
-> - **[Use Azure OpenAI on your data for generative answers](https://learn.microsoft.com/en-us/power-platform/release-plan/2024wave2/microsoft-copilot-studio/use-azure-openai-data-generative-answers)**: Integration with Microsoft's latest GPT-4o model for faster, more accurate generative responses.
-> - **[Create Copilot agents in Microsoft 365 Business Chat and Teams](https://learn.microsoft.com/en-us/power-platform/release-plan/2024wave2/microsoft-copilot-studio/create-copilot-agents-365-business-chat-teams)**: New Teams capabilities including meeting context awareness and collaborative copilot experiences.
-> - **[Enhanced Topic Recognition](https://learn.microsoft.com/en-us/power-platform/release-plan/2024wave2/microsoft-copilot-studio/analyze-knowledge-source-usage-custom-agents)**: Improved natural language understanding for more accurate topic matching and intent detection.
-> - **[Enable Copilot with real-time knowledge from non-Microsoft services](https://learn.microsoft.com/en-us/power-platform/release-plan/2024wave2/microsoft-copilot-studio/enable-copilot-real-time-knowledge-non-microsoft-services)**: Additional language support and improved translation quality for global deployments.
->
-> [View all recent updates on Microsoft Learn](https://learn.microsoft.com/en-us/power-platform/release-plan/2024wave2/microsoft-copilot-studio/planned-features)
+Visit https://www.mspulse360.app
 
 ## Implementation Roadmap
 
