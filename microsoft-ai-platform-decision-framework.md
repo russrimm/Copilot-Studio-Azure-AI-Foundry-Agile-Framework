@@ -485,11 +485,6 @@ graph LR
     D --> G[Trigger Workflow]
 ```
 
-**Best Practices**:
-- Use Power Automate HTTP triggers for external system integration
-- Implement retry logic for AI Builder processing failures
-- Store results in Dataverse for audit trail
-- Use response templates for consistent webhook responses
 
 #### Azure AI Foundry Integration Patterns
 ```mermaid
@@ -520,11 +515,11 @@ graph TD
 #### Document Processing Tasks
 | Task Type | Volume | Complexity | AI Builder | Azure AI Foundry | Integration Method |
 |-----------|--------|------------|------------|------------------|-------------------|
-| **Invoice Processing** | <1K/month | Standard formats | ✅ Optimal | 🟡 Overkill | Power Automate |
+| **Invoice Processing** | <1K/month | Standard formats | ✅ Optimal | 🟡 Increased Control | Power Automate |
 | **Contract Analysis** | <500/month | Legal documents | 🔴 Insufficient | ✅ Required | Logic Apps + Custom model |
 | **Form Data Extraction** | 1K-10K/month | Mixed formats | 🟡 Limited | ✅ Preferred | Azure Functions |
-| **Receipt Processing** | <5K/month | Standard receipts | ✅ Excellent | 🟡 Overkill | Power Automate |
-| **Custom Form Types** | Variable | Unique layouts | 🔴 Not supported | ✅ Required | Custom API integration |
+| **Receipt Processing** | <5K/month | Standard receipts | ✅ Optimal | 🟡 Increased Control | Power Automate |
+| **Custom Form Types** | Variable | Unique layouts | ✅ Optimal | ✅ Required | Custom API integration |
 
 
 ## Copilot Studio Experience Governance & Management
@@ -641,7 +636,6 @@ Based on Microsoft's official guidance, choose declarative agents for:
 **Real-time Customer Support with System Integrations**: Build agents that seamlessly integrate with plugins for external systems to provide real-time updates while maintaining the familiar Microsoft 365 Copilot interface.
 
 **Characteristics**: 
-- Target audience: Individuals or small teams
 - Agent type: Lightweight declarative agents with organizational knowledge and optional plugin integration
 - Infrastructure: Same scalable infrastructure as Microsoft 365 Copilot
 - Management: Primarily through Microsoft 365 admin center
@@ -649,7 +643,6 @@ Based on Microsoft's official guidance, choose declarative agents for:
 - Validation: Must pass Responsible AI (RAI) validation checksnternal knowledge bases, respecting existing Microsoft 365 permissions.
 
 **Characteristics**: 
-- Target audience: Individuals or small teams
 - Agent type: Lightweight Q&A agents with organizational knowledge
 - Management: Primarily through Microsoft 365 admin center
 - User type: Information workers using natural language authoring
