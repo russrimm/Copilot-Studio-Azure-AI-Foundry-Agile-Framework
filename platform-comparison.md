@@ -25,6 +25,24 @@ This guide helps organizations select the appropriate Microsoft AI and Power Pla
 
 ## Capabilities Comparison
 
+### Microsoft 365 Copilot
+- **Embedded AI in productivity apps**: AI-powered assistance directly within Word, Excel, Outlook, Teams, and PowerPoint.
+  - Content generation, summarization, and rewriting
+  - Data analysis and visualization in Excel
+  - Email drafting, scheduling, and triage in Outlook
+  - Meeting recap, action item extraction, and chat summarization in Teams
+  - Presentation creation and design in PowerPoint
+- **Natural language interface**: Use conversational prompts to automate tasks, retrieve information, and generate content.
+  - Context-aware suggestions and actions
+  - Integration with Microsoft Graph for organizational data
+- **Enterprise security and compliance**: Inherits Microsoft 365’s security, privacy, and compliance controls.
+  - Data residency, DLP, audit logging, and compliance certifications
+- **Extensibility**: Supports custom plugins, connectors, and knowledge sources for tailored scenarios.
+  - No-code/low-code extensibility for business users
+  - Integration with Copilot Studio and Power Platform for advanced workflows
+- **Rapid adoption**: Minimal setup for organizations already using Microsoft 365.
+  - Leverages existing licensing and infrastructure
+
 ### Copilot Studio
 - **Natural language processing**: Advanced conversational capabilities that understand user intent, extract entities, and maintain context throughout interactions.
   - Intent recognition with machine learning
