@@ -125,10 +125,10 @@ flowchart TD
 
 | Factor | Enterprise Agreement (EA) | Pay-as-You-Go | Hybrid Approach |
 |--------|---------------------------|----------------|-----------------|
-| **Cost Predictability** | 🟢 Fixed annual commitment | � Variable monthly costs | 🟡 Mixed predictability |
-| **Azure Credits** | 🟢 Bulk credits available | � Individual subscription billing | 🟡 Strategic credit allocation |
-| **Billing Complexity** | 🟢 Centralized true-up | 🟡 Direct Azure billing | � Multiple billing streams |
-| **Cost Optimization** | 🟢 Reserved instance discounts | � On-demand pricing | 🟡 Selective optimization |
+| **Cost Predictability** | 🟢 Fixed annual commitment | ✅ Variable monthly costs | 🟡 Mixed predictability |
+| **Azure Credits** | 🟢 Bulk credits available | ✅ Individual subscription billing | 🟡 Strategic credit allocation |
+| **Billing Complexity** | 🟢 Centralized true-up | 🟡 Direct Azure billing | ✅ Multiple billing streams |
+| **Cost Optimization** | 🟢 Reserved instance discounts | ✅ On-demand pricing | 🟡 Selective optimization |
 | **Budget Control** | 🟡 Annual commitment structure | 🟢 Direct usage control | 🟢 Flexible allocation |
 
 **Recommendation Matrix**:
@@ -142,9 +142,8 @@ flowchart TD
 |----------------------|-------------------|-------------------|---------------------|
 | **M365 E5 + Azure EA** | ✅ Optimal - Included | ✅ Good - Use EA credits | ✅ Excellent - Full EA benefits |
 | **M365 E3 + Azure EA** | 🟡 Upgrade to E5 needed | ✅ Good - Use EA credits | ✅ Excellent - Full EA benefits |
-| **M365 E5 + Pay-per-use** | ✅ Optimal - No Azure needed | 🟡 Direct Azure billing | � Direct Azure billing |
-| **M365 E3 + Pay-per-use** | � Requires E5 upgrade | 🟡 Direct Azure billing | � Direct Azure billing |
-| **Office 365 + No Azure** | � License upgrade required | � New Azure + Power Platform | � Complete new platform investment |
+| **M365 E5 + Pay-per-use** | ✅ Optimal - No Azure needed | 🟡 Direct Azure billing | 🟡 Direct Azure billing |
+| **M365 E3 + Pay-per-use** | 🟡 Requires E5 upgrade | 🟡 Direct Azure billing | 🟡 Direct Azure billing|
 
 ### Data Source Integration Analysis
 
