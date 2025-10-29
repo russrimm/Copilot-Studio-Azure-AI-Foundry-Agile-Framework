@@ -155,8 +155,6 @@ flowchart TD
 |---------------------|----------------------|-------------------|-------------------|-------------------|
 | **SaaS Applications** | 🟡 API connectors needed | 🟡 Connector licensing | � Multi-tenant security considerations | Copilot Studio + Power Platform |
 | **On-Premises Databases** | � Gateway infrastructure | � Infrastructure + licensing requirements | � Network security setup | Azure AI Foundry preferred |
-| **Cloud Databases (AWS/GCP)** | � Cross-cloud integration | � Data egress + compute usage | � Multi-cloud security | Azure AI Foundry with data lake |
-| **File Systems/FTP** | 🟡 Custom connector development | 🟡 Development effort | � Legacy security models | Power Platform with custom connectors |
 | **REST APIs** | 🟢 Standard HTTP connectors | 🟢 Usage-based pricing | 🟡 API authentication | All platforms support well |
 | **OAuth2 Protected APIs** | 🟡 Custom connector development | 🟡 Development + OAuth setup | 🟢 OAuth2 security standards | Copilot Studio full with OAuth2 connectors |
 | **Legacy Systems (SOAP/EDI)** | � Complex integration layer | � Development requirements | � Legacy security considerations | Azure AI Foundry + integration layer |
