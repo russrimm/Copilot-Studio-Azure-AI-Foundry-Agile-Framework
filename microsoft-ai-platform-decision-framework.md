@@ -4,13 +4,12 @@ This visual decision framework helps organizations choose the right Microsoft AI
 
 ## Decision Framework Overview
 
-The decision process evaluates six primary Microsoft AI platforms:
+The decision process evaluates five primary Microsoft AI platforms:
 - **Microsoft 365 Copilot**: AI embedded in productivity applications for enhanced user workflows
 - **Copilot Studio (lite)**: Lightweight declarative agents built within Microsoft 365 Copilot for individuals and small teams using natural language authoring. These agents use the same scalable infrastructure as Microsoft 365 Copilot but are scoped to meet specific business needs
 - **Copilot Studio (full)**: Comprehensive conversational AI platform for custom agents with complex workflows, multi-step logic, and enterprise governance
 - **Azure AI Foundry**: Advanced AI development platform with comprehensive AI services (Document Intelligence, Vision, Speech, Language, Custom Models)
 - **Microsoft AI Builder**: No-code AI capabilities integrated with Power Platform for business process automation
-- **Power Platform**: Business process automation and app development with integrated AI Builder capabilities
 
 ## Visual Decision Tree
 
@@ -123,7 +122,7 @@ flowchart TD
 
 | Factor | Enterprise Agreement (EA) | Pay-as-You-Go | Hybrid Approach |
 |--------|---------------------------|----------------|-----------------|
-| **Cost Predictability** | 🟢 Fixed annual commitment | ✅ Variable monthly costs | 🟡 Mixed predictability |
+| **Cost Predictability** | 🟢 Fixed annual commitment | 🟡 Variable monthly costs | 🟡 Mixed predictability |
 | **Azure Credits** | 🟢 Bulk credits available | ✅ Individual subscription billing | 🟡 Strategic credit allocation |
 | **Billing Complexity** | 🟢 Centralized true-up | 🟡 Direct Azure billing | ✅ Multiple billing streams |
 | **Cost Optimization** | 🟢 Reserved instance discounts | ✅ On-demand pricing | 🟡 Selective optimization |
