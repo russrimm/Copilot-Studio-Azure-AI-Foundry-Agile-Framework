@@ -175,15 +175,15 @@ Copilot Studio (full) provides native OAuth2 support for secure third-party data
 
 #### Security Model Comparison
 
-| Security Aspect | Microsoft 365 Copilot | Copilot Studio lite | Copilot Studio full | Azure AI Foundry | AI Builder | Power Platform |
-|-----------------|----------------------|---------------------|---------------------|------------------|-------------|----------------|
-| **Data Residency** | 🟢 M365 tenant region | 🟢 M365 tenant region | 🟡 Power Platform region | ✅ Full Azure control | 🟡 Power Platform region | 🟡 Power Platform region |
-| **Compliance Certifications** | ✅ Inherits M365 compliance | ✅ Inherits M365 compliance | 🟢 Power Platform compliance | ✅ Full Azure compliance | 🟢 Power Platform compliance | 🟢 Power Platform compliance |
-| **Data Loss Prevention** | ✅ Native M365 DLP | ✅ Native M365 DLP | 🟢 Power Platform DLP | 🟡 Custom implementation | 🟢 Power Platform DLP | 🟢 Power Platform DLP |
-| **Identity Management** | ✅ Native Entra ID | ✅ Native Entra ID | ✅ Native Entra ID | ✅ Native Entra ID | ✅ Native Entra ID | ✅ Native Entra ID |
-| **Network Security** | 🟢 M365 network controls | 🟢 M365 network controls | 🟡 Limited network control | ✅ Full Azure networking | 🟡 Limited network control | 🟡 Limited network control |
-| **Audit Logging** | ✅ Microsoft Purview audit logs | ✅ Microsoft Purview audit logs | 🟢 Power Platform + Purview | ✅ Azure monitoring + Purview | 🟢 Power Platform + Purview | 🟢 Power Platform + Purview |
-| **Data Processing Location** | 🟢 M365 data centers | 🟢 M365 data centers | 🟡 Power Platform regions | ✅ Configurable regions | 🟡 Power Platform regions | 🟡 Power Platform regions |
+| Security Aspect | Microsoft 365 Copilot | Copilot Studio lite | Copilot Studio full | Azure AI Foundry | AI Builder |
+|-----------------|----------------------|---------------------|---------------------|------------------|-------------|
+| **Data Residency** | 🟢 M365 tenant region | 🟢 M365 tenant region | 🟡 Power Platform region | ✅ Full Azure control | 🟡 Power Platform region |
+| **Compliance Certifications** | ✅ Inherits M365 compliance | ✅ Inherits M365 compliance | 🟢 Power Platform compliance | ✅ Full Azure compliance | 🟢 Power Platform compliance |
+| **Data Loss Prevention** | ✅ Native M365 DLP | ✅ Native M365 DLP | 🟢 Power Platform DLP | 🟡 Custom implementation | 🟢 Power Platform DLP |
+| **Identity Management** | ✅ Native Entra ID | ✅ Native Entra ID | ✅ Native Entra ID | ✅ Native Entra ID | ✅ Native Entra ID |
+| **Network Security** | 🟢 M365 network controls | 🟢 M365 network controls | 🟡 Limited network control | ✅ Full Azure networking | 🟡 Limited network control |
+| **Audit Logging** | ✅ Microsoft Purview audit logs | ✅ Microsoft Purview audit logs | 🟢 Power Platform + Purview | ✅ Azure monitoring + Purview | 🟢 Power Platform + Purview |
+| **Data Processing Location** | 🟢 M365 data centers | 🟢 M365 data centers | 🟡 Power Platform regions | ✅ Configurable regions | 🟡 Power Platform regions |
 
 #### Data Sensitivity Decision Matrix
 
