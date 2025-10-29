@@ -36,161 +36,66 @@ The decision process evaluates six primary Microsoft AI platforms:
     'darkModeLineColor': '#cccccc'
 } } }%%
 flowchart TD
-    Start([Start: AI Platform Selection]) --> LicenseCheck{Current Microsoft\nLicensing?}
-    
-    LicenseCheck -->|Enterprise Agreement\nwith Azure Credits| EAPath[EA Optimization Path\n💰 Leverage existing credits\n📊 Centralized billing]
-    LicenseCheck -->|Individual Subscriptions\nPay-as-you-go| PayGPath[Pay-per-use Path\n💰 Direct Azure billing\n📊 Usage-based costs]
-    LicenseCheck -->|M365 E3/E5 Only| M365OnlyPath[M365 Licensing Path\n💰 Upgrade considerations\n📊 Per-user licensing]
-    
-    EAPath --> DataSensitivity{Data Sensitivity\nRequirements?}
+    Start([Start: AI Platform Selection]) --> LicenseCheck{Current Microsoft Licensing?}
+    LicenseCheck -->|Enterprise Agreement with Azure Credits| EAPath[EA Optimization Path Leverage existing credits Centralized billing]
+    LicenseCheck -->|Individual Subscriptions Pay-as-you-go| PayGPath[Pay-per-use Path Direct Azure billing]
+    LicenseCheck -->|M365 E3/E5 Only| M365OnlyPath[M365 Licensing Path Upgrade considerations Per-user licensing]
+
+    EAPath --> DataSensitivity{Data Sensitivity Requirements?}
     PayGPath --> DataSensitivity
     M365OnlyPath --> DataSensitivity
-    
-    DataSensitivity -->|Highly Sensitive\nCompliance Required| SecurePath{Existing Security\nInfrastructure?}
-    DataSensitivity -->|Standard Business\nData| StandardPath{Primary Data\nSources?}
-    
-    SecurePath -->|Advanced Security\nImplemented| Q1{Primary Goal?}
-    SecurePath -->|Basic Security\nSetup Needed| SecurityGap[Security Enhancement Required\n🔐 Additional compliance costs\n⏱️ 2-4 month security setup]
-    
-    StandardPath -->|Mostly Microsoft\nData Sources| MSDataPath{M365 Integration\nFriction Tolerance?}
-    StandardPath -->|Mixed Microsoft\n& External Data| MixedDataPath{Integration\nComplexity Budget?}
-    StandardPath -->|Primarily External\nData Sources| ExternalDataPath{Data Lake\nInfrastructure?}
-    
-    MSDataPath -->|Low Friction\nPreferred| Q1
-    MSDataPath -->|Custom Control\nNeeded| Q1
-    
-    MixedDataPath -->|High Budget\nComplex Integration| Q1
-    MixedDataPath -->|Limited Budget\nSimple Integration| Q1
-    
-    ExternalDataPath -->|Existing Data Lake\n& Infrastructure| Q1
-    ExternalDataPath -->|Need Data Lake\nInfrastructure| InfraGap[Infrastructure Gap\n🏗️ Data lake setup required\n💰 $50K-200K additional cost]
-    
+    DataSensitivity -->|Highly Sensitive Compliance Required| SecurePath{Existing Security Infrastructure?}
+    DataSensitivity -->|Standard Business Data| StandardPath{Primary Data Sources?}
+    SecurePath -->|Advanced Security Implemented| Q1{Primary Goal?}
+    SecurePath -->|Basic Security Setup Needed| SecurityGap[Security Enhancement Required Additional compliance costs 2-4 month security setup]
+    StandardPath -->|Mostly Microsoft Data Sources| MSDataPath{M365 Integration Friction Tolerance?}
+    StandardPath -->|Mixed Microsoft & External Data| MixedDataPath{Integration Complexity Budget?}
+    StandardPath -->|Primarily External Data Sources| ExternalDataPath{Data Lake Infrastructure?}
+    MSDataPath -->|Low Friction Preferred| Q1
+    MSDataPath -->|Custom Control Needed| Q1
+    MixedDataPath -->|High Budget Complex Integration| Q1
+    MixedDataPath -->|Limited Budget Simple Integration| Q1
+    ExternalDataPath -->|Existing Data Lake & Infrastructure| Q1
+    ExternalDataPath -->|Need Data Lake Infrastructure| InfraGap[Infrastructure Gap\nData lake setup required]
     SecurityGap --> Q1
     InfraGap --> Q1
-    
+
     Q1{Primary Goal?}
-    
-    Q1 -->|Enhance Productivity\nin M365 Apps| M365Path{Current M365\nLicense Level?}
-    Q1 -->|Build Custom\nConversational AI| ConvPath{In-house Skills\nAssessment?}
-    Q1 -->|Advanced AI/ML\nDevelopment| AIPath{Python & Data Science\nExpertise?}
-    Q1 -->|Business Process\nAutomation| PowerPath{Power Platform &\nDataverse Knowledge?}
-    Q1 -->|Document Processing\n& Form Recognition| AIBuilderPath{Structured vs\nUnstructured Data?}
-    
+    Q1 -->|Enhance Productivity in M365 Apps| M365Path{Current M365 License Level?}
+    Q1 -->|Build Custom Conversational AI| ConvPath{In-house Skills Assessment?}
+    Q1 -->|Advanced AI/ML Development| AIPath{Python & Data Science Expertise?}
+
     %% Microsoft 365 Copilot Path
-    M365Path -->|E3/E5 License| M365Ready[Microsoft 365 Copilot\n🟢 Low Effort\n🟢 Quick ROI: 2-4 weeks\n🟢 No Dev Skills\n💰 $30/user/month]
-    M365Path -->|Basic License| M365Upgrade{Upgrade\nBudget Available?}
+    M365Path -->|Basic License| M365Upgrade{Upgrade Budget Available?}
+    M365Path -->|E3/E5 License| M365Ready[Microsoft 365 Copilot Low Effort Quick ROI: 2-4 weeks No Dev Skills $30/user/month]
     M365Upgrade -->|Yes| M365Ready
     M365Upgrade -->|No| ConvAlt[Consider Copilot Studio lite for lightweight agents]
-    
-    %% Conversational AI Path
-    ConvPath -->|Strong Power Platform\nSkills Available| PowerSkillsPath{Data Sources\nComplexity?}
-    ConvPath -->|Limited Power Platform\nSkills| LimitedSkillsPath{Training Budget\nAvailable?}
-    
-    PowerSkillsPath -->|Mostly Dataverse\n& SharePoint| SimpleConv{Timeline?}
-    PowerSkillsPath -->|External APIs\n& Databases| ComplexConv{Budget & Skills?}
-    
-    LimitedSkillsPath -->|Yes - Training\nBudget Available| TrainingPath[Include 2-3 months\n🎓 Power Platform training\n💰 $10K-30K training cost]
-    LimitedSkillsPath -->|No - Limited\nTraining Budget| ConsultingPath[Consider external consulting support\n💰 $50K-150K consulting]
-    
-    SimpleConv -->|4-8 weeks| StudioQuick[Copilot Studio full\n🟡 Medium Effort\n🟢 Fast ROI: 6-12 weeks\n🟡 Citizen Dev Skills\n💰 $0.01/credit or $200/month]
-    SimpleConv -->|2-4 weeks| M365Copilot[Microsoft 365 Copilot\n+ Knowledge Sources\n🟢 Low Effort\n🟢 Quick ROI: 2-4 weeks]
-    
-    ComplexConv -->|High Budget\nPro Developers| AzureAI[Azure AI Foundry\n🔴 High Effort\n🟡 Medium ROI: 3-6 months\n🔴 AI/ML Expertise\n💰 $1000+/month]
-    ComplexConv -->|Limited Budget\nCitizen Developers| StudioAdv[Copilot Studio full\n+ Custom Actions\n🟡 Medium Effort\n🟡 Medium ROI: 8-16 weeks]
-    
-    %% AI Development Path  
-    AIPath -->|Strong Python &\nData Science Team| StrongAIPath{Infrastructure\nReadiness?}
-    AIPath -->|Basic Python Skills\nLimited Data Science| BasicAIPath{Upskill vs\nOutsource?}
-    AIPath -->|No Python/DS\nExperience| NoAIPath[Consider Copilot Studio full or external development\n🎓 6-12 month skill gap]
-    
-    StrongAIPath -->|Existing Data Lake\n& MLOps| AzureFull[Azure AI Foundry\n🔴 High Effort\n🟡 Long ROI: 6-12 months\n🔴 Data Science Skills\n💰 $2000+/month]
-    StrongAIPath -->|Basic Infrastructure\nSetup Needed| InfraSetup[Infrastructure + Development\n🏗️ 3-6 month infrastructure setup\n� Additional $100K-300K]
-    
-    BasicAIPath -->|Upskill Team\nBudget Available| UpskillPath[Upskilling Path\n🎓 6-12 month training\n� $50K-100K training cost]
-    BasicAIPath -->|Outsource Development\nPartnership| OutsourcePath[Partner Development\n👥 External development team\n💰 $200K-500K project cost]
-    
-    %% Power Platform Path
-    PowerPath -->|Strong Dataverse\n& Power Platform Knowledge| StrongPowerPath{Current Environment\nSetup?}
-    PowerPath -->|Basic Power Platform\nKnowledge| BasicPowerPath{Governance &\nCOE Established?}
-    PowerPath -->|No Power Platform\nExperience| NoPowerPath[Significant Learning Curve\n🎓 3-6 month foundation\n💰 COE setup $50K-150K]
-    
-    StrongPowerPath -->|Production Environment\n& Governance| PowerReady[Power Platform Ready\n🟢 Leverage existing investment\n⚡ Fast deployment]
-    StrongPowerPath -->|Development Only\nNo Governance| GovernanceSetup[Governance Setup Needed\n📋 ALM & security setup\n⏱️ 2-4 month governance]
-    
-    BasicPowerPath -->|Yes - COE\nEstablished| PowerSimple[Power Platform\n🟡 Medium Effort\n🟢 Fast ROI: 4-8 weeks\n🟡 Citizen Dev Skills\n💰 $20-40/user/month]
-    BasicPowerPath -->|No - COE\nNeeded| COESetup[COE & Training Setup\n🏢 Center of Excellence\n💰 $30K-100K setup cost]
-    
-    TrainingPath --> SimpleConv
-    ConsultingPath --> ComplexConv
-    UpskillPath --> AzureEasy[Azure AI Foundry\n+ Templates\n🟡 Medium Effort\n🟡 Medium ROI: 2-4 months\n🟡 Basic Dev Skills]
-    OutsourcePath --> AzureFull
-    InfraSetup --> AzureFull
-    
-    PowerReady --> PowerEnterprise{AI Components\nNeeded?}
-    GovernanceSetup --> PowerEnterprise
-    COESetup --> PowerSimple
-    
-    PowerEnterprise -->|Yes| HybridSolution[Power Platform\n+ Copilot Studio full\n🟡 Medium-High Effort\n🟡 Medium ROI: 3-4 months]
-    PowerEnterprise -->|No| PowerFull[Power Platform\nEnterprise\n🟡 Medium Effort\n🟡 Fast ROI: 6-12 weeks]
-    
-    %% AI Builder Path
-    AIBuilderPath -->|Structured Forms\nStandard Documents| AIBuilderQuick[AI Builder + Power Platform\n🟢 Low-Medium Effort\n🟢 Fast ROI: 2-6 weeks\n🟡 Citizen Dev Skills\n💰 $40/user/month]
-    AIBuilderPath -->|Complex Documents\nCustom Requirements| AIBuilderCustom{Integration\nComplexity?}
-    
-    AIBuilderCustom -->|Power Platform\nIntegration Only| AIBuilderPower[AI Builder + Power Automate\n🟡 Medium Effort\n🟢 Good ROI: 4-8 weeks\n🟡 Process automation skills]
-    AIBuilderCustom -->|Advanced AI\nCustom Models| AzureAIDoc[Azure AI Foundry\nDocument Intelligence\n🔴 High Effort\n🟡 Long ROI: 3-6 months]
-    
-    %% Overlap Areas - Multiple Options Available
-    M365Ready -.->|Also Consider| OverlapBox1[Overlap Zone:\nMultiple Options Work\n📊 Compare Total Cost\n📊 Evaluate Integration]
-    StudioQuick -.-> OverlapBox1
-    
-    StudioAdv -.->|Also Consider| OverlapBox2[Overlap Zone:\nHybrid Approach\n🔄 Start Simple, Scale Up\n🔄 Phased Implementation]
-    AzureEasy -.-> OverlapBox2
-    
-    %% Decision Outcomes with Recommendations
-    OverlapBox1 --> Decision1{Existing M365\nInvestment?}
-    Decision1 -->|Heavy M365 Use| ChooseM365[✅ Choose M365 Copilot\nReason: Lower total cost\nBetter integration]
-    Decision1 -->|Mixed Environment| ChooseStudio[✅ Choose Copilot Studio full\nReason: More flexibility\nCustom branding]
-    
-    OverlapBox2 --> Decision2{Risk Tolerance?}
-    Decision2 -->|Low Risk| StartStudio[✅ Start with Copilot Studio full\nThen scale to Azure AI\nReason: Proven path]
-    Decision2 -->|High Innovation| StartAzure[✅ Start with Azure AI Foundry\nAdd Studio later\nReason: Future-proof]
-    
+
+    %% Copilot Studio Path
+    ConvPath -->|Strong Power Platform Skills| StudioFull[Copilot Studio full Medium Effort Custom workflows Visual design]
+    ConvPath -->|Limited Power Platform Skills| StudioLite[Copilot Studio lite Low Effort Natural language authoring]
+
+    %% Azure AI Foundry Path
+    AIPath -->|Strong Python & Data Science Team| AzureFull[Azure AI Foundry High Effort Custom models Full Azure stack]
+    AIPath -->|Basic Python Skills| AzureEasy[Azure AI Foundry Medium Effort Templates]
+    AIPath -->|No Python/DS Experience| StudioFull
+
+    %% Spacing nodes to reduce overlap
+    M365Ready --> Spacer1(( ))
+    StudioFull --> Spacer2(( ))
+    AzureFull --> Spacer3(( ))
+
     %% Styling
     classDef readyOption fill:#90EE90,stroke:#006400,stroke-width:2px
-    classDef mediumOption fill:#FFE4B5,stroke:#FF8C00,stroke-width:2px  
+    classDef mediumOption fill:#FFE4B5,stroke:#FF8C00,stroke-width:2px
     classDef complexOption fill:#FFB6C1,stroke:#DC143C,stroke-width:2px
-    classDef overlapOption fill:#E6E6FA,stroke:#4B0082,stroke-width:3px
-    classDef decision fill:#F0F8FF,stroke:#4682B4,stroke-width:2px
-    classDef warningOption fill:#FFCCCB,stroke:#DC143C,stroke-width:2px
     classDef infoOption fill:#E0F6FF,stroke:#0066CC,stroke-width:2px
-    
-    class M365Ready,StudioQuick,PowerSimple,PowerReady,AIBuilderQuick readyOption
-    class StudioAdv,AzureEasy,PowerFull,HybridSolution,TrainingPath,UpskillPath,AIBuilderPower mediumOption
-    class AzureFull,AzureAI,SecurityGap,InfraGap,InfraSetup,ConsultingPath,OutsourcePath,AzureAIDoc complexOption
-    class OverlapBox1,OverlapBox2 overlapOption
-    class Decision1,Decision2,ChooseM365,ChooseStudio,StartStudio,StartAzure decision
 
-    class EAPath,PayGPath,M365OnlyPath,GovernanceSetup,COESetup infoOption
-
+    class M365Ready readyOption
+    class StudioFull,StudioLite mediumOption
+    class AzureFull,AzureEasy complexOption
+    class EAPath,PayGPath,M365OnlyPath infoOption
 ```
-
-
-
-## Key Decision Factors Comparison
-
-### Implementation Effort Scale
-| Platform | Setup Time | Development Effort | Maintenance |
-|----------|------------|-------------------|-------------|
-| **Microsoft 365 Copilot** | 🟢 1-2 days | 🟢 Minimal (Configuration) | 🟢 Low |
-| **Copilot Studio lite** | 🟢 1-3 days | 🟢 Natural language authoring | 🟢 Low |
-| **Copilot Studio full** | 🟡 1-2 weeks | 🟡 Medium (Visual Design) | 🟡 Medium |
-| **Azure AI Foundry** | 🔴 2-8 weeks | 🔴 High (Code Development) | 🔴 High |
-| **Microsoft AI Builder** | 🟢 3-5 days | 🟢 Low (Point-and-click) | 🟢 Low |
-| **Power Platform** | 🟡 1-3 weeks | 🟡 Medium (Low-Code) | 🟡 Medium |
-
-### Required Skills & Resources
-| Platform | Developer Skills | Technical Complexity | Development Skills |
 |----------|------------------|---------------------|-------------------|
 | **Microsoft 365 Copilot** | 🟢 End-user training only | 🟢 Configuration-based | 🟢 Low-Code |
 | **Copilot Studio lite** | 🟢 Information workers | 🟢 Natural language authoring | 🟢 Low-Code |
