@@ -357,16 +357,6 @@ Copilot Studio (full) provides native OAuth2 support for secure third-party data
 | **Mobile Experience** | ✅ M365 mobile apps | ✅ M365 mobile apps | 🟡 Teams + web mobile | 🔴 Custom mobile needed | Medium - mobile access expectations |
 | **Offline Capability** | 🔴 Cloud-dependent | 🔴 Cloud-dependent | 🔴 Cloud-dependent | 🟡 Possible with architecture | Low - mostly cloud-first orgs |
 
-#### Change Management Complexity Matrix
-
-| User Group | M365 Copilot Adoption | Copilot Studio lite Adoption | Copilot Studio full Adoption | Azure AI Foundry Adoption |
-|------------|----------------------|------------------------------|------------------------------|--------------------------|
-| **Executives** | 🟢 Low friction - familiar tools | � Integrated with familiar M365 | �🟡 Medium - new interface | 🔴 High - technical complexity |
-| **Knowledge Workers** | 🟢 Native workflow integration | � Natural language authoring | �🟡 Additional tool training | 🔴 Not direct users |
-| **Power Users** | 🟡 May want more control | � Limited customization | �🟢 Good balance of power/ease | 🟡 Technical interest |
-| **IT Administrators** | 🟢 Extends existing governance | � M365 admin center management | �🟡 New governance model | 🔴 Complex new infrastructure |
-| **Developers** | 🔴 Limited customization | 🔴 No coding capabilities | 🟡 Good development platform | 🟢 Full development control |
-
 ### Cost-Benefit Analysis by Scenario
 
 #### Licensing Structure Analysis by Scenario
