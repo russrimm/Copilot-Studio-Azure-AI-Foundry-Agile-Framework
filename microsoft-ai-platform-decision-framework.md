@@ -1,6 +1,6 @@
 # Microsoft AI Platform Decision Framework
 
-This visual decision framework helps organizations choose the right Microsoft AI platform based on their specific requirements, constraints, and objectives. The framework considers implementation effort, ROI expectations, developer skill requirements, and timeline constraints.
+This visual decision framework helps organizations choose the right Microsoft AI platform based on their specific requirements, constraints, and objectives. The framework considers implementation effort, developer skill requirements, and timeline constraints.
 
 ## Decision Framework Overview
 
@@ -18,7 +18,7 @@ The decision process evaluates six primary Microsoft AI platforms:
 %%{init: { 'theme': 'default', 'themeVariables': {
     'background': '#ffffff',
     'fontFamily': 'Segoe UI, Arial, sans-serif',
-    'fontSize': '16px',
+    'fontSize': '24px',
     'primaryColor': '#222222',
     'edgeLabelBackground':'#ffffff',
     'nodeTextColor': '#222222',
@@ -168,9 +168,12 @@ flowchart TD
     class AzureFull,AzureAI,SecurityGap,InfraGap,InfraSetup,ConsultingPath,OutsourcePath,AzureAIDoc complexOption
     class OverlapBox1,OverlapBox2 overlapOption
     class Decision1,Decision2,ChooseM365,ChooseStudio,StartStudio,StartAzure decision
+
     class EAPath,PayGPath,M365OnlyPath,GovernanceSetup,COESetup infoOption
-    class NoAIPath,NoPowerPath warningOption
+
 ```
+
+
 
 ## Key Decision Factors Comparison
 
@@ -523,13 +526,6 @@ graph TD
 | **Receipt Processing** | <5K/month | Standard receipts | ✅ Excellent | 🟡 Overkill | Power Automate |
 | **Custom Form Types** | Variable | Unique layouts | 🔴 Not supported | ✅ Required | Custom API integration |
 
-#### Business Process Automation Tasks
-| Process Type | User Interaction | Data Sources | AI Builder | Copilot Studio | Azure AI Foundry |
-| **Approval Workflows** | Form-based | Dataverse/SharePoint | ✅ Excellent | 🟡 Advanced option | 🟡 Advanced option |
-| **Customer Service** | Conversational | Multiple systems | 🟡 Not designed for this | ✅ Optimal | 🟡 Complex setup |
-| **Data Analysis** | Dashboard/Report | Data lake/warehouse | 🟡 Limited capabilities | 🟡 Not designed for this | ✅ Required |
-| **Content Classification** | Automated | Document libraries | ✅ Good fit | 🟡 Not designed for this | 🟡 Advanced scenarios |
-| **Predictive Analytics** | Scheduled/Triggered | Historical data | 🟡 Basic models | 🟡 Not designed for this | ✅ Required |
 
 ## Copilot Studio Experience Governance & Management
 
