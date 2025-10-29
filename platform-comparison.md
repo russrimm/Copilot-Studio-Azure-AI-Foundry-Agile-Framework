@@ -4,6 +4,13 @@ This guide helps organizations select the appropriate Microsoft AI and Power Pla
 
 ## Platform Overview
 
+### Microsoft 365 Copilot
+- **Embedded AI in productivity apps**: Seamlessly integrates advanced AI into Microsoft 365 applications (Word, Excel, Outlook, Teams, PowerPoint) to enhance user productivity and automate routine tasks.
+- **Natural language assistance**: Enables users to generate content, summarize information, analyze data, and automate workflows using conversational prompts directly within familiar Microsoft 365 tools.
+- **Enterprise-grade security and compliance**: Inherits Microsoft 365’s robust security, compliance, and privacy controls, including data residency, DLP, and audit logging.
+- **No-code/low-code extensibility**: Allows organizations to extend Copilot with custom plugins, connectors, and knowledge sources without deep technical expertise.
+- **Rapid adoption and minimal setup**: Delivers immediate value to end users with minimal IT overhead, leveraging existing Microsoft 365 licensing and infrastructure.
+
 ### Microsoft Copilot Studio
 - **Conversational AI platform**: Purpose-built environment for developing, deploying, and managing AI-powered virtual agents with natural conversation capabilities.
 - **Low-code/no-code development**: Visual authoring environment that enables both technical and non-technical users to create sophisticated conversational experiences without extensive programming knowledge.
@@ -15,12 +22,6 @@ This guide helps organizations select the appropriate Microsoft AI and Power Pla
 - **Custom model development**: Tools and services for training, fine-tuning, and deploying custom AI models tailored to specific business domains and requirements.
 - **Scalable infrastructure**: Enterprise-grade infrastructure that can handle high-volume, mission-critical AI workloads with global availability and automatic scaling.
 - **Enterprise integration**: Seamless integration with existing enterprise systems, data sources, and applications through standard protocols and extensive connector ecosystem.
-
-### Power Platform
-- **Business process automation**: End-to-end automation capabilities for streamlining workflows, reducing manual tasks, and improving operational efficiency across departments.
-- **App development**: Low-code tools for building custom business applications that can run on web and mobile platforms, with integration to enterprise data sources.
-- **Data visualization**: Interactive dashboards and reports that transform complex data into actionable insights with real-time monitoring capabilities.
-- **Workflow management**: Visual workflow design tools for creating complex business processes with approvals, branching logic, and system integrations.
 
 ## Capabilities Comparison
 
