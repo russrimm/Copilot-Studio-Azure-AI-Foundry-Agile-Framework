@@ -1,4 +1,4 @@
-# Microsoft Copilot Studio Tutorial for Beginners
+# Microsoft Copilot Studio Walkthrough and Tutorial
 
 ## Table of Contents
 - [Introduction](#introduction)
