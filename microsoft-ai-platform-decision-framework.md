@@ -103,7 +103,6 @@ flowchart TD
 | **Copilot Studio full** | 🟡 Makers and developers | 🟡 Visual programming | 🟡 Low/Pro-Code |
 | **Azure AI Foundry** | 🔴 Professional developer | 🔴 AI/ML programming | 🔴 Pro-Code |
 | **Microsoft AI Builder** | 🟢 Business user | 🟢 Point-and-click setup | 🟢 Low-Code |
-| **Power Platform** | 🟡 Business analyst | 🟡 Process design | 🟡 Low/Pro-Code |
 
 **Note**: GitHub Copilot can be utilized to supplement all development efforts across these platforms, accelerating code generation, debugging, and best practice implementation regardless of skill level.
 
@@ -115,7 +114,6 @@ flowchart TD
 | **Copilot Studio full** | Pay-as-you-go or monthly plan | N/A | $0.01/credit (Azure billing) or $200/month for 25,000 credits | Usage varies by conversation complexity |
 | **Azure AI Foundry** | Pay-per-use consumption | N/A | Varies by model and tokens | GPT-4: ~$0.03/1K tokens, Custom models vary |
 | **Microsoft AI Builder** | User-based subscription | $40/user/month | 5,000 credits included | Additional credits $0.01 each |
-| **Power Platform** | User/App-based subscription | $20-40/user/month | Varies by plan | Dataverse storage and API calls additional |
 
 ## Enterprise Decision Factors Deep Dive
 
