@@ -137,14 +137,14 @@ flowchart TD
 
 #### Microsoft Data Sources - Pros & Cons
 
-| Data Source | Integration Effort | Cost Impact | Security Benefits | Limitations |
-|-------------|-------------------|-------------|-------------------|-------------|
-| **SharePoint/OneDrive** | 🟢 Native integration | 🟢 Included in license | 🟢 Built-in governance | Content structure dependency |
-| **Microsoft Dataverse** | 🟢 Native Power Platform | 🟡 Additional licensing | 🟢 Enterprise governance | Schema complexity |
-| **Microsoft 365 (Email/Teams)** | 🟢 Built-in connectors | 🟢 Included in license | 🟢 Zero-trust integration | Privacy considerations |
-| **Dynamics 365** | 🟡 Standard connectors | 🟡 Depends on D365 license | 🟢 Enterprise security | CRM/ERP complexity |
-| **Azure SQL Database** | 🟡 Easy Azure integration | 🟡 Azure consumption | 🟢 Azure security model | SQL expertise needed |
-| **Power BI/Excel** | 🟢 Native Power Platform | 🟢 License-dependent | 🟡 Data model dependency | Real-time limitations |
+| Data Source | Integration Effort | Cost Impact | Security Benefits | 
+|-------------|-------------------|-------------|-------------------|
+| **SharePoint/OneDrive** | 🟢 Native integration | 🟢 Included in license | 🟢 Built-in governance | 
+| **Microsoft Dataverse** | 🟢 Native Power Platform | 🟡 Additional licensing | 🟢 Enterprise governance | 
+| **Microsoft 365 (Email/Teams)** | 🟢 Built-in connectors | 🟢 Included in license | 🟢 Zero-trust integration | 
+| **Dynamics 365** | 🟡 Standard connectors | 🟡 Depends on D365 license | 🟢 Enterprise security | 
+| **Azure SQL Database** | 🟡 Easy Azure integration | 🟡 Azure consumption | 🟢 Azure security model | 
+| **Power BI/Excel** | 🟢 Native Power Platform | 🟢 License-dependent | 🟡 Data model dependency | 
 
 
 
@@ -206,7 +206,6 @@ Copilot Studio (full) provides native OAuth2 support for secure third-party data
 | **Copilot Studio full** | ✅ OS-agnostic (cloud) | 🟢 Minimal - Power Platform | 🟡 Optional for large data |
 | **Azure AI Foundry** | ✅ Linux/Windows support | 🔴 Most - full Azure stack | ✅ Often required |
 | **AI Builder** | ✅ OS-agnostic (cloud) | 🟢 None - fully managed | 🟢 Not required |
-| **Power Platform** | ✅ OS-agnostic (cloud) | 🟡 Data gateway for on-prem | 🟡 Dataverse as alternative |
 
 #### Data Lake & Storage Strategy
 
